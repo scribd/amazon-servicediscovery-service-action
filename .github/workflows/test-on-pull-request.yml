@@ -1,8 +1,5 @@
 name: Test on Pull Requests
 on:
-  push:
-    branches:
-      - jimp/cidev
   pull_request:
 
 jobs:
