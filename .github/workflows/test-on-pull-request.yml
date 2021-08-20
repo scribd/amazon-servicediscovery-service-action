@@ -8,6 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-18.04
+    concurrency: ${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2

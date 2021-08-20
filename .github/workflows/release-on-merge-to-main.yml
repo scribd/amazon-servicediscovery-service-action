@@ -1,0 +1,45 @@
+name: Release on Merge to Main
+on:
+  push:
+    branches:
+      - main
+      - jimp/cidev
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    concurrency: ${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - run: yarn install
+      - run: yarn lint
+      - name: commit linting changes
+        uses: stefanzweifel/git-auto-commit-action@v4.6.0
+        with:
+          commit_message: ":robot: yarn lint [skip ci]"
+      - run: yarn test
+  release:
+    runs-on: ubuntu-18.04
+    concurrency: ${{ github.ref }}
+    needs:
+    - test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - run: yarn install
+      - run: yarn package
+      - name: Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          semantic_version: 17
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
