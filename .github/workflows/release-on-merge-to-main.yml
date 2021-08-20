@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-      - jimp/cidev
-
 jobs:
   test:
     runs-on: ubuntu-18.04
