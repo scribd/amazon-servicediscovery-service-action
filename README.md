@@ -26,7 +26,6 @@ parameter              | description                                 | default
 -----------------------|---------------------------------------------|----------
 `name` | The name that you want to assign to the service. | 
 `namespace-id` | The ID of the namespace that you want to use to create the service. The namespace ID must be specified, but it can be specified either here or in the DnsConfig object. |
-
 `description` | A description for the service. | `undefined`
 `dns-config` | A complex type that contains information about the Amazon Route 53 records that you want Cloud Map to create when you register an instance. | {}
 `health-check-config` | Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig. | {}
