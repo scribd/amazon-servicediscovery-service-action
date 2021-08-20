@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.0...v1.0.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* include dist/index.js in updates ([6dcb609](https://github.com/scribd/amazon-servicediscovery-service-action/commit/6dcb609a34b0de82d5618869a68d649fa2c6320e))
+
 # 1.0.0 (2021-08-20)
 
 
