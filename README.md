@@ -132,3 +132,9 @@ See this example:
 ```bash
 ❯  env "ACTIONS_STEP_DEBUG=true" "GITHUB_WORKSPACE=$(pwd)" 'AWS_REGION=us-east-1' 'INPUT_DNS-CONFIG={"NamespaceId": "ns-abc123", "RoutingPolicy": "MULTIVALUE", "DnsRecords":[{"Type": "SRV","TTL": 10}]}' "INPUT_NAME=my-service" 'INPUT_TAGS=[{"Key": "hello", "Value": "world"}]' node  index.js
 ```
+
+# Development
+
+Releases are cut using [semantic-release](https://github.com/semantic-release/semantic-release).
+
+Please write commit messages following [Angular commit guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
