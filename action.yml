@@ -1,0 +1,109 @@
+name: 'Amazon ServiceDiscovery Service Action for GitHub Actions'
+description: 'Creates an Amazon ServiceDiscovery Service'
+branding:
+  icon: 'cloud'
+  color: 'orange'
+inputs:
+  name:
+    required: false
+    description: |
+      The name that you want to assign to the service.
+      
+      If you want Cloud Map to create an SRV record when you register an instance and you're using a system that requires a specific SRV format, such as HAProxy, specify the following for Name:
+      
+      Start the name with an underscore (_), such as _exampleservice.
+      
+      End the name with ._protocol, such as ._tcp.
+      
+      When you register an instance, Cloud Map creates an SRV record and assigns a name to the record by concatenating the service name and the namespace name (for example,
+      
+      _exampleservice._tcp.example.com).
+      
+      For services that are accessible by DNS queries, you can't create multiple services with names that differ only by case (such as EXAMPLE and example). Otherwise, these services have the same DNS name and can't be distinguished. However, if you use a namespace that's only accessible by API calls, then you can create services that with names that differ only by case.
+      
+      string | undefined
+  description:
+    required: false
+    description: |
+      A description for the service.
+      
+      undefined | string
+  dns-config:
+    required: false
+    description: |
+      A complex type that contains information about the Amazon Route 53 records that you want Cloud Map to create when you register an instance.
+      
+      {
+        "NamespaceId": string,
+        "RoutingPolicy": "MULTIVALUE" // or "WEIGHTED",
+        "DnsRecords": [
+          {
+            "Type": string,
+            "TTL": number
+          }
+        ]
+      }
+  health-check-config:
+    required: false
+    description: |
+      Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig.
+      
+      If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.
+      
+      For information about the charges for health checks, see Cloud Map Pricing.
+      
+      {
+        "FailureThreshold": number,
+        "ResourcePath": string,
+        "Type": "HTTP" // HTTP is the only valid value for this property.
+      }
+  health-check-custom-config:
+    required: false
+    description: |
+      A complex type that contains information about an optional custom health check.
+      
+      If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.
+      
+      You can't add, update, or delete a HealthCheckCustomConfig configuration from an existing service.
+      
+      {
+        "FailureThreshold": number
+      }
+  namespace-id:
+    required: false
+    description: |
+      The ID of the namespace that you want to use to create the service. The namespace ID must be specified, but it can be specified either here or in the DnsConfig object.
+      
+      undefined | string
+  tags:
+    required: false
+    description: |
+      The tags to add to the service. Each Tag consists of a key and a value that you define({Key: my-key, Value: my-value}). Tags keys can be up to 128 characters in length, and tag values can be up to 256 characters in length.
+      
+      [{Key: string, Value: string}]
+  type:
+    required: false
+    description: |
+      If present, specifies that the service instances are only discoverable using the DiscoverInstances API operation. No DNS records is registered for the service instances. The only valid value is HTTP.
+      
+      ServiceTypeOption | string
+  action:
+    description: 'Whether to create the resource or delete the resource. Creates by default
+      
+      [create] | delete'
+    required: false
+  id:
+    description: 'The ID of the service that you want to delete.
+      
+      string'
+    required: false
+outputs:
+  arn:
+    description: 'The ARN of the Service'
+  id:
+    description: 'The ID of the Service'
+  response:
+    description: 'The final response of the AWS API.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
