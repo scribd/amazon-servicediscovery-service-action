@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.1...v1.0.2) (2021-08-25)
+
+
+### Bug Fixes
+
+* also publish release to major branch ([89001b2](https://github.com/scribd/amazon-servicediscovery-service-action/commit/89001b28ff016cf23913ad10392fe6e325229542))
+* **deps:** bump @actions/core from 1.4.0 to 1.5.0 ([c95e214](https://github.com/scribd/amazon-servicediscovery-service-action/commit/c95e21454c7432fd4f6b7823b70c3aca19dd3c76))
+
 ## [1.0.1](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.0...v1.0.1) (2021-08-20)
 
 
