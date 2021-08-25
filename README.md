@@ -38,7 +38,7 @@ parameter              | description                                 | default
 ```yaml
 - name: ServiceDiscovery Service
   id: create-servicediscovery-service
-  uses: scribd/amazon-servicediscovery-service@master
+  uses: scribd/amazon-servicediscovery-service-action@v1
   with:
     name: my-service
     dns-config: |
@@ -73,7 +73,7 @@ Note: This command will fail if there are still instances registered to the serv
 
 ```yaml
 - name: Delete ServiceDiscovery Service
-  uses: scribd/amazon-servicediscovery-service@master
+  uses: scribd/amazon-servicediscovery-service-action@v1
   with:
     action: delete
     id: ${{ steps.create-servicediscovery-service.outputs.id }}
