@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.7...v1.0.8) (2021-09-20)
+
+
+### Bug Fixes
+
+* **deps:** bump tmpl from 1.0.4 to 1.0.5 ([e239dde](https://github.com/scribd/amazon-servicediscovery-service-action/commit/e239dde8700067031dcceec41fea1fc2e6b29e31))
+
 ## [1.0.7](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.6...v1.0.7) (2021-09-20)
 
 
