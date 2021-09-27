@@ -1,3 +1,11 @@
+## [1.0.11](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.10...v1.0.11) (2021-09-27)
+
+
+### Bug Fixes
+
+* yarn upgrade ([a30626a](https://github.com/scribd/amazon-servicediscovery-service-action/commit/a30626a4f345fa509ebb26547b73305a7950da10))
+* **deps:** bump @aws-sdk/client-servicediscovery from 3.33.0 to 3.34.0 ([a0d9181](https://github.com/scribd/amazon-servicediscovery-service-action/commit/a0d9181d9fdf4bf686329179655248cb63709f71))
+
 ## [1.0.10](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.9...v1.0.10) (2021-09-22)
 
 
