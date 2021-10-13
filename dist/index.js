@@ -5,7 +5,7 @@
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.36.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.36.0","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/credential-provider-node":"3.36.0","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-signing":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","tslib":"^2.3.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.36.1","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.36.1","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/credential-provider-node":"3.36.1","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-signing":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","tslib":"^2.3.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","descrip
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.36.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.36.1","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.36.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/credential-provider-node":"3.36.0","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-sdk-sts":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-signing":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.36.1","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.36.0","@aws-sdk/credential-provider-node":"3.36.1","@aws-sdk/fetch-http-handler":"3.36.0","@aws-sdk/hash-node":"3.36.0","@aws-sdk/invalid-dependency":"3.36.0","@aws-sdk/middleware-content-length":"3.36.0","@aws-sdk/middleware-host-header":"3.36.0","@aws-sdk/middleware-logger":"3.36.0","@aws-sdk/middleware-retry":"3.36.0","@aws-sdk/middleware-sdk-sts":"3.36.0","@aws-sdk/middleware-serde":"3.36.0","@aws-sdk/middleware-signing":"3.36.0","@aws-sdk/middleware-stack":"3.36.0","@aws-sdk/middleware-user-agent":"3.36.0","@aws-sdk/node-config-provider":"3.36.0","@aws-sdk/node-http-handler":"3.36.0","@aws-sdk/protocol-http":"3.36.0","@aws-sdk/smithy-client":"3.36.0","@aws-sdk/types":"3.36.0","@aws-sdk/url-parser":"3.36.0","@aws-sdk/util-base64-browser":"3.36.0","@aws-sdk/util-base64-node":"3.36.0","@aws-sdk/util-body-length-browser":"3.36.0","@aws-sdk/util-body-length-node":"3.36.0","@aws-sdk/util-user-agent-browser":"3.36.0","@aws-sdk/util-user-agent-node":"3.36.0","@aws-sdk/util-utf8-browser":"3.36.0","@aws-sdk/util-utf8-node":"3.36.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.36.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -1719,14 +1719,6 @@ const UpdatePrivateDnsNamespaceCommand_1 = __nccwpck_require__(4641);
 const UpdatePublicDnsNamespaceCommand_1 = __nccwpck_require__(3782);
 const UpdateServiceCommand_1 = __nccwpck_require__(8909);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * <fullname>Cloud Map</fullname>
- *          <p>With Cloud Map, you can configure public DNS, private DNS, or HTTP namespaces that your microservice
- *    applications run in. When an instance becomes available, you can call the Cloud Map API to register the instance
- *    with Cloud Map. For public or private DNS namespaces, Cloud Map automatically creates DNS records and an optional
- *    health check. Clients that submit public or private DNS queries, or HTTP requests, for the service receive an answer
- *    that contains up to eight healthy records. </p>
- */
 class ServiceDiscovery extends ServiceDiscoveryClient_1.ServiceDiscoveryClient {
     createHttpNamespace(args, optionsOrCb, cb) {
         const command = new CreateHttpNamespaceCommand_1.CreateHttpNamespaceCommand(args);
@@ -2114,14 +2106,6 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
 const runtimeConfig_1 = __nccwpck_require__(6432);
-/**
- * <fullname>Cloud Map</fullname>
- *          <p>With Cloud Map, you can configure public DNS, private DNS, or HTTP namespaces that your microservice
- *    applications run in. When an instance becomes available, you can call the Cloud Map API to register the instance
- *    with Cloud Map. For public or private DNS namespaces, Cloud Map automatically creates DNS records and an optional
- *    health check. Clients that submit public or private DNS queries, or HTTP requests, for the service receive an answer
- *    that contains up to eight healthy records. </p>
- */
 class ServiceDiscoveryClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
@@ -2140,11 +2124,6 @@ class ServiceDiscoveryClient extends smithy_client_1.Client {
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(this.config));
         this.middlewareStack.use(middleware_user_agent_1.getUserAgentPlugin(this.config));
     }
-    /**
-     * Destroy underlying resources, like sockets. It's usually not necessary to do this.
-     * However in Node.js, it's best to explicitly shut down the client's agent when it is no longer needed.
-     * Otherwise, sockets might stay open for quite a long time before the server terminates them.
-     */
     destroy() {
         super.destroy();
     }
@@ -2165,39 +2144,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a
- *     <code>DiscoverInstances</code> request but can't be discovered using DNS.</p>
- *          <p>For the current quota on the number of namespaces that you can create using the same account,
- *    see <a href="https://docs.aws.amazon.com/cloud-map/latest/dg/cloud-map-limits.html">Cloud Map quotas</a> in the
- *     <i>Cloud Map Developer Guide</i>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, CreateHttpNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, CreateHttpNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new CreateHttpNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link CreateHttpNamespaceCommandInput} for command's `input` shape.
- * @see {@link CreateHttpNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class CreateHttpNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2237,41 +2188,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Creates a private namespace based on DNS, which is visible only inside a specified Amazon VPC. The namespace
- *    defines your service naming scheme. For example, if you name your namespace <code>example.com</code> and name your
- *    service <code>backend</code>, the resulting DNS name for the service is <code>backend.example.com</code>. Service
- *    instances that are registered using a private DNS namespace can be discovered using either a
- *     <code>DiscoverInstances</code> request or using DNS. For the current quota on the number of namespaces that you can
- *    create using the same account, see <a href="https://docs.aws.amazon.com/cloud-map/latest/dg/cloud-map-limits.html">Cloud Map quotas</a> in the
- *     <i>Cloud Map Developer Guide</i>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, CreatePrivateDnsNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, CreatePrivateDnsNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new CreatePrivateDnsNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link CreatePrivateDnsNamespaceCommandInput} for command's `input` shape.
- * @see {@link CreatePrivateDnsNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class CreatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2311,40 +2232,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Creates a public namespace based on DNS, which is visible on the internet. The namespace defines your service
- *    naming scheme. For example, if you name your namespace <code>example.com</code> and name your service
- *     <code>backend</code>, the resulting DNS name for the service is <code>backend.example.com</code>. You can discover
- *    instances that were registered with a public DNS namespace by using either a <code>DiscoverInstances</code> request
- *    or using DNS. For the current quota on the number of namespaces that you can create using the same account, see <a href="https://docs.aws.amazon.com/cloud-map/latest/dg/cloud-map-limits.html">Cloud Map
- *     quotas</a> in the <i>Cloud Map Developer Guide</i>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, CreatePublicDnsNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, CreatePublicDnsNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new CreatePublicDnsNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link CreatePublicDnsNamespaceCommandInput} for command's `input` shape.
- * @see {@link CreatePublicDnsNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class CreatePublicDnsNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2384,75 +2276,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Creates a service. This action defines the configuration for the following entities:</p>
- *          <ul>
- *             <li>
- *                <p>For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:</p>
- *                <ul>
- *                   <li>
- *                      <p>
- *                         <code>A</code>
- *                      </p>
- *                   </li>
- *                   <li>
- *                      <p>
- *                         <code>AAAA</code>
- *                      </p>
- *                   </li>
- *                   <li>
- *                      <p>
- *                         <code>A</code> and <code>AAAA</code>
- *                      </p>
- *                   </li>
- *                   <li>
- *                      <p>
- *                         <code>SRV</code>
- *                      </p>
- *                   </li>
- *                   <li>
- *                      <p>
- *                         <code>CNAME</code>
- *                      </p>
- *                   </li>
- *                </ul>
- *             </li>
- *             <li>
- *                <p>Optionally, a health check</p>
- *             </li>
- *          </ul>
- *          <p>After you create the service, you can submit a <a href="https://docs.aws.amazon.com/cloud-map/latest/api/API_RegisterInstance.html">RegisterInstance</a> request, and Cloud Map uses the
- *    values in the configuration to create the specified entities.</p>
- *          <p>For the current quota on the number of instances that you can register using the same namespace and using the
- *    same service, see <a href="https://docs.aws.amazon.com/cloud-map/latest/dg/cloud-map-limits.html">Cloud Map
- *     quotas</a> in the <i>Cloud Map Developer Guide</i>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, CreateServiceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, CreateServiceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new CreateServiceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link CreateServiceCommandInput} for command's `input` shape.
- * @see {@link CreateServiceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class CreateServiceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2492,36 +2320,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Deletes a namespace from the current account. If the namespace still contains one or more services, the request
- *    fails.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, DeleteNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, DeleteNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new DeleteNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link DeleteNamespaceCommandInput} for command's `input` shape.
- * @see {@link DeleteNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class DeleteNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2561,36 +2364,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Deletes a specified service. If the service still contains one or more registered instances, the request
- *    fails.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, DeleteServiceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, DeleteServiceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new DeleteServiceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link DeleteServiceCommandInput} for command's `input` shape.
- * @see {@link DeleteServiceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class DeleteServiceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2630,36 +2408,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map created for the specified
- *    instance.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, DeregisterInstanceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, DeregisterInstanceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new DeregisterInstanceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link DeregisterInstanceCommandInput} for command's `input` shape.
- * @see {@link DeregisterInstanceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class DeregisterInstanceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2699,37 +2452,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Discovers registered instances for a specified namespace and service. You can use <code>DiscoverInstances</code>
- *    to discover instances for any type of namespace. For public and private DNS namespaces, you can also use DNS queries
- *    to discover instances.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, DiscoverInstancesCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, DiscoverInstancesCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new DiscoverInstancesCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link DiscoverInstancesCommandInput} for command's `input` shape.
- * @see {@link DiscoverInstancesCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class DiscoverInstancesCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2769,35 +2496,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Gets information about a specified instance.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, GetInstanceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, GetInstanceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new GetInstanceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetInstanceCommandInput} for command's `input` shape.
- * @see {@link GetInstanceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetInstanceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2837,40 +2540,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Gets the current health status (<code>Healthy</code>, <code>Unhealthy</code>, or <code>Unknown</code>) of one or
- *    more instances that are associated with a specified service.</p>
- *          <note>
- *             <p>There's a brief delay between when you register an instance and when the health status for the instance is
- *     available. </p>
- *          </note>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, GetInstancesHealthStatusCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, GetInstancesHealthStatusCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new GetInstancesHealthStatusCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetInstancesHealthStatusCommandInput} for command's `input` shape.
- * @see {@link GetInstancesHealthStatusCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetInstancesHealthStatusCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2910,35 +2584,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Gets information about a namespace.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, GetNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, GetNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new GetNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetNamespaceCommandInput} for command's `input` shape.
- * @see {@link GetNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -2978,39 +2628,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Gets information about any operation that returns an operation ID in the response, such as a
- *     <code>CreateService</code> request.</p>
- *          <note>
- *             <p>To get a list of operations that match specified criteria, see <a href="https://docs.aws.amazon.com/cloud-map/latest/api/API_ListOperations.html">ListOperations</a>.</p>
- *          </note>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, GetOperationCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, GetOperationCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new GetOperationCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetOperationCommandInput} for command's `input` shape.
- * @see {@link GetOperationCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetOperationCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3050,35 +2672,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Gets the settings for a specified service.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, GetServiceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, GetServiceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new GetServiceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetServiceCommandInput} for command's `input` shape.
- * @see {@link GetServiceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetServiceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3118,35 +2716,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Lists summary information about the instances that you registered by using a specified service.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, ListInstancesCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, ListInstancesCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new ListInstancesCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListInstancesCommandInput} for command's `input` shape.
- * @see {@link ListInstancesCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListInstancesCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3186,35 +2760,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Lists summary information about the namespaces that were created by the current account.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, ListNamespacesCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, ListNamespacesCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new ListNamespacesCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListNamespacesCommandInput} for command's `input` shape.
- * @see {@link ListNamespacesCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListNamespacesCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3254,35 +2804,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Lists operations that match the criteria that you specify.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, ListOperationsCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, ListOperationsCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new ListOperationsCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListOperationsCommandInput} for command's `input` shape.
- * @see {@link ListOperationsCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListOperationsCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3322,35 +2848,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Lists summary information for all the services that are associated with one or more specified namespaces.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, ListServicesCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, ListServicesCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new ListServicesCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListServicesCommandInput} for command's `input` shape.
- * @see {@link ListServicesCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListServicesCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3390,35 +2892,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Lists tags for the specified resource.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, ListTagsForResourceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, ListTagsForResourceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new ListTagsForResourceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListTagsForResourceCommandInput} for command's `input` shape.
- * @see {@link ListTagsForResourceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListTagsForResourceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3458,74 +2936,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Creates or updates one or more records and, optionally, creates a health check based on the settings in a
- *    specified service. When you submit a <code>RegisterInstance</code> request, the following occurs:</p>
- *          <ul>
- *             <li>
- *                <p>For each DNS record that you define in the service that's specified by <code>ServiceId</code>, a record is
- *      created or updated in the hosted zone that's associated with the corresponding namespace.</p>
- *             </li>
- *             <li>
- *                <p>If the service includes <code>HealthCheckConfig</code>, a health check is created based on the settings in the
- *      health check configuration.</p>
- *             </li>
- *             <li>
- *                <p>The health check, if any, is associated with each of the new or updated records.</p>
- *             </li>
- *          </ul>
- *          <important>
- *             <p>One <code>RegisterInstance</code> request must complete before you can submit another request and specify the
- *     same service ID and instance ID.</p>
- *          </important>
- *          <p>For more information, see <a href="https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateService.html">CreateService</a>.</p>
- *          <p>When Cloud Map receives a DNS query for the specified DNS name, it returns the applicable value:</p>
- *          <ul>
- *             <li>
- *                <p>
- *                   <b>If the health check is healthy</b>: returns all the records</p>
- *             </li>
- *             <li>
- *                <p>
- *                   <b>If the health check is unhealthy</b>: returns the applicable value for the last
- *      healthy instance</p>
- *             </li>
- *             <li>
- *                <p>
- *                   <b>If you didn't specify a health check configuration</b>: returns all the
- *      records</p>
- *             </li>
- *          </ul>
- *          <p>For the current quota on the number of instances that you can register using the same namespace and using the
- *    same service, see <a href="https://docs.aws.amazon.com/cloud-map/latest/dg/cloud-map-limits.html">Cloud Map
- *     quotas</a> in the <i>Cloud Map Developer Guide</i>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, RegisterInstanceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, RegisterInstanceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new RegisterInstanceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link RegisterInstanceCommandInput} for command's `input` shape.
- * @see {@link RegisterInstanceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class RegisterInstanceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3565,35 +2980,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Adds one or more tags to the specified resource.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, TagResourceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, TagResourceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new TagResourceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link TagResourceCommandInput} for command's `input` shape.
- * @see {@link TagResourceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class TagResourceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3633,35 +3024,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Removes one or more tags from the specified resource.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UntagResourceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UntagResourceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UntagResourceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UntagResourceCommandInput} for command's `input` shape.
- * @see {@link UntagResourceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UntagResourceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3701,36 +3068,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Updates an HTTP
- *    namespace.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UpdateHttpNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UpdateHttpNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UpdateHttpNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UpdateHttpNamespaceCommandInput} for command's `input` shape.
- * @see {@link UpdateHttpNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UpdateHttpNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3770,39 +3112,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Submits a request to change the health status of a custom health check to healthy or unhealthy.</p>
- *          <p>You can use <code>UpdateInstanceCustomHealthStatus</code> to change the status only for custom health checks,
- *    which you define using <code>HealthCheckCustomConfig</code> when you create a service. You can't use it to change the
- *    status for Route 53 health checks, which you define using <code>HealthCheckConfig</code>.</p>
- *          <p>For more information, see <a href="https://docs.aws.amazon.com/cloud-map/latest/api/API_HealthCheckCustomConfig.html">HealthCheckCustomConfig</a>.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UpdateInstanceCustomHealthStatusCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UpdateInstanceCustomHealthStatusCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UpdateInstanceCustomHealthStatusCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UpdateInstanceCustomHealthStatusCommandInput} for command's `input` shape.
- * @see {@link UpdateInstanceCustomHealthStatusCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UpdateInstanceCustomHealthStatusCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3842,36 +3156,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Updates a private DNS
- *    namespace.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UpdatePrivateDnsNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UpdatePrivateDnsNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UpdatePrivateDnsNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UpdatePrivateDnsNamespaceCommandInput} for command's `input` shape.
- * @see {@link UpdatePrivateDnsNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UpdatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3911,36 +3200,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Updates a public DNS
- *    namespace.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UpdatePublicDnsNamespaceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UpdatePublicDnsNamespaceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UpdatePublicDnsNamespaceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UpdatePublicDnsNamespaceCommandInput} for command's `input` shape.
- * @see {@link UpdatePublicDnsNamespaceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UpdatePublicDnsNamespaceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -3980,59 +3244,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
 const Aws_json1_1_1 = __nccwpck_require__(8861);
-/**
- * <p>Submits a request to perform the following operations:</p>
- *          <ul>
- *             <li>
- *                <p>Update the TTL setting for existing <code>DnsRecords</code> configurations</p>
- *             </li>
- *             <li>
- *                <p>Add, update, or delete <code>HealthCheckConfig</code> for a specified service</p>
- *                <note>
- *                   <p>You can't add, update, or delete a <code>HealthCheckCustomConfig</code> configuration.</p>
- *                </note>
- *             </li>
- *          </ul>
- *          <p>For public and private DNS namespaces, note the following:</p>
- *          <ul>
- *             <li>
- *                <p>If you omit any existing <code>DnsRecords</code> or <code>HealthCheckConfig</code> configurations from an
- *       <code>UpdateService</code> request, the configurations are deleted from the service.</p>
- *             </li>
- *             <li>
- *                <p>If you omit an existing <code>HealthCheckCustomConfig</code> configuration from an <code>UpdateService</code>
- *      request, the configuration isn't deleted from the service.</p>
- *             </li>
- *          </ul>
- *          <p>When you update settings for a service, Cloud Map also updates the corresponding settings in all the records
- *    and health checks that were created by using the specified service.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { ServiceDiscoveryClient, UpdateServiceCommand } from "@aws-sdk/client-servicediscovery"; // ES Modules import
- * // const { ServiceDiscoveryClient, UpdateServiceCommand } = require("@aws-sdk/client-servicediscovery"); // CommonJS import
- * const client = new ServiceDiscoveryClient(config);
- * const command = new UpdateServiceCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link UpdateServiceCommandInput} for command's `input` shape.
- * @see {@link UpdateServiceCommandOutput} for command's `response` shape.
- * @see {@link ServiceDiscoveryClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class UpdateServiceCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -4200,153 +3416,102 @@ exports.PublicDnsNamespaceChange = exports.PublicDnsNamespacePropertiesChange = 
 exports.UpdateServiceResponse = exports.UpdateServiceRequest = exports.ServiceChange = exports.UpdatePublicDnsNamespaceResponse = exports.UpdatePublicDnsNamespaceRequest = exports.UpdatePrivateDnsNamespaceResponse = exports.UpdatePrivateDnsNamespaceRequest = exports.UpdateInstanceCustomHealthStatusRequest = exports.UpdateHttpNamespaceResponse = exports.UpdateHttpNamespaceRequest = exports.UntagResourceResponse = exports.UntagResourceRequest = exports.TagResourceResponse = exports.TagResourceRequest = exports.RegisterInstanceResponse = exports.RegisterInstanceRequest = void 0;
 var Tag;
 (function (Tag) {
-    /**
-     * @internal
-     */
     Tag.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Tag = exports.Tag || (exports.Tag = {}));
 var CreateHttpNamespaceRequest;
 (function (CreateHttpNamespaceRequest) {
-    /**
-     * @internal
-     */
     CreateHttpNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateHttpNamespaceRequest = exports.CreateHttpNamespaceRequest || (exports.CreateHttpNamespaceRequest = {}));
 var CreateHttpNamespaceResponse;
 (function (CreateHttpNamespaceResponse) {
-    /**
-     * @internal
-     */
     CreateHttpNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateHttpNamespaceResponse = exports.CreateHttpNamespaceResponse || (exports.CreateHttpNamespaceResponse = {}));
 var DuplicateRequest;
 (function (DuplicateRequest) {
-    /**
-     * @internal
-     */
     DuplicateRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DuplicateRequest = exports.DuplicateRequest || (exports.DuplicateRequest = {}));
 var InvalidInput;
 (function (InvalidInput) {
-    /**
-     * @internal
-     */
     InvalidInput.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidInput = exports.InvalidInput || (exports.InvalidInput = {}));
 var NamespaceAlreadyExists;
 (function (NamespaceAlreadyExists) {
-    /**
-     * @internal
-     */
     NamespaceAlreadyExists.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(NamespaceAlreadyExists = exports.NamespaceAlreadyExists || (exports.NamespaceAlreadyExists = {}));
 var ResourceLimitExceeded;
 (function (ResourceLimitExceeded) {
-    /**
-     * @internal
-     */
     ResourceLimitExceeded.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceLimitExceeded = exports.ResourceLimitExceeded || (exports.ResourceLimitExceeded = {}));
 var TooManyTagsException;
 (function (TooManyTagsException) {
-    /**
-     * @internal
-     */
     TooManyTagsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TooManyTagsException = exports.TooManyTagsException || (exports.TooManyTagsException = {}));
 var SOA;
 (function (SOA) {
-    /**
-     * @internal
-     */
     SOA.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SOA = exports.SOA || (exports.SOA = {}));
 var PrivateDnsPropertiesMutable;
 (function (PrivateDnsPropertiesMutable) {
-    /**
-     * @internal
-     */
     PrivateDnsPropertiesMutable.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PrivateDnsPropertiesMutable = exports.PrivateDnsPropertiesMutable || (exports.PrivateDnsPropertiesMutable = {}));
 var PrivateDnsNamespaceProperties;
 (function (PrivateDnsNamespaceProperties) {
-    /**
-     * @internal
-     */
     PrivateDnsNamespaceProperties.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PrivateDnsNamespaceProperties = exports.PrivateDnsNamespaceProperties || (exports.PrivateDnsNamespaceProperties = {}));
 var CreatePrivateDnsNamespaceRequest;
 (function (CreatePrivateDnsNamespaceRequest) {
-    /**
-     * @internal
-     */
     CreatePrivateDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreatePrivateDnsNamespaceRequest = exports.CreatePrivateDnsNamespaceRequest || (exports.CreatePrivateDnsNamespaceRequest = {}));
 var CreatePrivateDnsNamespaceResponse;
 (function (CreatePrivateDnsNamespaceResponse) {
-    /**
-     * @internal
-     */
     CreatePrivateDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreatePrivateDnsNamespaceResponse = exports.CreatePrivateDnsNamespaceResponse || (exports.CreatePrivateDnsNamespaceResponse = {}));
 var PublicDnsPropertiesMutable;
 (function (PublicDnsPropertiesMutable) {
-    /**
-     * @internal
-     */
     PublicDnsPropertiesMutable.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublicDnsPropertiesMutable = exports.PublicDnsPropertiesMutable || (exports.PublicDnsPropertiesMutable = {}));
 var PublicDnsNamespaceProperties;
 (function (PublicDnsNamespaceProperties) {
-    /**
-     * @internal
-     */
     PublicDnsNamespaceProperties.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublicDnsNamespaceProperties = exports.PublicDnsNamespaceProperties || (exports.PublicDnsNamespaceProperties = {}));
 var CreatePublicDnsNamespaceRequest;
 (function (CreatePublicDnsNamespaceRequest) {
-    /**
-     * @internal
-     */
     CreatePublicDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreatePublicDnsNamespaceRequest = exports.CreatePublicDnsNamespaceRequest || (exports.CreatePublicDnsNamespaceRequest = {}));
 var CreatePublicDnsNamespaceResponse;
 (function (CreatePublicDnsNamespaceResponse) {
-    /**
-     * @internal
-     */
     CreatePublicDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4360,9 +3525,6 @@ var RecordType;
 })(RecordType = exports.RecordType || (exports.RecordType = {}));
 var DnsRecord;
 (function (DnsRecord) {
-    /**
-     * @internal
-     */
     DnsRecord.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4374,9 +3536,6 @@ var RoutingPolicy;
 })(RoutingPolicy = exports.RoutingPolicy || (exports.RoutingPolicy = {}));
 var DnsConfig;
 (function (DnsConfig) {
-    /**
-     * @internal
-     */
     DnsConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4389,18 +3548,12 @@ var HealthCheckType;
 })(HealthCheckType = exports.HealthCheckType || (exports.HealthCheckType = {}));
 var HealthCheckConfig;
 (function (HealthCheckConfig) {
-    /**
-     * @internal
-     */
     HealthCheckConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(HealthCheckConfig = exports.HealthCheckConfig || (exports.HealthCheckConfig = {}));
 var HealthCheckCustomConfig;
 (function (HealthCheckCustomConfig) {
-    /**
-     * @internal
-     */
     HealthCheckCustomConfig.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4411,9 +3564,6 @@ var ServiceTypeOption;
 })(ServiceTypeOption = exports.ServiceTypeOption || (exports.ServiceTypeOption = {}));
 var CreateServiceRequest;
 (function (CreateServiceRequest) {
-    /**
-     * @internal
-     */
     CreateServiceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4426,45 +3576,30 @@ var ServiceType;
 })(ServiceType = exports.ServiceType || (exports.ServiceType = {}));
 var Service;
 (function (Service) {
-    /**
-     * @internal
-     */
     Service.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Service = exports.Service || (exports.Service = {}));
 var CreateServiceResponse;
 (function (CreateServiceResponse) {
-    /**
-     * @internal
-     */
     CreateServiceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(CreateServiceResponse = exports.CreateServiceResponse || (exports.CreateServiceResponse = {}));
 var NamespaceNotFound;
 (function (NamespaceNotFound) {
-    /**
-     * @internal
-     */
     NamespaceNotFound.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(NamespaceNotFound = exports.NamespaceNotFound || (exports.NamespaceNotFound = {}));
 var ServiceAlreadyExists;
 (function (ServiceAlreadyExists) {
-    /**
-     * @internal
-     */
     ServiceAlreadyExists.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ServiceAlreadyExists = exports.ServiceAlreadyExists || (exports.ServiceAlreadyExists = {}));
 var CustomHealthNotFound;
 (function (CustomHealthNotFound) {
-    /**
-     * @internal
-     */
     CustomHealthNotFound.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4476,81 +3611,54 @@ var CustomHealthStatus;
 })(CustomHealthStatus = exports.CustomHealthStatus || (exports.CustomHealthStatus = {}));
 var DeleteNamespaceRequest;
 (function (DeleteNamespaceRequest) {
-    /**
-     * @internal
-     */
     DeleteNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteNamespaceRequest = exports.DeleteNamespaceRequest || (exports.DeleteNamespaceRequest = {}));
 var DeleteNamespaceResponse;
 (function (DeleteNamespaceResponse) {
-    /**
-     * @internal
-     */
     DeleteNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteNamespaceResponse = exports.DeleteNamespaceResponse || (exports.DeleteNamespaceResponse = {}));
 var ResourceInUse;
 (function (ResourceInUse) {
-    /**
-     * @internal
-     */
     ResourceInUse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceInUse = exports.ResourceInUse || (exports.ResourceInUse = {}));
 var DeleteServiceRequest;
 (function (DeleteServiceRequest) {
-    /**
-     * @internal
-     */
     DeleteServiceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteServiceRequest = exports.DeleteServiceRequest || (exports.DeleteServiceRequest = {}));
 var DeleteServiceResponse;
 (function (DeleteServiceResponse) {
-    /**
-     * @internal
-     */
     DeleteServiceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeleteServiceResponse = exports.DeleteServiceResponse || (exports.DeleteServiceResponse = {}));
 var ServiceNotFound;
 (function (ServiceNotFound) {
-    /**
-     * @internal
-     */
     ServiceNotFound.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ServiceNotFound = exports.ServiceNotFound || (exports.ServiceNotFound = {}));
 var DeregisterInstanceRequest;
 (function (DeregisterInstanceRequest) {
-    /**
-     * @internal
-     */
     DeregisterInstanceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeregisterInstanceRequest = exports.DeregisterInstanceRequest || (exports.DeregisterInstanceRequest = {}));
 var DeregisterInstanceResponse;
 (function (DeregisterInstanceResponse) {
-    /**
-     * @internal
-     */
     DeregisterInstanceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DeregisterInstanceResponse = exports.DeregisterInstanceResponse || (exports.DeregisterInstanceResponse = {}));
 var InstanceNotFound;
 (function (InstanceNotFound) {
-    /**
-     * @internal
-     */
     InstanceNotFound.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4564,9 +3672,6 @@ var HealthStatusFilter;
 })(HealthStatusFilter = exports.HealthStatusFilter || (exports.HealthStatusFilter = {}));
 var DiscoverInstancesRequest;
 (function (DiscoverInstancesRequest) {
-    /**
-     * @internal
-     */
     DiscoverInstancesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4579,45 +3684,30 @@ var HealthStatus;
 })(HealthStatus = exports.HealthStatus || (exports.HealthStatus = {}));
 var HttpInstanceSummary;
 (function (HttpInstanceSummary) {
-    /**
-     * @internal
-     */
     HttpInstanceSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(HttpInstanceSummary = exports.HttpInstanceSummary || (exports.HttpInstanceSummary = {}));
 var DiscoverInstancesResponse;
 (function (DiscoverInstancesResponse) {
-    /**
-     * @internal
-     */
     DiscoverInstancesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DiscoverInstancesResponse = exports.DiscoverInstancesResponse || (exports.DiscoverInstancesResponse = {}));
 var RequestLimitExceeded;
 (function (RequestLimitExceeded) {
-    /**
-     * @internal
-     */
     RequestLimitExceeded.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RequestLimitExceeded = exports.RequestLimitExceeded || (exports.RequestLimitExceeded = {}));
 var DnsConfigChange;
 (function (DnsConfigChange) {
-    /**
-     * @internal
-     */
     DnsConfigChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DnsConfigChange = exports.DnsConfigChange || (exports.DnsConfigChange = {}));
 var DnsProperties;
 (function (DnsProperties) {
-    /**
-     * @internal
-     */
     DnsProperties.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4630,72 +3720,48 @@ var FilterCondition;
 })(FilterCondition = exports.FilterCondition || (exports.FilterCondition = {}));
 var GetInstanceRequest;
 (function (GetInstanceRequest) {
-    /**
-     * @internal
-     */
     GetInstanceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetInstanceRequest = exports.GetInstanceRequest || (exports.GetInstanceRequest = {}));
 var Instance;
 (function (Instance) {
-    /**
-     * @internal
-     */
     Instance.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Instance = exports.Instance || (exports.Instance = {}));
 var GetInstanceResponse;
 (function (GetInstanceResponse) {
-    /**
-     * @internal
-     */
     GetInstanceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetInstanceResponse = exports.GetInstanceResponse || (exports.GetInstanceResponse = {}));
 var GetInstancesHealthStatusRequest;
 (function (GetInstancesHealthStatusRequest) {
-    /**
-     * @internal
-     */
     GetInstancesHealthStatusRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetInstancesHealthStatusRequest = exports.GetInstancesHealthStatusRequest || (exports.GetInstancesHealthStatusRequest = {}));
 var GetInstancesHealthStatusResponse;
 (function (GetInstancesHealthStatusResponse) {
-    /**
-     * @internal
-     */
     GetInstancesHealthStatusResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetInstancesHealthStatusResponse = exports.GetInstancesHealthStatusResponse || (exports.GetInstancesHealthStatusResponse = {}));
 var GetNamespaceRequest;
 (function (GetNamespaceRequest) {
-    /**
-     * @internal
-     */
     GetNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetNamespaceRequest = exports.GetNamespaceRequest || (exports.GetNamespaceRequest = {}));
 var HttpProperties;
 (function (HttpProperties) {
-    /**
-     * @internal
-     */
     HttpProperties.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(HttpProperties = exports.HttpProperties || (exports.HttpProperties = {}));
 var NamespaceProperties;
 (function (NamespaceProperties) {
-    /**
-     * @internal
-     */
     NamespaceProperties.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4708,27 +3774,18 @@ var NamespaceType;
 })(NamespaceType = exports.NamespaceType || (exports.NamespaceType = {}));
 var Namespace;
 (function (Namespace) {
-    /**
-     * @internal
-     */
     Namespace.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Namespace = exports.Namespace || (exports.Namespace = {}));
 var GetNamespaceResponse;
 (function (GetNamespaceResponse) {
-    /**
-     * @internal
-     */
     GetNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetNamespaceResponse = exports.GetNamespaceResponse || (exports.GetNamespaceResponse = {}));
 var GetOperationRequest;
 (function (GetOperationRequest) {
-    /**
-     * @internal
-     */
     GetOperationRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4757,81 +3814,54 @@ var OperationType;
 })(OperationType = exports.OperationType || (exports.OperationType = {}));
 var Operation;
 (function (Operation) {
-    /**
-     * @internal
-     */
     Operation.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Operation = exports.Operation || (exports.Operation = {}));
 var GetOperationResponse;
 (function (GetOperationResponse) {
-    /**
-     * @internal
-     */
     GetOperationResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetOperationResponse = exports.GetOperationResponse || (exports.GetOperationResponse = {}));
 var OperationNotFound;
 (function (OperationNotFound) {
-    /**
-     * @internal
-     */
     OperationNotFound.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(OperationNotFound = exports.OperationNotFound || (exports.OperationNotFound = {}));
 var GetServiceRequest;
 (function (GetServiceRequest) {
-    /**
-     * @internal
-     */
     GetServiceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetServiceRequest = exports.GetServiceRequest || (exports.GetServiceRequest = {}));
 var GetServiceResponse;
 (function (GetServiceResponse) {
-    /**
-     * @internal
-     */
     GetServiceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetServiceResponse = exports.GetServiceResponse || (exports.GetServiceResponse = {}));
 var HttpNamespaceChange;
 (function (HttpNamespaceChange) {
-    /**
-     * @internal
-     */
     HttpNamespaceChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(HttpNamespaceChange = exports.HttpNamespaceChange || (exports.HttpNamespaceChange = {}));
 var InstanceSummary;
 (function (InstanceSummary) {
-    /**
-     * @internal
-     */
     InstanceSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InstanceSummary = exports.InstanceSummary || (exports.InstanceSummary = {}));
 var ListInstancesRequest;
 (function (ListInstancesRequest) {
-    /**
-     * @internal
-     */
     ListInstancesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListInstancesRequest = exports.ListInstancesRequest || (exports.ListInstancesRequest = {}));
 var ListInstancesResponse;
 (function (ListInstancesResponse) {
-    /**
-     * @internal
-     */
     ListInstancesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4842,36 +3872,24 @@ var NamespaceFilterName;
 })(NamespaceFilterName = exports.NamespaceFilterName || (exports.NamespaceFilterName = {}));
 var NamespaceFilter;
 (function (NamespaceFilter) {
-    /**
-     * @internal
-     */
     NamespaceFilter.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(NamespaceFilter = exports.NamespaceFilter || (exports.NamespaceFilter = {}));
 var ListNamespacesRequest;
 (function (ListNamespacesRequest) {
-    /**
-     * @internal
-     */
     ListNamespacesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListNamespacesRequest = exports.ListNamespacesRequest || (exports.ListNamespacesRequest = {}));
 var NamespaceSummary;
 (function (NamespaceSummary) {
-    /**
-     * @internal
-     */
     NamespaceSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(NamespaceSummary = exports.NamespaceSummary || (exports.NamespaceSummary = {}));
 var ListNamespacesResponse;
 (function (ListNamespacesResponse) {
-    /**
-     * @internal
-     */
     ListNamespacesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4886,36 +3904,24 @@ var OperationFilterName;
 })(OperationFilterName = exports.OperationFilterName || (exports.OperationFilterName = {}));
 var OperationFilter;
 (function (OperationFilter) {
-    /**
-     * @internal
-     */
     OperationFilter.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(OperationFilter = exports.OperationFilter || (exports.OperationFilter = {}));
 var ListOperationsRequest;
 (function (ListOperationsRequest) {
-    /**
-     * @internal
-     */
     ListOperationsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListOperationsRequest = exports.ListOperationsRequest || (exports.ListOperationsRequest = {}));
 var OperationSummary;
 (function (OperationSummary) {
-    /**
-     * @internal
-     */
     OperationSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(OperationSummary = exports.OperationSummary || (exports.OperationSummary = {}));
 var ListOperationsResponse;
 (function (ListOperationsResponse) {
-    /**
-     * @internal
-     */
     ListOperationsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -4926,270 +3932,180 @@ var ServiceFilterName;
 })(ServiceFilterName = exports.ServiceFilterName || (exports.ServiceFilterName = {}));
 var ServiceFilter;
 (function (ServiceFilter) {
-    /**
-     * @internal
-     */
     ServiceFilter.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ServiceFilter = exports.ServiceFilter || (exports.ServiceFilter = {}));
 var ListServicesRequest;
 (function (ListServicesRequest) {
-    /**
-     * @internal
-     */
     ListServicesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListServicesRequest = exports.ListServicesRequest || (exports.ListServicesRequest = {}));
 var ServiceSummary;
 (function (ServiceSummary) {
-    /**
-     * @internal
-     */
     ServiceSummary.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ServiceSummary = exports.ServiceSummary || (exports.ServiceSummary = {}));
 var ListServicesResponse;
 (function (ListServicesResponse) {
-    /**
-     * @internal
-     */
     ListServicesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListServicesResponse = exports.ListServicesResponse || (exports.ListServicesResponse = {}));
 var ListTagsForResourceRequest;
 (function (ListTagsForResourceRequest) {
-    /**
-     * @internal
-     */
     ListTagsForResourceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsForResourceRequest = exports.ListTagsForResourceRequest || (exports.ListTagsForResourceRequest = {}));
 var ListTagsForResourceResponse;
 (function (ListTagsForResourceResponse) {
-    /**
-     * @internal
-     */
     ListTagsForResourceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListTagsForResourceResponse = exports.ListTagsForResourceResponse || (exports.ListTagsForResourceResponse = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
-    /**
-     * @internal
-     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var SOAChange;
 (function (SOAChange) {
-    /**
-     * @internal
-     */
     SOAChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(SOAChange = exports.SOAChange || (exports.SOAChange = {}));
 var PrivateDnsPropertiesMutableChange;
 (function (PrivateDnsPropertiesMutableChange) {
-    /**
-     * @internal
-     */
     PrivateDnsPropertiesMutableChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PrivateDnsPropertiesMutableChange = exports.PrivateDnsPropertiesMutableChange || (exports.PrivateDnsPropertiesMutableChange = {}));
 var PrivateDnsNamespacePropertiesChange;
 (function (PrivateDnsNamespacePropertiesChange) {
-    /**
-     * @internal
-     */
     PrivateDnsNamespacePropertiesChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PrivateDnsNamespacePropertiesChange = exports.PrivateDnsNamespacePropertiesChange || (exports.PrivateDnsNamespacePropertiesChange = {}));
 var PrivateDnsNamespaceChange;
 (function (PrivateDnsNamespaceChange) {
-    /**
-     * @internal
-     */
     PrivateDnsNamespaceChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PrivateDnsNamespaceChange = exports.PrivateDnsNamespaceChange || (exports.PrivateDnsNamespaceChange = {}));
 var PublicDnsPropertiesMutableChange;
 (function (PublicDnsPropertiesMutableChange) {
-    /**
-     * @internal
-     */
     PublicDnsPropertiesMutableChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublicDnsPropertiesMutableChange = exports.PublicDnsPropertiesMutableChange || (exports.PublicDnsPropertiesMutableChange = {}));
 var PublicDnsNamespacePropertiesChange;
 (function (PublicDnsNamespacePropertiesChange) {
-    /**
-     * @internal
-     */
     PublicDnsNamespacePropertiesChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublicDnsNamespacePropertiesChange = exports.PublicDnsNamespacePropertiesChange || (exports.PublicDnsNamespacePropertiesChange = {}));
 var PublicDnsNamespaceChange;
 (function (PublicDnsNamespaceChange) {
-    /**
-     * @internal
-     */
     PublicDnsNamespaceChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PublicDnsNamespaceChange = exports.PublicDnsNamespaceChange || (exports.PublicDnsNamespaceChange = {}));
 var RegisterInstanceRequest;
 (function (RegisterInstanceRequest) {
-    /**
-     * @internal
-     */
     RegisterInstanceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RegisterInstanceRequest = exports.RegisterInstanceRequest || (exports.RegisterInstanceRequest = {}));
 var RegisterInstanceResponse;
 (function (RegisterInstanceResponse) {
-    /**
-     * @internal
-     */
     RegisterInstanceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RegisterInstanceResponse = exports.RegisterInstanceResponse || (exports.RegisterInstanceResponse = {}));
 var TagResourceRequest;
 (function (TagResourceRequest) {
-    /**
-     * @internal
-     */
     TagResourceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TagResourceRequest = exports.TagResourceRequest || (exports.TagResourceRequest = {}));
 var TagResourceResponse;
 (function (TagResourceResponse) {
-    /**
-     * @internal
-     */
     TagResourceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TagResourceResponse = exports.TagResourceResponse || (exports.TagResourceResponse = {}));
 var UntagResourceRequest;
 (function (UntagResourceRequest) {
-    /**
-     * @internal
-     */
     UntagResourceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UntagResourceRequest = exports.UntagResourceRequest || (exports.UntagResourceRequest = {}));
 var UntagResourceResponse;
 (function (UntagResourceResponse) {
-    /**
-     * @internal
-     */
     UntagResourceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UntagResourceResponse = exports.UntagResourceResponse || (exports.UntagResourceResponse = {}));
 var UpdateHttpNamespaceRequest;
 (function (UpdateHttpNamespaceRequest) {
-    /**
-     * @internal
-     */
     UpdateHttpNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateHttpNamespaceRequest = exports.UpdateHttpNamespaceRequest || (exports.UpdateHttpNamespaceRequest = {}));
 var UpdateHttpNamespaceResponse;
 (function (UpdateHttpNamespaceResponse) {
-    /**
-     * @internal
-     */
     UpdateHttpNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateHttpNamespaceResponse = exports.UpdateHttpNamespaceResponse || (exports.UpdateHttpNamespaceResponse = {}));
 var UpdateInstanceCustomHealthStatusRequest;
 (function (UpdateInstanceCustomHealthStatusRequest) {
-    /**
-     * @internal
-     */
     UpdateInstanceCustomHealthStatusRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateInstanceCustomHealthStatusRequest = exports.UpdateInstanceCustomHealthStatusRequest || (exports.UpdateInstanceCustomHealthStatusRequest = {}));
 var UpdatePrivateDnsNamespaceRequest;
 (function (UpdatePrivateDnsNamespaceRequest) {
-    /**
-     * @internal
-     */
     UpdatePrivateDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdatePrivateDnsNamespaceRequest = exports.UpdatePrivateDnsNamespaceRequest || (exports.UpdatePrivateDnsNamespaceRequest = {}));
 var UpdatePrivateDnsNamespaceResponse;
 (function (UpdatePrivateDnsNamespaceResponse) {
-    /**
-     * @internal
-     */
     UpdatePrivateDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdatePrivateDnsNamespaceResponse = exports.UpdatePrivateDnsNamespaceResponse || (exports.UpdatePrivateDnsNamespaceResponse = {}));
 var UpdatePublicDnsNamespaceRequest;
 (function (UpdatePublicDnsNamespaceRequest) {
-    /**
-     * @internal
-     */
     UpdatePublicDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdatePublicDnsNamespaceRequest = exports.UpdatePublicDnsNamespaceRequest || (exports.UpdatePublicDnsNamespaceRequest = {}));
 var UpdatePublicDnsNamespaceResponse;
 (function (UpdatePublicDnsNamespaceResponse) {
-    /**
-     * @internal
-     */
     UpdatePublicDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdatePublicDnsNamespaceResponse = exports.UpdatePublicDnsNamespaceResponse || (exports.UpdatePublicDnsNamespaceResponse = {}));
 var ServiceChange;
 (function (ServiceChange) {
-    /**
-     * @internal
-     */
     ServiceChange.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ServiceChange = exports.ServiceChange || (exports.ServiceChange = {}));
 var UpdateServiceRequest;
 (function (UpdateServiceRequest) {
-    /**
-     * @internal
-     */
     UpdateServiceRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UpdateServiceRequest = exports.UpdateServiceRequest || (exports.UpdateServiceRequest = {}));
 var UpdateServiceResponse;
 (function (UpdateServiceResponse) {
-    /**
-     * @internal
-     */
     UpdateServiceResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -5208,22 +4124,13 @@ exports.paginateGetInstancesHealthStatus = void 0;
 const GetInstancesHealthStatusCommand_1 = __nccwpck_require__(19);
 const ServiceDiscovery_1 = __nccwpck_require__(8799);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new GetInstancesHealthStatusCommand_1.GetInstancesHealthStatusCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.getInstancesHealthStatus(input, ...args);
 };
 async function* paginateGetInstancesHealthStatus(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.NextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -5243,7 +4150,6 @@ async function* paginateGetInstancesHealthStatus(config, input, ...additionalArg
         token = page.NextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateGetInstancesHealthStatus = paginateGetInstancesHealthStatus;
@@ -5271,22 +4177,13 @@ exports.paginateListInstances = void 0;
 const ListInstancesCommand_1 = __nccwpck_require__(1689);
 const ServiceDiscovery_1 = __nccwpck_require__(8799);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListInstancesCommand_1.ListInstancesCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listInstances(input, ...args);
 };
 async function* paginateListInstances(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.NextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -5306,7 +4203,6 @@ async function* paginateListInstances(config, input, ...additionalArguments) {
         token = page.NextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListInstances = paginateListInstances;
@@ -5324,22 +4220,13 @@ exports.paginateListNamespaces = void 0;
 const ListNamespacesCommand_1 = __nccwpck_require__(9046);
 const ServiceDiscovery_1 = __nccwpck_require__(8799);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListNamespacesCommand_1.ListNamespacesCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listNamespaces(input, ...args);
 };
 async function* paginateListNamespaces(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.NextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -5359,7 +4246,6 @@ async function* paginateListNamespaces(config, input, ...additionalArguments) {
         token = page.NextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListNamespaces = paginateListNamespaces;
@@ -5377,22 +4263,13 @@ exports.paginateListOperations = void 0;
 const ListOperationsCommand_1 = __nccwpck_require__(7148);
 const ServiceDiscovery_1 = __nccwpck_require__(8799);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListOperationsCommand_1.ListOperationsCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listOperations(input, ...args);
 };
 async function* paginateListOperations(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.NextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -5412,7 +4289,6 @@ async function* paginateListOperations(config, input, ...additionalArguments) {
         token = page.NextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListOperations = paginateListOperations;
@@ -5430,22 +4306,13 @@ exports.paginateListServices = void 0;
 const ListServicesCommand_1 = __nccwpck_require__(4890);
 const ServiceDiscovery_1 = __nccwpck_require__(8799);
 const ServiceDiscoveryClient_1 = __nccwpck_require__(8747);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListServicesCommand_1.ListServicesCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listServices(input, ...args);
 };
 async function* paginateListServices(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.NextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -5465,7 +4332,6 @@ async function* paginateListServices(config, input, ...additionalArguments) {
         token = page.NextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListServices = paginateListServices;
@@ -8588,14 +7454,12 @@ const deserializeMetadata = (output) => {
         cfId: output.headers["x-amz-cf-id"],
     });
 };
-// Collect low-level response body stream to Uint8Array.
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
     }
     return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
 };
-// Encode Uint8Array data into string with utf-8.
 const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
 const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
@@ -8621,9 +7485,6 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
     }
     return {};
 });
-/**
- * Load an error code for the aws.rest-json-1.1 protocol.
- */
 const loadRestJsonErrorCode = (output, data) => {
     const findKey = (object, key) => Object.keys(object).find((k) => k.toLowerCase() === key.toLowerCase());
     const sanitizeErrorCode = (rawValue) => {
@@ -8660,8 +7521,7 @@ const loadRestJsonErrorCode = (output, data) => {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
-// @ts-ignore: package.json will be imported from dist folders
-const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(3636)); // eslint-disable-line
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(3636));
 const client_sts_1 = __nccwpck_require__(2209);
 const config_resolver_1 = __nccwpck_require__(6153);
 const credential_provider_node_1 = __nccwpck_require__(5531);
@@ -8675,9 +7535,6 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(7772);
 const smithy_client_1 = __nccwpck_require__(4963);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
@@ -8715,9 +7572,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const url_parser_1 = __nccwpck_require__(2992);
 const endpoints_1 = __nccwpck_require__(3961);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({
@@ -8746,24 +7600,6 @@ const ListAccountRolesCommand_1 = __nccwpck_require__(1513);
 const ListAccountsCommand_1 = __nccwpck_require__(4296);
 const LogoutCommand_1 = __nccwpck_require__(2586);
 const SSOClient_1 = __nccwpck_require__(1057);
-/**
- * <p>AWS Single Sign-On Portal is a web service that makes it easy for you to assign user
- *       access to AWS SSO resources such as the user portal. Users can get AWS account applications
- *       and roles assigned to them and get federated into the application.</p>
- *
- *          <p>For general information about AWS SSO, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">What is AWS
- *         Single Sign-On?</a> in the <i>AWS SSO User Guide</i>.</p>
- *
- *          <p>This API reference guide describes the AWS SSO Portal operations that you can call
- *       programatically and includes detailed information on data types and errors.</p>
- *
- *          <note>
- *             <p>AWS provides SDKs that consist of libraries and sample code for various programming
- *         languages and platforms, such as Java, Ruby, .Net, iOS, or Android. The SDKs provide a
- *         convenient way to create programmatic access to AWS SSO and other AWS services. For more
- *         information about the AWS SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p>
- *          </note>
- */
 class SSO extends SSOClient_1.SSOClient {
     getRoleCredentials(args, optionsOrCb, cb) {
         const command = new GetRoleCredentialsCommand_1.GetRoleCredentialsCommand(args);
@@ -8842,24 +7678,6 @@ const middleware_retry_1 = __nccwpck_require__(6064);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
 const runtimeConfig_1 = __nccwpck_require__(9756);
-/**
- * <p>AWS Single Sign-On Portal is a web service that makes it easy for you to assign user
- *       access to AWS SSO resources such as the user portal. Users can get AWS account applications
- *       and roles assigned to them and get federated into the application.</p>
- *
- *          <p>For general information about AWS SSO, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">What is AWS
- *         Single Sign-On?</a> in the <i>AWS SSO User Guide</i>.</p>
- *
- *          <p>This API reference guide describes the AWS SSO Portal operations that you can call
- *       programatically and includes detailed information on data types and errors.</p>
- *
- *          <note>
- *             <p>AWS provides SDKs that consist of libraries and sample code for various programming
- *         languages and platforms, such as Java, Ruby, .Net, iOS, or Android. The SDKs provide a
- *         convenient way to create programmatic access to AWS SSO and other AWS services. For more
- *         information about the AWS SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p>
- *          </note>
- */
 class SSOClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
@@ -8876,11 +7694,6 @@ class SSOClient extends smithy_client_1.Client {
         this.middlewareStack.use(middleware_logger_1.getLoggerPlugin(this.config));
         this.middlewareStack.use(middleware_user_agent_1.getUserAgentPlugin(this.config));
     }
-    /**
-     * Destroy underlying resources, like sockets. It's usually not necessary to do this.
-     * However in Node.js, it's best to explicitly shut down the client's agent when it is no longer needed.
-     * Otherwise, sockets might stay open for quite a long time before the server terminates them.
-     */
     destroy() {
         super.destroy();
     }
@@ -8901,36 +7714,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
 const Aws_restJson1_1 = __nccwpck_require__(8507);
-/**
- * <p>Returns the STS short-term credentials for a given role name that is assigned to the
- *       user.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { SSOClient, GetRoleCredentialsCommand } from "@aws-sdk/client-sso"; // ES Modules import
- * // const { SSOClient, GetRoleCredentialsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
- * const client = new SSOClient(config);
- * const command = new GetRoleCredentialsCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetRoleCredentialsCommandInput} for command's `input` shape.
- * @see {@link GetRoleCredentialsCommandOutput} for command's `response` shape.
- * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetRoleCredentialsCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -8970,35 +7758,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
 const Aws_restJson1_1 = __nccwpck_require__(8507);
-/**
- * <p>Lists all roles that are assigned to the user for a given AWS account.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { SSOClient, ListAccountRolesCommand } from "@aws-sdk/client-sso"; // ES Modules import
- * // const { SSOClient, ListAccountRolesCommand } = require("@aws-sdk/client-sso"); // CommonJS import
- * const client = new SSOClient(config);
- * const command = new ListAccountRolesCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListAccountRolesCommandInput} for command's `input` shape.
- * @see {@link ListAccountRolesCommandOutput} for command's `response` shape.
- * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListAccountRolesCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -9038,37 +7802,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
 const Aws_restJson1_1 = __nccwpck_require__(8507);
-/**
- * <p>Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the
- *       administrator of the account. For more information, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/useraccess.html#assignusers">Assign User Access</a> in the <i>AWS SSO User Guide</i>. This operation
- *       returns a paginated response.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { SSOClient, ListAccountsCommand } from "@aws-sdk/client-sso"; // ES Modules import
- * // const { SSOClient, ListAccountsCommand } = require("@aws-sdk/client-sso"); // CommonJS import
- * const client = new SSOClient(config);
- * const command = new ListAccountsCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link ListAccountsCommandInput} for command's `input` shape.
- * @see {@link ListAccountsCommandOutput} for command's `response` shape.
- * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class ListAccountsCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -9108,35 +7846,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
 const Aws_restJson1_1 = __nccwpck_require__(8507);
-/**
- * <p>Removes the client- and server-side session that is associated with the user.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { SSOClient, LogoutCommand } from "@aws-sdk/client-sso"; // ES Modules import
- * // const { SSOClient, LogoutCommand } = require("@aws-sdk/client-sso"); // CommonJS import
- * const client = new SSOClient(config);
- * const command = new LogoutCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link LogoutCommandInput} for command's `input` shape.
- * @see {@link LogoutCommandOutput} for command's `response` shape.
- * @see {@link SSOClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class LogoutCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -9309,18 +8023,12 @@ exports.LogoutRequest = exports.ListAccountsResponse = exports.ListAccountsReque
 const smithy_client_1 = __nccwpck_require__(4963);
 var AccountInfo;
 (function (AccountInfo) {
-    /**
-     * @internal
-     */
     AccountInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AccountInfo = exports.AccountInfo || (exports.AccountInfo = {}));
 var GetRoleCredentialsRequest;
 (function (GetRoleCredentialsRequest) {
-    /**
-     * @internal
-     */
     GetRoleCredentialsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -9328,9 +8036,6 @@ var GetRoleCredentialsRequest;
 })(GetRoleCredentialsRequest = exports.GetRoleCredentialsRequest || (exports.GetRoleCredentialsRequest = {}));
 var RoleCredentials;
 (function (RoleCredentials) {
-    /**
-     * @internal
-     */
     RoleCredentials.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.secretAccessKey && { secretAccessKey: smithy_client_1.SENSITIVE_STRING }),
@@ -9339,9 +8044,6 @@ var RoleCredentials;
 })(RoleCredentials = exports.RoleCredentials || (exports.RoleCredentials = {}));
 var GetRoleCredentialsResponse;
 (function (GetRoleCredentialsResponse) {
-    /**
-     * @internal
-     */
     GetRoleCredentialsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.roleCredentials && { roleCredentials: RoleCredentials.filterSensitiveLog(obj.roleCredentials) }),
@@ -9349,45 +8051,30 @@ var GetRoleCredentialsResponse;
 })(GetRoleCredentialsResponse = exports.GetRoleCredentialsResponse || (exports.GetRoleCredentialsResponse = {}));
 var InvalidRequestException;
 (function (InvalidRequestException) {
-    /**
-     * @internal
-     */
     InvalidRequestException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidRequestException = exports.InvalidRequestException || (exports.InvalidRequestException = {}));
 var ResourceNotFoundException;
 (function (ResourceNotFoundException) {
-    /**
-     * @internal
-     */
     ResourceNotFoundException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ResourceNotFoundException = exports.ResourceNotFoundException || (exports.ResourceNotFoundException = {}));
 var TooManyRequestsException;
 (function (TooManyRequestsException) {
-    /**
-     * @internal
-     */
     TooManyRequestsException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(TooManyRequestsException = exports.TooManyRequestsException || (exports.TooManyRequestsException = {}));
 var UnauthorizedException;
 (function (UnauthorizedException) {
-    /**
-     * @internal
-     */
     UnauthorizedException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(UnauthorizedException = exports.UnauthorizedException || (exports.UnauthorizedException = {}));
 var ListAccountRolesRequest;
 (function (ListAccountRolesRequest) {
-    /**
-     * @internal
-     */
     ListAccountRolesRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -9395,27 +8082,18 @@ var ListAccountRolesRequest;
 })(ListAccountRolesRequest = exports.ListAccountRolesRequest || (exports.ListAccountRolesRequest = {}));
 var RoleInfo;
 (function (RoleInfo) {
-    /**
-     * @internal
-     */
     RoleInfo.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RoleInfo = exports.RoleInfo || (exports.RoleInfo = {}));
 var ListAccountRolesResponse;
 (function (ListAccountRolesResponse) {
-    /**
-     * @internal
-     */
     ListAccountRolesResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountRolesResponse = exports.ListAccountRolesResponse || (exports.ListAccountRolesResponse = {}));
 var ListAccountsRequest;
 (function (ListAccountsRequest) {
-    /**
-     * @internal
-     */
     ListAccountsRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -9423,18 +8101,12 @@ var ListAccountsRequest;
 })(ListAccountsRequest = exports.ListAccountsRequest || (exports.ListAccountsRequest = {}));
 var ListAccountsResponse;
 (function (ListAccountsResponse) {
-    /**
-     * @internal
-     */
     ListAccountsResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ListAccountsResponse = exports.ListAccountsResponse || (exports.ListAccountsResponse = {}));
 var LogoutRequest;
 (function (LogoutRequest) {
-    /**
-     * @internal
-     */
     LogoutRequest.filterSensitiveLog = (obj) => ({
         ...obj,
         ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
@@ -9464,22 +8136,13 @@ exports.paginateListAccountRoles = void 0;
 const ListAccountRolesCommand_1 = __nccwpck_require__(1513);
 const SSO_1 = __nccwpck_require__(9838);
 const SSOClient_1 = __nccwpck_require__(1057);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListAccountRolesCommand_1.ListAccountRolesCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listAccountRoles(input, ...args);
 };
 async function* paginateListAccountRoles(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.nextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -9499,7 +8162,6 @@ async function* paginateListAccountRoles(config, input, ...additionalArguments) 
         token = page.nextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListAccountRoles = paginateListAccountRoles;
@@ -9517,22 +8179,13 @@ exports.paginateListAccounts = void 0;
 const ListAccountsCommand_1 = __nccwpck_require__(4296);
 const SSO_1 = __nccwpck_require__(9838);
 const SSOClient_1 = __nccwpck_require__(1057);
-/**
- * @private
- */
 const makePagedClientRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.send(new ListAccountsCommand_1.ListAccountsCommand(input), ...args);
 };
-/**
- * @private
- */
 const makePagedRequest = async (client, input, ...args) => {
-    // @ts-ignore
     return await client.listAccounts(input, ...args);
 };
 async function* paginateListAccounts(config, input, ...additionalArguments) {
-    // ToDo: replace with actual type instead of typeof input.nextToken
     let token = config.startingToken || undefined;
     let hasNext = true;
     let page;
@@ -9552,7 +8205,6 @@ async function* paginateListAccounts(config, input, ...additionalArguments) {
         token = page.nextToken;
         hasNext = !!token;
     }
-    // @ts-ignore
     return undefined;
 }
 exports.paginateListAccounts = paginateListAccounts;
@@ -10043,14 +8695,12 @@ const deserializeMetadata = (output) => {
         cfId: output.headers["x-amz-cf-id"],
     });
 };
-// Collect low-level response body stream to Uint8Array.
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
     }
     return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
 };
-// Encode Uint8Array data into string with utf-8.
 const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
 const isSerializableHeaderValue = (value) => value !== undefined &&
     value !== null &&
@@ -10063,9 +8713,6 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
     }
     return {};
 });
-/**
- * Load an error code for the aws.rest-json-1.1 protocol.
- */
 const loadRestJsonErrorCode = (output, data) => {
     const findKey = (object, key) => Object.keys(object).find((k) => k.toLowerCase() === key.toLowerCase());
     const sanitizeErrorCode = (rawValue) => {
@@ -10102,8 +8749,7 @@ const loadRestJsonErrorCode = (output, data) => {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
-// @ts-ignore: package.json will be imported from dist folders
-const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(3966)); // eslint-disable-line
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(3966));
 const config_resolver_1 = __nccwpck_require__(6153);
 const hash_node_1 = __nccwpck_require__(7442);
 const middleware_retry_1 = __nccwpck_require__(6064);
@@ -10115,9 +8761,6 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(4355);
 const smithy_client_1 = __nccwpck_require__(4963);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
@@ -10154,9 +8797,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const url_parser_1 = __nccwpck_require__(2992);
 const endpoints_1 = __nccwpck_require__(3546);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({
@@ -10189,13 +8829,6 @@ const GetCallerIdentityCommand_1 = __nccwpck_require__(4278);
 const GetFederationTokenCommand_1 = __nccwpck_require__(7552);
 const GetSessionTokenCommand_1 = __nccwpck_require__(3285);
 const STSClient_1 = __nccwpck_require__(4195);
-/**
- * <fullname>Security Token Service</fullname>
- *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for Identity and Access Management (IAM) users or for users that you
- *       authenticate (federated users). This guide provides descriptions of the STS API. For
- *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
- */
 class STS extends STSClient_1.STSClient {
     assumeRole(args, optionsOrCb, cb) {
         const command = new AssumeRoleCommand_1.AssumeRoleCommand(args);
@@ -10331,13 +8964,6 @@ const middleware_sdk_sts_1 = __nccwpck_require__(5959);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
 const runtimeConfig_1 = __nccwpck_require__(3405);
-/**
- * <fullname>Security Token Service</fullname>
- *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for Identity and Access Management (IAM) users or for users that you
- *       authenticate (federated users). This guide provides descriptions of the STS API. For
- *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
- */
 class STSClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
@@ -10355,11 +8981,6 @@ class STSClient extends smithy_client_1.Client {
         this.middlewareStack.use(middleware_logger_1.getLoggerPlugin(this.config));
         this.middlewareStack.use(middleware_user_agent_1.getUserAgentPlugin(this.config));
     }
-    /**
-     * Destroy underlying resources, like sockets. It's usually not necessary to do this.
-     * However in Node.js, it's best to explicitly shut down the client's agent when it is no longer needed.
-     * Otherwise, sockets might stay open for quite a long time before the server terminates them.
-     */
     destroy() {
         super.destroy();
     }
@@ -10381,118 +9002,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns a set of temporary security credentials that you can use to access Amazon Web Services
- *             resources that you might not normally have access to. These temporary credentials
- *             consist of an access key ID, a secret access key, and a security token. Typically, you
- *             use <code>AssumeRole</code> within your account or for cross-account access. For a
- *             comparison of <code>AssumeRole</code> with other API operations that produce temporary
- *             credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
- *                 Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing
- *                 the STS API operations</a> in the
- *             <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Permissions</b>
- *          </p>
- *          <p>The temporary security credentials created by <code>AssumeRole</code> can be used to
- *          make API calls to any Amazon Web Services service with the following exception: You cannot call the
- *          STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
- *          operations.</p>
- *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
- *          this operation. You can pass a single JSON policy document to use as an inline session
- *          policy. You can also specify up to 10 managed policies to use as managed session policies.
- *          The plaintext that you use for both inline and managed session policies can't exceed 2,048
- *          characters. Passing policies to this operation returns new
- *          temporary credentials. The resulting session's permissions are the intersection of the
- *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
- *          the role. You cannot use session policies to grant more permissions than those allowed
- *          by the identity-based policy of the role that is being assumed. For more information, see
- *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
- *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>To assume a role from a different account, your account must be trusted by the
- *          role. The trust relationship is defined in the role's trust policy when the role is
- *          created. That trust policy states which accounts are allowed to delegate that access to
- *          users in the account. </p>
- *          <p>A user who wants to access a role in a different account must also have permissions that
- *          are delegated from the user account administrator. The administrator must attach a policy
- *          that allows the user to call <code>AssumeRole</code> for the ARN of the role in the other
- *          account. If the user is in the same account as the role, then you can do either of the
- *          following:</p>
- *          <ul>
- *             <li>
- *                <p>Attach a policy to the user (identical to the previous user in a different
- *                account).</p>
- *             </li>
- *             <li>
- *                <p>Add the user as a principal directly in the role's trust policy.</p>
- *             </li>
- *          </ul>
- *          <p>In this case, the trust policy acts as an IAM resource-based policy. Users in the same
- *          account as the role do not need explicit permission to assume the role. For more
- *          information about trust policies and resource-based policies, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html">IAM Policies</a> in
- *          the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Tags</b>
- *          </p>
- *          <p>(Optional) You can pass tag key-value pairs to your session. These tags are called
- *          session tags. For more information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
- *             <i>IAM User Guide</i>.</p>
- *          <p>An administrator must grant you the permissions necessary to pass session tags. The
- *          administrator can also create granular permissions to allow you to pass only specific
- *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
- *             for Attribute-Based Access Control</a> in the
- *          <i>IAM User Guide</i>.</p>
- *          <p>You can set the session tags as transitive. Transitive tags persist during role
- *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
- *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Using MFA with AssumeRole</b>
- *          </p>
- *          <p>(Optional) You can include multi-factor authentication (MFA) information when you call
- *             <code>AssumeRole</code>. This is useful for cross-account scenarios to ensure that the
- *          user that assumes the role has been authenticated with an Amazon Web Services MFA device. In that
- *          scenario, the trust policy of the role being assumed includes a condition that tests for
- *          MFA authentication. If the caller does not include valid MFA information, the request to
- *          assume the role is denied. The condition in a trust policy that tests for MFA
- *          authentication might look like the following example.</p>
- *          <p>
- *             <code>"Condition": {"Bool": {"aws:MultiFactorAuthPresent": true}}</code>
- *          </p>
- *          <p>For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/MFAProtectedAPI.html">Configuring MFA-Protected API Access</a>
- *          in the <i>IAM User Guide</i> guide.</p>
- *          <p>To use MFA with <code>AssumeRole</code>, you pass values for the
- *             <code>SerialNumber</code> and <code>TokenCode</code> parameters. The
- *             <code>SerialNumber</code> value identifies the user's hardware or virtual MFA device.
- *          The <code>TokenCode</code> is the time-based one-time password (TOTP) that the MFA device
- *          produces. </p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, AssumeRoleCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, AssumeRoleCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new AssumeRoleCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link AssumeRoleCommandInput} for command's `input` shape.
- * @see {@link AssumeRoleCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class AssumeRoleCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -10533,166 +9047,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns a set of temporary security credentials for users who have been authenticated
- *          via a SAML authentication response. This operation provides a mechanism for tying an
- *          enterprise identity store or directory to role-based Amazon Web Services access without user-specific
- *          credentials or configuration. For a comparison of <code>AssumeRoleWithSAML</code> with the
- *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
- *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
- *          <p>The temporary security credentials returned by this operation consist of an access key
- *          ID, a secret access key, and a security token. Applications can use these temporary
- *          security credentials to sign calls to Amazon Web Services services.</p>
- *          <p>
- *             <b>Session Duration</b>
- *          </p>
- *          <p>By default, the temporary security credentials created by
- *             <code>AssumeRoleWithSAML</code> last for one hour. However, you can use the optional
- *             <code>DurationSeconds</code> parameter to specify the duration of your session. Your
- *          role session lasts for the duration that you specify, or until the time specified in the
- *          SAML authentication response's <code>SessionNotOnOrAfter</code> value, whichever is
- *          shorter. You can provide a <code>DurationSeconds</code> value from 900 seconds (15 minutes)
- *          up to the maximum session duration setting for the role. This setting can have a value from
- *          1 hour to 12 hours. To learn how to view the maximum value for your role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html#id_roles_use_view-role-max-session">View the
- *             Maximum Session Duration Setting for a Role</a> in the
- *             <i>IAM User Guide</i>. The maximum session duration limit applies when
- *          you use the <code>AssumeRole*</code> API operations or the <code>assume-role*</code> CLI
- *          commands. However the limit does not apply when you use those operations to create a
- *          console URL. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html">Using IAM Roles</a> in the
- *             <i>IAM User Guide</i>.</p>
- *          <note>
- *            <p>
- *                <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining">Role chaining</a> limits your CLI or Amazon Web Services API
- *                role session to a maximum of one hour. When you use the <code>AssumeRole</code> API
- *                operation to assume a role, you can specify the duration of your role session with
- *                the <code>DurationSeconds</code> parameter. You can specify a parameter value of up
- *                to 43200 seconds (12 hours), depending on the maximum session duration setting for
- *                your role. However, if you assume a role using role chaining and provide a
- *                <code>DurationSeconds</code> parameter value greater than one hour, the
- *                operation fails.</p>
- *          </note>
- *          <p>
- *             <b>Permissions</b>
- *          </p>
- *          <p>The temporary security credentials created by <code>AssumeRoleWithSAML</code> can be
- *          used to make API calls to any Amazon Web Services service with the following exception: you cannot call
- *          the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
- *          operations.</p>
- *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
- *          this operation. You can pass a single JSON policy document to use as an inline session
- *          policy. You can also specify up to 10 managed policies to use as managed session policies.
- *          The plaintext that you use for both inline and managed session policies can't exceed 2,048
- *          characters. Passing policies to this operation returns new
- *          temporary credentials. The resulting session's permissions are the intersection of the
- *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
- *          the role. You cannot use session policies to grant more permissions than those allowed
- *          by the identity-based policy of the role that is being assumed. For more information, see
- *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
- *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of Amazon Web Services security
- *          credentials. The identity of the caller is validated by using keys in the metadata document
- *          that is uploaded for the SAML provider entity for your identity provider. </p>
- *          <important>
- *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your CloudTrail logs.
- *             The entry includes the value in the <code>NameID</code> element of the SAML assertion.
- *             We recommend that you use a <code>NameIDType</code> that is not associated with any
- *             personally identifiable information (PII). For example, you could instead use the
- *             persistent identifier
- *             (<code>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</code>).</p>
- *          </important>
- *          <p>
- *             <b>Tags</b>
- *          </p>
- *          <p>(Optional) You can configure your IdP to pass attributes into your SAML assertion as
- *          session tags. Each session tag consists of a key name and an associated value. For more
- *          information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
- *             <i>IAM User Guide</i>.</p>
- *          <p>You can pass up to 50 session tags. The plaintext session tag keys can’t exceed 128
- *          characters and the values can’t exceed 256 characters. For these and additional limits, see
- *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html#reference_iam-limits-entity-length">IAM
- *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
- *
- *          <note>
- *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
- *             packed binary format that has a separate limit. Your request can fail for this limit
- *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
- *             response element indicates by percentage how close the policies and tags for your
- *             request are to the upper size limit.
- *             </p>
- *          </note>
- *          <p>You can pass a session tag with the same key as a tag that is
- *          attached to the role. When you do, session tags override the role's tags with the same
- *          key.</p>
- *          <p>An administrator must grant you the permissions necessary to pass session tags. The
- *          administrator can also create granular permissions to allow you to pass only specific
- *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
- *             for Attribute-Based Access Control</a> in the
- *          <i>IAM User Guide</i>.</p>
- *          <p>You can set the session tags as transitive. Transitive tags persist during role
- *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
- *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>SAML Configuration</b>
- *          </p>
- *          <p>Before your application can call <code>AssumeRoleWithSAML</code>, you must configure
- *          your SAML identity provider (IdP) to issue the claims required by Amazon Web Services. Additionally, you
- *          must use Identity and Access Management (IAM) to create a SAML provider entity in your Amazon Web Services account that
- *          represents your identity provider. You must also create an IAM role that specifies this
- *          SAML provider in its trust policy. </p>
- *          <p>For more information, see the following resources:</p>
- *          <ul>
- *             <li>
- *                <p>
- *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html">About
- *                   SAML 2.0-based Federation</a> in the <i>IAM User Guide</i>.
- *             </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html">Creating SAML Identity Providers</a> in the
- *                   <i>IAM User Guide</i>. </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml_relying-party.html">Configuring
- *                   a Relying Party and Claims</a> in the <i>IAM User Guide</i>.
- *             </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_saml.html">Creating a Role for SAML 2.0 Federation</a> in the
- *                   <i>IAM User Guide</i>. </p>
- *             </li>
- *          </ul>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, AssumeRoleWithSAMLCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, AssumeRoleWithSAMLCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new AssumeRoleWithSAMLCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link AssumeRoleWithSAMLCommandInput} for command's `input` shape.
- * @see {@link AssumeRoleWithSAMLCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -10732,170 +9091,11 @@ const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns a set of temporary security credentials for users who have been authenticated in
- *          a mobile or web application with a web identity provider. Example providers include Amazon Cognito,
- *          Login with Amazon, Facebook, Google, or any OpenID Connect-compatible identity
- *          provider.</p>
- *          <note>
- *             <p>For mobile applications, we recommend that you use Amazon Cognito. You can use Amazon Cognito with the
- *                <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a> to uniquely
- *             identify a user. You can also supply the user with a consistent identity throughout the
- *             lifetime of an application.</p>
- *             <p>To learn more about Amazon Cognito, see <a href="https://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/cognito-auth.html#d0e840">Amazon Cognito Overview</a> in
- *                <i>Amazon Web Services SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
- *                <i>Amazon Web Services SDK for iOS Developer Guide</i>.</p>
- *          </note>
- *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of Amazon Web Services
- *          security credentials. Therefore, you can distribute an application (for example, on mobile
- *          devices) that requests temporary security credentials without including long-term Amazon Web Services
- *          credentials in the application. You also don't need to deploy server-based proxy services
- *          that use long-term Amazon Web Services credentials. Instead, the identity of the caller is validated by
- *          using a token from the web identity provider. For a comparison of
- *             <code>AssumeRoleWithWebIdentity</code> with the other API operations that produce
- *          temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
- *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
- *          <p>The temporary security credentials returned by this API consist of an access key ID, a
- *          secret access key, and a security token. Applications can use these temporary security
- *          credentials to sign calls to Amazon Web Services service API operations.</p>
- *          <p>
- *             <b>Session Duration</b>
- *          </p>
- *          <p>By default, the temporary security credentials created by
- *             <code>AssumeRoleWithWebIdentity</code> last for one hour. However, you can use the
- *          optional <code>DurationSeconds</code> parameter to specify the duration of your session.
- *          You can provide a value from 900 seconds (15 minutes) up to the maximum session duration
- *          setting for the role. This setting can have a value from 1 hour to 12 hours. To learn how
- *          to view the maximum value for your role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html#id_roles_use_view-role-max-session">View the
- *             Maximum Session Duration Setting for a Role</a> in the
- *             <i>IAM User Guide</i>. The maximum session duration limit applies when
- *          you use the <code>AssumeRole*</code> API operations or the <code>assume-role*</code> CLI
- *          commands. However the limit does not apply when you use those operations to create a
- *          console URL. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html">Using IAM Roles</a> in the
- *             <i>IAM User Guide</i>. </p>
- *          <p>
- *             <b>Permissions</b>
- *          </p>
- *          <p>The temporary security credentials created by <code>AssumeRoleWithWebIdentity</code> can
- *          be used to make API calls to any Amazon Web Services service with the following exception: you cannot
- *          call the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
- *          operations.</p>
- *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
- *          this operation. You can pass a single JSON policy document to use as an inline session
- *          policy. You can also specify up to 10 managed policies to use as managed session policies.
- *          The plaintext that you use for both inline and managed session policies can't exceed 2,048
- *          characters. Passing policies to this operation returns new
- *          temporary credentials. The resulting session's permissions are the intersection of the
- *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
- *          the role. You cannot use session policies to grant more permissions than those allowed
- *          by the identity-based policy of the role that is being assumed. For more information, see
- *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
- *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Tags</b>
- *          </p>
- *          <p>(Optional) You can configure your IdP to pass attributes into your web identity token as
- *          session tags. Each session tag consists of a key name and an associated value. For more
- *          information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
- *             <i>IAM User Guide</i>.</p>
- *          <p>You can pass up to 50 session tags. The plaintext session tag keys can’t exceed 128
- *          characters and the values can’t exceed 256 characters. For these and additional limits, see
- *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html#reference_iam-limits-entity-length">IAM
- *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
- *
- *          <note>
- *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
- *             packed binary format that has a separate limit. Your request can fail for this limit
- *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
- *             response element indicates by percentage how close the policies and tags for your
- *             request are to the upper size limit.
- *             </p>
- *          </note>
- *          <p>You can pass a session tag with the same key as a tag that is
- *          attached to the role. When you do, the session tag overrides the role tag with the same
- *          key.</p>
- *          <p>An administrator must grant you the permissions necessary to pass session tags. The
- *          administrator can also create granular permissions to allow you to pass only specific
- *          session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using Tags
- *             for Attribute-Based Access Control</a> in the
- *          <i>IAM User Guide</i>.</p>
- *          <p>You can set the session tags as transitive. Transitive tags persist during role
- *          chaining. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_role-chaining">Chaining Roles
- *             with Session Tags</a> in the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Identities</b>
- *          </p>
- *          <p>Before your application can call <code>AssumeRoleWithWebIdentity</code>, you must have
- *          an identity token from a supported identity provider and create a role that the application
- *          can assume. The role that your application assumes must trust the identity provider that is
- *          associated with the identity token. In other words, the identity provider must be specified
- *          in the role's trust policy. </p>
- *          <important>
- *             <p>Calling <code>AssumeRoleWithWebIdentity</code> can result in an entry in your
- *             CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
- *             the provided web identity token. We recommend that you avoid using any personally
- *             identifiable information (PII) in this field. For example, you could instead use a GUID
- *             or a pairwise identifier, as <a href="http://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes">suggested
- *                in the OIDC specification</a>.</p>
- *          </important>
- *          <p>For more information about how to use web identity federation and the
- *             <code>AssumeRoleWithWebIdentity</code> API, see the following resources: </p>
- *          <ul>
- *             <li>
- *                <p>
- *                   <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_manual.html">Using Web Identity Federation API Operations for Mobile Apps</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_assumerolewithwebidentity">Federation Through a Web-based Identity Provider</a>. </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="https://aws.amazon.com/blogs/aws/the-aws-web-identity-federation-playground/"> Web Identity Federation Playground</a>. Walk through the process of
- *                authenticating through Login with Amazon, Facebook, or Google, getting temporary
- *                security credentials, and then using those credentials to make a request to Amazon Web Services.
- *             </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a>. These toolkits
- *                contain sample apps that show how to invoke the identity providers. The toolkits then
- *                show how to use the information from these providers to get and use temporary
- *                security credentials. </p>
- *             </li>
- *             <li>
- *                <p>
- *                   <a href="http://aws.amazon.com/articles/web-identity-federation-with-mobile-applications">Web Identity
- *                   Federation with Mobile Applications</a>. This article discusses web identity
- *                federation and shows an example of how to use web identity federation to get access
- *                to content in Amazon S3. </p>
- *             </li>
- *          </ul>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, AssumeRoleWithWebIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, AssumeRoleWithWebIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new AssumeRoleWithWebIdentityCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link AssumeRoleWithWebIdentityCommandInput} for command's `input` shape.
- * @see {@link AssumeRoleWithWebIdentityCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         const stack = clientStack.concat(this.middlewareStack);
@@ -10936,70 +9136,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Decodes additional information about the authorization status of a request from an
- *          encoded message returned in response to an Amazon Web Services request.</p>
- *          <p>For example, if a user is not authorized to perform an operation that he or she has
- *          requested, the request returns a <code>Client.UnauthorizedOperation</code> response (an
- *          HTTP 403 response). Some Amazon Web Services operations additionally return an encoded message that can
- *          provide details about this authorization failure. </p>
- *          <note>
- *             <p>Only certain Amazon Web Services operations return an encoded authorization message. The
- *             documentation for an individual operation indicates whether that operation returns an
- *             encoded message in addition to returning an HTTP code.</p>
- *          </note>
- *          <p>The message is encoded because the details of the authorization status can constitute
- *          privileged information that the user who requested the operation should not see. To decode
- *          an authorization status message, a user must be granted permissions via an IAM policy to
- *          request the <code>DecodeAuthorizationMessage</code>
- *             (<code>sts:DecodeAuthorizationMessage</code>) action. </p>
- *          <p>The decoded message includes the following type of information:</p>
- *          <ul>
- *             <li>
- *                <p>Whether the request was denied due to an explicit deny or due to the absence of an
- *                explicit allow. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow">Determining Whether a Request is Allowed or Denied</a> in the
- *                   <i>IAM User Guide</i>. </p>
- *             </li>
- *             <li>
- *                <p>The principal who made the request.</p>
- *             </li>
- *             <li>
- *                <p>The requested action.</p>
- *             </li>
- *             <li>
- *                <p>The requested resource.</p>
- *             </li>
- *             <li>
- *                <p>The values of condition keys in the context of the user's request.</p>
- *             </li>
- *          </ul>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, DecodeAuthorizationMessageCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, DecodeAuthorizationMessageCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new DecodeAuthorizationMessageCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link DecodeAuthorizationMessageCommandInput} for command's `input` shape.
- * @see {@link DecodeAuthorizationMessageCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -11041,52 +9182,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns the account identifier for the specified access key ID.</p>
- *         <p>Access keys consist of two parts: an access key ID (for example,
- *                 <code>AKIAIOSFODNN7EXAMPLE</code>) and a secret access key (for example,
- *                 <code>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code>). For more information about
- *             access keys, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html">Managing Access Keys for IAM
- *                 Users</a> in the <i>IAM User Guide</i>.</p>
- *         <p>When you pass an access key ID to this operation, it returns the ID of the Amazon Web Services
- *             account to which the keys belong. Access key IDs beginning with <code>AKIA</code> are
- *             long-term credentials for an IAM user or the Amazon Web Services account root user. Access key IDs
- *             beginning with <code>ASIA</code> are temporary credentials that are created using STS
- *             operations. If the account in the response belongs to you, you can sign in as the root
- *             user and review your root user access keys. Then, you can pull a <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html">credentials report</a> to learn which IAM user owns the keys. To learn who
- *             requested the temporary credentials for an <code>ASIA</code> access key, view the STS
- *             events in your <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html">CloudTrail logs</a> in the
- *                 <i>IAM User Guide</i>.</p>
- *         <p>This operation does not indicate the state of the access key. The key might be active,
- *             inactive, or deleted. Active keys might not have permissions to perform an operation.
- *             Providing a deleted access key might return an error that the key doesn't exist.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, GetAccessKeyInfoCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, GetAccessKeyInfoCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new GetAccessKeyInfoCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetAccessKeyInfoCommandInput} for command's `input` shape.
- * @see {@link GetAccessKeyInfoCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetAccessKeyInfoCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -11128,44 +9228,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns details about the IAM user or role whose credentials are used to call the
- *             operation.</p>
- *         <note>
- *             <p>No permissions are required to perform this operation. If an administrator adds a
- *                 policy to your IAM user or role that explicitly denies access to the
- *                     <code>sts:GetCallerIdentity</code> action, you can still perform this operation.
- *                 Permissions are not required because the same information is returned when an IAM
- *                 user or role is denied access. To view an example response, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_general.html#troubleshoot_general_access-denied-delete-mfa">I Am Not Authorized to Perform: iam:DeleteVirtualMFADevice</a> in the
- *                     <i>IAM User Guide</i>.</p>
- *         </note>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, GetCallerIdentityCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, GetCallerIdentityCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new GetCallerIdentityCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetCallerIdentityCommandInput} for command's `input` shape.
- * @see {@link GetCallerIdentityCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetCallerIdentityCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -11207,173 +9274,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns a set of temporary security credentials (consisting of an access key ID, a
- *          secret access key, and a security token) for a federated user. A typical use is in a proxy
- *          application that gets temporary security credentials on behalf of distributed applications
- *          inside a corporate network. You must call the <code>GetFederationToken</code> operation
- *          using the long-term security credentials of an IAM user. As a result, this call is
- *          appropriate in contexts where those credentials can be safely stored, usually in a
- *          server-based application. For a comparison of <code>GetFederationToken</code> with the
- *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
- *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
- *          <note>
- *             <p>You can create a mobile-based or browser-based app that can authenticate users using
- *             a web identity provider like Login with Amazon, Facebook, Google, or an OpenID
- *             Connect-compatible identity provider. In this case, we recommend that you use <a href="http://aws.amazon.com/cognito/">Amazon Cognito</a> or
- *                <code>AssumeRoleWithWebIdentity</code>. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_assumerolewithwebidentity">Federation Through a Web-based Identity Provider</a> in the
- *                <i>IAM User Guide</i>.</p>
- *          </note>
- *          <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *          Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you create
- *          an IAM user for the purpose of the proxy application. Then attach a policy to the IAM
- *          user that limits federated users to only the actions and resources that they need to
- *          access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
- *             <i>IAM User Guide</i>. </p>
- *          <p>
- *             <b>Session duration</b>
- *          </p>
- *          <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
- *          minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *          43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services account
- *          root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
- *          <p>
- *             <b>Permissions</b>
- *          </p>
- *          <p>You can use the temporary credentials created by <code>GetFederationToken</code> in any
- *          Amazon Web Services service except the following:</p>
- *          <ul>
- *             <li>
- *                <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API. </p>
- *             </li>
- *             <li>
- *                <p>You cannot call any STS operations except <code>GetCallerIdentity</code>.</p>
- *             </li>
- *          </ul>
- *          <p>You must pass an inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policy</a> to
- *          this operation. You can pass a single JSON policy document to use as an inline session
- *          policy. You can also specify up to 10 managed policies to use as managed session policies.
- *          The plaintext that you use for both inline and managed session policies can't exceed 2,048
- *          characters.</p>
- *          <p>Though the session policy parameters are optional, if you do not pass a policy, then the
- *          resulting federated user session has no permissions. When you pass session policies, the
- *          session permissions are the intersection of the IAM user policies and the session
- *          policies that you pass. This gives you a way to further restrict the permissions for a
- *          federated user. You cannot use session policies to grant more permissions than those that
- *          are defined in the permissions policy of the IAM user. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
- *             Policies</a> in the <i>IAM User Guide</i>. For information about
- *          using <code>GetFederationToken</code> to create temporary security credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getfederationtoken">GetFederationToken—Federation Through a Custom Identity Broker</a>. </p>
- *          <p>You can use the credentials to access a resource that has a resource-based policy. If
- *          that policy specifically references the federated user session in the
- *             <code>Principal</code> element of the policy, the session has the permissions allowed by
- *          the policy. These permissions are granted in addition to the permissions granted by the
- *          session policies.</p>
- *          <p>
- *             <b>Tags</b>
- *          </p>
- *          <p>(Optional) You can pass tag key-value pairs to your session. These are called session
- *          tags. For more information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in the
- *             <i>IAM User Guide</i>.</p>
- *         <note>
- *             <p>You can create a mobile-based or browser-based app that can authenticate users
- *                 using a web identity provider like Login with Amazon, Facebook, Google, or an OpenID
- *                 Connect-compatible identity provider. In this case, we recommend that you use <a href="http://aws.amazon.com/cognito/">Amazon Cognito</a> or
- *                     <code>AssumeRoleWithWebIdentity</code>. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_assumerolewithwebidentity">Federation Through a Web-based Identity Provider</a> in the
- *                     <i>IAM User Guide</i>.</p>
- *         </note>
- *         <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *             Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you
- *             create an IAM user for the purpose of the proxy application. Then attach a policy to
- *             the IAM user that limits federated users to only the actions and resources that they
- *             need to access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
- *                 <i>IAM User Guide</i>. </p>
- *         <p>
- *             <b>Session duration</b>
- *          </p>
- *         <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
- *             minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *             43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services
- *             account root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
- *         <p>
- *             <b>Permissions</b>
- *         </p>
- *         <p>You can use the temporary credentials created by <code>GetFederationToken</code> in
- *             any Amazon Web Services service except the following:</p>
- *         <ul>
- *             <li>
- *                 <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API.
- *                 </p>
- *             </li>
- *             <li>
- *                 <p>You cannot call any STS operations except
- *                     <code>GetCallerIdentity</code>.</p>
- *             </li>
- *          </ul>
- *         <p>You must pass an inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policy</a> to
- *             this operation. You can pass a single JSON policy document to use as an inline session
- *             policy. You can also specify up to 10 managed policies to use as managed session
- *             policies. The plain text that you use for both inline and managed session policies can't
- *             exceed 2,048 characters.</p>
- *         <p>Though the session policy parameters are optional, if you do not pass a policy, then
- *             the resulting federated user session has no permissions. When you pass session policies,
- *             the session permissions are the intersection of the IAM user policies and the session
- *             policies that you pass. This gives you a way to further restrict the permissions for a
- *             federated user. You cannot use session policies to grant more permissions than those
- *             that are defined in the permissions policy of the IAM user. For more information, see
- *                 <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session Policies</a>
- *             in the <i>IAM User Guide</i>. For information about using
- *                 <code>GetFederationToken</code> to create temporary security credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getfederationtoken">GetFederationToken—Federation Through a Custom Identity Broker</a>. </p>
- *         <p>You can use the credentials to access a resource that has a resource-based policy. If
- *             that policy specifically references the federated user session in the
- *                 <code>Principal</code> element of the policy, the session has the permissions
- *             allowed by the policy. These permissions are granted in addition to the permissions
- *             granted by the session policies.</p>
- *         <p>
- *             <b>Tags</b>
- *          </p>
- *         <p>(Optional) You can pass tag key-value pairs to your session. These are called session
- *             tags. For more information about session tags, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html">Passing Session Tags in STS</a> in
- *             the <i>IAM User Guide</i>.</p>
- *         <p>An administrator must grant you the permissions necessary to pass session tags. The
- *             administrator can also create granular permissions to allow you to pass only specific
- *             session tags. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html">Tutorial: Using
- *                 Tags for Attribute-Based Access Control</a> in the
- *                 <i>IAM User Guide</i>.</p>
- *         <p>Tag key–value pairs are not case sensitive, but case is preserved. This means that you
- *             cannot have separate <code>Department</code> and <code>department</code> tag keys.
- *             Assume that the user that you are federating has the
- *                 <code>Department</code>=<code>Marketing</code> tag and you pass the
- *                 <code>department</code>=<code>engineering</code> session tag.
- *                 <code>Department</code> and <code>department</code> are not saved as separate tags,
- *             and the session tag passed in the request takes precedence over the user tag.</p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, GetFederationTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, GetFederationTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new GetFederationTokenCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetFederationTokenCommandInput} for command's `input` shape.
- * @see {@link GetFederationTokenCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetFederationTokenCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -11415,86 +9320,11 @@ const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
 const Aws_query_1 = __nccwpck_require__(740);
-/**
- * <p>Returns a set of temporary credentials for an Amazon Web Services account or IAM user. The
- *          credentials consist of an access key ID, a secret access key, and a security token.
- *          Typically, you use <code>GetSessionToken</code> if you want to use MFA to protect
- *          programmatic calls to specific Amazon Web Services API operations like Amazon EC2 <code>StopInstances</code>.
- *          MFA-enabled IAM users would need to call <code>GetSessionToken</code> and submit an MFA
- *          code that is associated with their MFA device. Using the temporary security credentials
- *          that are returned from the call, IAM users can then make programmatic calls to API
- *          operations that require MFA authentication. If you do not supply a correct MFA code, then
- *          the API returns an access denied error. For a comparison of <code>GetSessionToken</code>
- *          with the other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting
- *             Temporary Security Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
- *          <p>
- *             <b>Session Duration</b>
- *          </p>
- *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term Amazon Web Services
- *          security credentials of the Amazon Web Services account root user or an IAM user. Credentials that are
- *          created by IAM users are valid for the duration that you specify. This duration can range
- *          from 900 seconds (15 minutes) up to a maximum of 129,600 seconds (36 hours), with a default
- *          of 43,200 seconds (12 hours). Credentials based on account credentials can range from 900
- *          seconds (15 minutes) up to 3,600 seconds (1 hour), with a default of 1 hour. </p>
- *          <p>
- *             <b>Permissions</b>
- *          </p>
- *          <p>The temporary security credentials created by <code>GetSessionToken</code> can be used
- *          to make API calls to any Amazon Web Services service with the following exceptions:</p>
- *          <ul>
- *             <li>
- *                <p>You cannot call any IAM API operations unless MFA authentication information is
- *                included in the request.</p>
- *             </li>
- *             <li>
- *                <p>You cannot call any STS API <i>except</i>
- *                   <code>AssumeRole</code> or <code>GetCallerIdentity</code>.</p>
- *             </li>
- *          </ul>
- *          <note>
- *             <p>We recommend that you do not call <code>GetSessionToken</code> with Amazon Web Services account
- *             root user credentials. Instead, follow our <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users">best practices</a> by
- *             creating one or more IAM users, giving them the necessary permissions, and using IAM
- *             users for everyday interaction with Amazon Web Services. </p>
- *          </note>
- *          <p>The credentials that are returned by <code>GetSessionToken</code> are based on
- *          permissions associated with the user whose credentials were used to call the operation. If
- *             <code>GetSessionToken</code> is called using Amazon Web Services account root user credentials, the
- *          temporary credentials have root user permissions. Similarly, if
- *             <code>GetSessionToken</code> is called using the credentials of an IAM user, the
- *          temporary credentials have the same permissions as the IAM user. </p>
- *          <p>For more information about using <code>GetSessionToken</code> to create temporary
- *          credentials, go to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#api_getsessiontoken">Temporary
- *             Credentials for Users in Untrusted Environments</a> in the
- *             <i>IAM User Guide</i>. </p>
- * @example
- * Use a bare-bones client and the command you need to make an API call.
- * ```javascript
- * import { STSClient, GetSessionTokenCommand } from "@aws-sdk/client-sts"; // ES Modules import
- * // const { STSClient, GetSessionTokenCommand } = require("@aws-sdk/client-sts"); // CommonJS import
- * const client = new STSClient(config);
- * const command = new GetSessionTokenCommand(input);
- * const response = await client.send(command);
- * ```
- *
- * @see {@link GetSessionTokenCommandInput} for command's `input` shape.
- * @see {@link GetSessionTokenCommandOutput} for command's `response` shape.
- * @see {@link STSClientResolvedConfig | config} for command's `input` shape.
- *
- */
 class GetSessionTokenCommand extends smithy_client_1.Command {
-    // Start section: command_properties
-    // End section: command_properties
     constructor(input) {
-        // Start section: command_constructor
         super();
         this.input = input;
-        // End section: command_constructor
     }
-    /**
-     * @internal
-     */
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_signing_1.getAwsAuthPlugin(configuration));
@@ -11531,28 +9361,12 @@ exports.GetSessionTokenCommand = GetSessionTokenCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWebIdentity = exports.getDefaultRoleAssumer = void 0;
-// Please do not touch this file. It's generated from template in:
-// https://github.com/aws/aws-sdk-js-v3/blob/main/codegen/smithy-aws-typescript-codegen/src/main/resources/software/amazon/smithy/aws/typescript/codegen/sts-client-defaultRoleAssumers.ts
 const defaultStsRoleAssumers_1 = __nccwpck_require__(48);
 const STSClient_1 = __nccwpck_require__(4195);
-/**
- * The default role assumer that used by credential providers when sts:AssumeRole API is needed.
- */
 const getDefaultRoleAssumer = (stsOptions = {}) => defaultStsRoleAssumers_1.getDefaultRoleAssumer(stsOptions, STSClient_1.STSClient);
 exports.getDefaultRoleAssumer = getDefaultRoleAssumer;
-/**
- * The default role assumer that used by credential providers when sts:AssumeRoleWithWebIdentity API is needed.
- */
 const getDefaultRoleAssumerWithWebIdentity = (stsOptions = {}) => defaultStsRoleAssumers_1.getDefaultRoleAssumerWithWebIdentity(stsOptions, STSClient_1.STSClient);
 exports.getDefaultRoleAssumerWithWebIdentity = getDefaultRoleAssumerWithWebIdentity;
-/**
- * The default credential providers depend STS client to assume role with desired API: sts:assumeRole,
- * sts:assumeRoleWithWebIdentity, etc. This function decorates the default credential provider with role assumers which
- * encapsulates the process of calling STS commands. This can only be imported by AWS client packages to avoid circular
- * dependencies.
- *
- * @internal
- */
 const decorateDefaultCredentialProvider = (provider) => (input) => provider({
     roleAssumer: exports.getDefaultRoleAssumer(input),
     roleAssumerWithWebIdentity: exports.getDefaultRoleAssumerWithWebIdentity(input),
@@ -11573,9 +9387,6 @@ exports.decorateDefaultCredentialProvider = exports.getDefaultRoleAssumerWithWeb
 const AssumeRoleCommand_1 = __nccwpck_require__(9802);
 const AssumeRoleWithWebIdentityCommand_1 = __nccwpck_require__(7451);
 const ASSUME_ROLE_DEFAULT_REGION = "us-east-1";
-/**
- * Inject the fallback STS region of us-east-1.
- */
 const decorateDefaultRegion = (region) => {
     if (typeof region !== "function") {
         return region === undefined ? ASSUME_ROLE_DEFAULT_REGION : region;
@@ -11589,10 +9400,6 @@ const decorateDefaultRegion = (region) => {
         }
     };
 };
-/**
- * The default role assumer that used by credential providers when sts:AssumeRole API is needed.
- * @internal
- */
 const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
     let stsClient;
     let closureSourceCreds;
@@ -11602,7 +9409,6 @@ const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
             const { logger, region, requestHandler } = stsOptions;
             stsClient = new stsClientCtor({
                 logger,
-                // A hack to make sts client uses the credential in current closure.
                 credentialDefaultProvider: () => async () => closureSourceCreds,
                 region: decorateDefaultRegion(region || stsOptions.region),
                 ...(requestHandler ? { requestHandler } : {}),
@@ -11621,10 +9427,6 @@ const getDefaultRoleAssumer = (stsOptions, stsClientCtor) => {
     };
 };
 exports.getDefaultRoleAssumer = getDefaultRoleAssumer;
-/**
- * The default role assumer that used by credential providers when sts:AssumeRoleWithWebIdentity API is needed.
- * @internal
- */
 const getDefaultRoleAssumerWithWebIdentity = (stsOptions, stsClientCtor) => {
     let stsClient;
     return async (params) => {
@@ -11649,14 +9451,6 @@ const getDefaultRoleAssumerWithWebIdentity = (stsOptions, stsClientCtor) => {
     };
 };
 exports.getDefaultRoleAssumerWithWebIdentity = getDefaultRoleAssumerWithWebIdentity;
-/**
- * The default credential providers depend STS client to assume role with desired API: sts:assumeRole,
- * sts:assumeRoleWithWebIdentity, etc. This function decorates the default credential provider with role assumers which
- * encapsulates the process of calling STS commands. This can only be imported by AWS client packages to avoid circular
- * dependencies.
- *
- * @internal
- */
 const decorateDefaultCredentialProvider = (provider) => (input) => provider({
     roleAssumer: exports.getDefaultRoleAssumer(input, input.stsClientCtor),
     roleAssumerWithWebIdentity: exports.getDefaultRoleAssumerWithWebIdentity(input, input.stsClientCtor),
@@ -11809,261 +9603,174 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
 var AssumedRoleUser;
 (function (AssumedRoleUser) {
-    /**
-     * @internal
-     */
     AssumedRoleUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumedRoleUser = exports.AssumedRoleUser || (exports.AssumedRoleUser = {}));
 var PolicyDescriptorType;
 (function (PolicyDescriptorType) {
-    /**
-     * @internal
-     */
     PolicyDescriptorType.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PolicyDescriptorType = exports.PolicyDescriptorType || (exports.PolicyDescriptorType = {}));
 var Tag;
 (function (Tag) {
-    /**
-     * @internal
-     */
     Tag.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Tag = exports.Tag || (exports.Tag = {}));
 var AssumeRoleRequest;
 (function (AssumeRoleRequest) {
-    /**
-     * @internal
-     */
     AssumeRoleRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleRequest = exports.AssumeRoleRequest || (exports.AssumeRoleRequest = {}));
 var Credentials;
 (function (Credentials) {
-    /**
-     * @internal
-     */
     Credentials.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(Credentials = exports.Credentials || (exports.Credentials = {}));
 var AssumeRoleResponse;
 (function (AssumeRoleResponse) {
-    /**
-     * @internal
-     */
     AssumeRoleResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
 var ExpiredTokenException;
 (function (ExpiredTokenException) {
-    /**
-     * @internal
-     */
     ExpiredTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(ExpiredTokenException = exports.ExpiredTokenException || (exports.ExpiredTokenException = {}));
 var MalformedPolicyDocumentException;
 (function (MalformedPolicyDocumentException) {
-    /**
-     * @internal
-     */
     MalformedPolicyDocumentException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(MalformedPolicyDocumentException = exports.MalformedPolicyDocumentException || (exports.MalformedPolicyDocumentException = {}));
 var PackedPolicyTooLargeException;
 (function (PackedPolicyTooLargeException) {
-    /**
-     * @internal
-     */
     PackedPolicyTooLargeException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(PackedPolicyTooLargeException = exports.PackedPolicyTooLargeException || (exports.PackedPolicyTooLargeException = {}));
 var RegionDisabledException;
 (function (RegionDisabledException) {
-    /**
-     * @internal
-     */
     RegionDisabledException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(RegionDisabledException = exports.RegionDisabledException || (exports.RegionDisabledException = {}));
 var AssumeRoleWithSAMLRequest;
 (function (AssumeRoleWithSAMLRequest) {
-    /**
-     * @internal
-     */
     AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLRequest = exports.AssumeRoleWithSAMLRequest || (exports.AssumeRoleWithSAMLRequest = {}));
 var AssumeRoleWithSAMLResponse;
 (function (AssumeRoleWithSAMLResponse) {
-    /**
-     * @internal
-     */
     AssumeRoleWithSAMLResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
 var IDPRejectedClaimException;
 (function (IDPRejectedClaimException) {
-    /**
-     * @internal
-     */
     IDPRejectedClaimException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPRejectedClaimException = exports.IDPRejectedClaimException || (exports.IDPRejectedClaimException = {}));
 var InvalidIdentityTokenException;
 (function (InvalidIdentityTokenException) {
-    /**
-     * @internal
-     */
     InvalidIdentityTokenException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidIdentityTokenException = exports.InvalidIdentityTokenException || (exports.InvalidIdentityTokenException = {}));
 var AssumeRoleWithWebIdentityRequest;
 (function (AssumeRoleWithWebIdentityRequest) {
-    /**
-     * @internal
-     */
     AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityRequest = exports.AssumeRoleWithWebIdentityRequest || (exports.AssumeRoleWithWebIdentityRequest = {}));
 var AssumeRoleWithWebIdentityResponse;
 (function (AssumeRoleWithWebIdentityResponse) {
-    /**
-     * @internal
-     */
     AssumeRoleWithWebIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
 var IDPCommunicationErrorException;
 (function (IDPCommunicationErrorException) {
-    /**
-     * @internal
-     */
     IDPCommunicationErrorException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(IDPCommunicationErrorException = exports.IDPCommunicationErrorException || (exports.IDPCommunicationErrorException = {}));
 var DecodeAuthorizationMessageRequest;
 (function (DecodeAuthorizationMessageRequest) {
-    /**
-     * @internal
-     */
     DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageRequest = exports.DecodeAuthorizationMessageRequest || (exports.DecodeAuthorizationMessageRequest = {}));
 var DecodeAuthorizationMessageResponse;
 (function (DecodeAuthorizationMessageResponse) {
-    /**
-     * @internal
-     */
     DecodeAuthorizationMessageResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
 var InvalidAuthorizationMessageException;
 (function (InvalidAuthorizationMessageException) {
-    /**
-     * @internal
-     */
     InvalidAuthorizationMessageException.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(InvalidAuthorizationMessageException = exports.InvalidAuthorizationMessageException || (exports.InvalidAuthorizationMessageException = {}));
 var GetAccessKeyInfoRequest;
 (function (GetAccessKeyInfoRequest) {
-    /**
-     * @internal
-     */
     GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoRequest = exports.GetAccessKeyInfoRequest || (exports.GetAccessKeyInfoRequest = {}));
 var GetAccessKeyInfoResponse;
 (function (GetAccessKeyInfoResponse) {
-    /**
-     * @internal
-     */
     GetAccessKeyInfoResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetAccessKeyInfoResponse = exports.GetAccessKeyInfoResponse || (exports.GetAccessKeyInfoResponse = {}));
 var GetCallerIdentityRequest;
 (function (GetCallerIdentityRequest) {
-    /**
-     * @internal
-     */
     GetCallerIdentityRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityRequest = exports.GetCallerIdentityRequest || (exports.GetCallerIdentityRequest = {}));
 var GetCallerIdentityResponse;
 (function (GetCallerIdentityResponse) {
-    /**
-     * @internal
-     */
     GetCallerIdentityResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetCallerIdentityResponse = exports.GetCallerIdentityResponse || (exports.GetCallerIdentityResponse = {}));
 var GetFederationTokenRequest;
 (function (GetFederationTokenRequest) {
-    /**
-     * @internal
-     */
     GetFederationTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenRequest = exports.GetFederationTokenRequest || (exports.GetFederationTokenRequest = {}));
 var FederatedUser;
 (function (FederatedUser) {
-    /**
-     * @internal
-     */
     FederatedUser.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(FederatedUser = exports.FederatedUser || (exports.FederatedUser = {}));
 var GetFederationTokenResponse;
 (function (GetFederationTokenResponse) {
-    /**
-     * @internal
-     */
     GetFederationTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetFederationTokenResponse = exports.GetFederationTokenResponse || (exports.GetFederationTokenResponse = {}));
 var GetSessionTokenRequest;
 (function (GetSessionTokenRequest) {
-    /**
-     * @internal
-     */
     GetSessionTokenRequest.filterSensitiveLog = (obj) => ({
         ...obj,
     });
 })(GetSessionTokenRequest = exports.GetSessionTokenRequest || (exports.GetSessionTokenRequest = {}));
 var GetSessionTokenResponse;
 (function (GetSessionTokenResponse) {
-    /**
-     * @internal
-     */
     GetSessionTokenResponse.filterSensitiveLog = (obj) => ({
         ...obj,
     });
@@ -13268,14 +10975,12 @@ const deserializeMetadata = (output) => {
         cfId: output.headers["x-amz-cf-id"],
     });
 };
-// Collect low-level response body stream to Uint8Array.
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
     }
     return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
 };
-// Encode Uint8Array data into string with utf-8.
 const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
 const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
     const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
@@ -13339,8 +11044,7 @@ const loadQueryErrorCode = (output, data) => {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
-// @ts-ignore: package.json will be imported from dist folders
-const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(1121)); // eslint-disable-line
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(1121));
 const defaultStsRoleAssumers_1 = __nccwpck_require__(48);
 const config_resolver_1 = __nccwpck_require__(6153);
 const credential_provider_node_1 = __nccwpck_require__(5531);
@@ -13354,9 +11058,6 @@ const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(2642);
 const smithy_client_1 = __nccwpck_require__(4963);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
     smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
@@ -13394,9 +11095,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
 const url_parser_1 = __nccwpck_require__(2992);
 const endpoints_1 = __nccwpck_require__(3571);
-/**
- * @internal
- */
 const getRuntimeConfig = (config) => {
     var _a, _b, _c, _d, _e;
     return ({

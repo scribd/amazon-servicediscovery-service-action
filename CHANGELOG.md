@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.14...v1.0.15) (2021-10-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @aws-sdk/client-servicediscovery from 3.36.0 to 3.36.1 ([3db4b8a](https://github.com/scribd/amazon-servicediscovery-service-action/commit/3db4b8abd296c39a822aa1f9464d900de9ba4200))
+
 ## [1.0.14](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.13...v1.0.14) (2021-10-13)
 
 
