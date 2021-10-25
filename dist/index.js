@@ -5,7 +5,7 @@
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.37.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.37.0","@aws-sdk/config-resolver":"3.37.0","@aws-sdk/credential-provider-node":"3.37.0","@aws-sdk/fetch-http-handler":"3.37.0","@aws-sdk/hash-node":"3.37.0","@aws-sdk/invalid-dependency":"3.37.0","@aws-sdk/middleware-content-length":"3.37.0","@aws-sdk/middleware-host-header":"3.37.0","@aws-sdk/middleware-logger":"3.37.0","@aws-sdk/middleware-retry":"3.37.0","@aws-sdk/middleware-serde":"3.37.0","@aws-sdk/middleware-signing":"3.37.0","@aws-sdk/middleware-stack":"3.37.0","@aws-sdk/middleware-user-agent":"3.37.0","@aws-sdk/node-config-provider":"3.37.0","@aws-sdk/node-http-handler":"3.37.0","@aws-sdk/protocol-http":"3.37.0","@aws-sdk/smithy-client":"3.37.0","@aws-sdk/types":"3.37.0","@aws-sdk/url-parser":"3.37.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.37.0","@aws-sdk/util-user-agent-node":"3.37.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","tslib":"^2.3.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.37.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.38.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.38.0","@aws-sdk/config-resolver":"3.38.0","@aws-sdk/credential-provider-node":"3.38.0","@aws-sdk/fetch-http-handler":"3.38.0","@aws-sdk/hash-node":"3.38.0","@aws-sdk/invalid-dependency":"3.38.0","@aws-sdk/middleware-content-length":"3.38.0","@aws-sdk/middleware-host-header":"3.38.0","@aws-sdk/middleware-logger":"3.38.0","@aws-sdk/middleware-retry":"3.38.0","@aws-sdk/middleware-serde":"3.38.0","@aws-sdk/middleware-signing":"3.38.0","@aws-sdk/middleware-stack":"3.38.0","@aws-sdk/middleware-user-agent":"3.38.0","@aws-sdk/node-config-provider":"3.38.0","@aws-sdk/node-http-handler":"3.38.0","@aws-sdk/protocol-http":"3.38.0","@aws-sdk/smithy-client":"3.38.0","@aws-sdk/types":"3.38.0","@aws-sdk/url-parser":"3.38.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.38.0","@aws-sdk/util-user-agent-node":"3.38.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","tslib":"^2.3.0","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","@types/uuid":"^8.3.0","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","descrip
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.37.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.37.0","@aws-sdk/fetch-http-handler":"3.37.0","@aws-sdk/hash-node":"3.37.0","@aws-sdk/invalid-dependency":"3.37.0","@aws-sdk/middleware-content-length":"3.37.0","@aws-sdk/middleware-host-header":"3.37.0","@aws-sdk/middleware-logger":"3.37.0","@aws-sdk/middleware-retry":"3.37.0","@aws-sdk/middleware-serde":"3.37.0","@aws-sdk/middleware-stack":"3.37.0","@aws-sdk/middleware-user-agent":"3.37.0","@aws-sdk/node-config-provider":"3.37.0","@aws-sdk/node-http-handler":"3.37.0","@aws-sdk/protocol-http":"3.37.0","@aws-sdk/smithy-client":"3.37.0","@aws-sdk/types":"3.37.0","@aws-sdk/url-parser":"3.37.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.37.0","@aws-sdk/util-user-agent-node":"3.37.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.37.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.38.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.38.0","@aws-sdk/fetch-http-handler":"3.38.0","@aws-sdk/hash-node":"3.38.0","@aws-sdk/invalid-dependency":"3.38.0","@aws-sdk/middleware-content-length":"3.38.0","@aws-sdk/middleware-host-header":"3.38.0","@aws-sdk/middleware-logger":"3.38.0","@aws-sdk/middleware-retry":"3.38.0","@aws-sdk/middleware-serde":"3.38.0","@aws-sdk/middleware-stack":"3.38.0","@aws-sdk/middleware-user-agent":"3.38.0","@aws-sdk/node-config-provider":"3.38.0","@aws-sdk/node-http-handler":"3.38.0","@aws-sdk/protocol-http":"3.38.0","@aws-sdk/smithy-client":"3.38.0","@aws-sdk/types":"3.38.0","@aws-sdk/url-parser":"3.38.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.38.0","@aws-sdk/util-user-agent-node":"3.38.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.37.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.37.0","@aws-sdk/credential-provider-node":"3.37.0","@aws-sdk/fetch-http-handler":"3.37.0","@aws-sdk/hash-node":"3.37.0","@aws-sdk/invalid-dependency":"3.37.0","@aws-sdk/middleware-content-length":"3.37.0","@aws-sdk/middleware-host-header":"3.37.0","@aws-sdk/middleware-logger":"3.37.0","@aws-sdk/middleware-retry":"3.37.0","@aws-sdk/middleware-sdk-sts":"3.37.0","@aws-sdk/middleware-serde":"3.37.0","@aws-sdk/middleware-signing":"3.37.0","@aws-sdk/middleware-stack":"3.37.0","@aws-sdk/middleware-user-agent":"3.37.0","@aws-sdk/node-config-provider":"3.37.0","@aws-sdk/node-http-handler":"3.37.0","@aws-sdk/protocol-http":"3.37.0","@aws-sdk/smithy-client":"3.37.0","@aws-sdk/types":"3.37.0","@aws-sdk/url-parser":"3.37.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.37.0","@aws-sdk/util-user-agent-node":"3.37.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.37.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.38.0","scripts":{"build":"yarn build:cjs && yarn build:es && yarn build:types","build:cjs":"tsc -p tsconfig.json","build:docs":"yarn clean:docs && typedoc ./","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","clean":"yarn clean:dist && yarn clean:docs","clean:dist":"rimraf ./dist","clean:docs":"rimraf ./docs","downlevel-dts":"downlevel-dts dist-types dist-types/ts3.4","test":"exit 0"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.38.0","@aws-sdk/credential-provider-node":"3.38.0","@aws-sdk/fetch-http-handler":"3.38.0","@aws-sdk/hash-node":"3.38.0","@aws-sdk/invalid-dependency":"3.38.0","@aws-sdk/middleware-content-length":"3.38.0","@aws-sdk/middleware-host-header":"3.38.0","@aws-sdk/middleware-logger":"3.38.0","@aws-sdk/middleware-retry":"3.38.0","@aws-sdk/middleware-sdk-sts":"3.38.0","@aws-sdk/middleware-serde":"3.38.0","@aws-sdk/middleware-signing":"3.38.0","@aws-sdk/middleware-stack":"3.38.0","@aws-sdk/middleware-user-agent":"3.38.0","@aws-sdk/node-config-provider":"3.38.0","@aws-sdk/node-http-handler":"3.38.0","@aws-sdk/protocol-http":"3.38.0","@aws-sdk/smithy-client":"3.38.0","@aws-sdk/types":"3.38.0","@aws-sdk/url-parser":"3.38.0","@aws-sdk/util-base64-browser":"3.37.0","@aws-sdk/util-base64-node":"3.37.0","@aws-sdk/util-body-length-browser":"3.37.0","@aws-sdk/util-body-length-node":"3.37.0","@aws-sdk/util-user-agent-browser":"3.38.0","@aws-sdk/util-user-agent-node":"3.38.0","@aws-sdk/util-utf8-browser":"3.37.0","@aws-sdk/util-utf8-node":"3.37.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.38.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.5"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -2143,7 +2143,7 @@ exports.CreateHttpNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class CreateHttpNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2187,7 +2187,7 @@ exports.CreatePrivateDnsNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class CreatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2231,7 +2231,7 @@ exports.CreatePublicDnsNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class CreatePublicDnsNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2275,7 +2275,7 @@ exports.CreateServiceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class CreateServiceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2319,7 +2319,7 @@ exports.DeleteNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class DeleteNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2363,7 +2363,7 @@ exports.DeleteServiceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class DeleteServiceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2407,7 +2407,7 @@ exports.DeregisterInstanceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class DeregisterInstanceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2451,7 +2451,7 @@ exports.DiscoverInstancesCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class DiscoverInstancesCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2495,7 +2495,7 @@ exports.GetInstanceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class GetInstanceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2539,7 +2539,7 @@ exports.GetInstancesHealthStatusCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class GetInstancesHealthStatusCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2583,7 +2583,7 @@ exports.GetNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class GetNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2627,7 +2627,7 @@ exports.GetOperationCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class GetOperationCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2671,7 +2671,7 @@ exports.GetServiceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class GetServiceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2715,7 +2715,7 @@ exports.ListInstancesCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class ListInstancesCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2759,7 +2759,7 @@ exports.ListNamespacesCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class ListNamespacesCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2803,7 +2803,7 @@ exports.ListOperationsCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class ListOperationsCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2847,7 +2847,7 @@ exports.ListServicesCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class ListServicesCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2891,7 +2891,7 @@ exports.ListTagsForResourceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class ListTagsForResourceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2935,7 +2935,7 @@ exports.RegisterInstanceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class RegisterInstanceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -2979,7 +2979,7 @@ exports.TagResourceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class TagResourceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3023,7 +3023,7 @@ exports.UntagResourceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UntagResourceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3067,7 +3067,7 @@ exports.UpdateHttpNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UpdateHttpNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3111,7 +3111,7 @@ exports.UpdateInstanceCustomHealthStatusCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UpdateInstanceCustomHealthStatusCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3155,7 +3155,7 @@ exports.UpdatePrivateDnsNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UpdatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3199,7 +3199,7 @@ exports.UpdatePublicDnsNamespaceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UpdatePublicDnsNamespaceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3243,7 +3243,7 @@ exports.UpdateServiceCommand = void 0;
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(9096);
-const Aws_json1_1_1 = __nccwpck_require__(8861);
+const Aws_json1_1_1 = __nccwpck_require__(2298);
 class UpdateServiceCommand extends smithy_client_1.Command {
     constructor(input) {
         super();
@@ -3273,6 +3273,43 @@ class UpdateServiceCommand extends smithy_client_1.Command {
     }
 }
 exports.UpdateServiceCommand = UpdateServiceCommand;
+
+
+/***/ }),
+
+/***/ 6235:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(7694), exports);
+tslib_1.__exportStar(__nccwpck_require__(6358), exports);
+tslib_1.__exportStar(__nccwpck_require__(3684), exports);
+tslib_1.__exportStar(__nccwpck_require__(5907), exports);
+tslib_1.__exportStar(__nccwpck_require__(7417), exports);
+tslib_1.__exportStar(__nccwpck_require__(7816), exports);
+tslib_1.__exportStar(__nccwpck_require__(4391), exports);
+tslib_1.__exportStar(__nccwpck_require__(402), exports);
+tslib_1.__exportStar(__nccwpck_require__(1976), exports);
+tslib_1.__exportStar(__nccwpck_require__(19), exports);
+tslib_1.__exportStar(__nccwpck_require__(4551), exports);
+tslib_1.__exportStar(__nccwpck_require__(8659), exports);
+tslib_1.__exportStar(__nccwpck_require__(3480), exports);
+tslib_1.__exportStar(__nccwpck_require__(1689), exports);
+tslib_1.__exportStar(__nccwpck_require__(9046), exports);
+tslib_1.__exportStar(__nccwpck_require__(7148), exports);
+tslib_1.__exportStar(__nccwpck_require__(4890), exports);
+tslib_1.__exportStar(__nccwpck_require__(9692), exports);
+tslib_1.__exportStar(__nccwpck_require__(9262), exports);
+tslib_1.__exportStar(__nccwpck_require__(4066), exports);
+tslib_1.__exportStar(__nccwpck_require__(4051), exports);
+tslib_1.__exportStar(__nccwpck_require__(4465), exports);
+tslib_1.__exportStar(__nccwpck_require__(6111), exports);
+tslib_1.__exportStar(__nccwpck_require__(4641), exports);
+tslib_1.__exportStar(__nccwpck_require__(3782), exports);
+tslib_1.__exportStar(__nccwpck_require__(8909), exports);
 
 
 /***/ }),
@@ -3354,41 +3391,11 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(8747), exports);
 tslib_1.__exportStar(__nccwpck_require__(8799), exports);
-tslib_1.__exportStar(__nccwpck_require__(7694), exports);
-tslib_1.__exportStar(__nccwpck_require__(6358), exports);
-tslib_1.__exportStar(__nccwpck_require__(3684), exports);
-tslib_1.__exportStar(__nccwpck_require__(5907), exports);
-tslib_1.__exportStar(__nccwpck_require__(7417), exports);
-tslib_1.__exportStar(__nccwpck_require__(7816), exports);
-tslib_1.__exportStar(__nccwpck_require__(4391), exports);
-tslib_1.__exportStar(__nccwpck_require__(402), exports);
-tslib_1.__exportStar(__nccwpck_require__(1976), exports);
-tslib_1.__exportStar(__nccwpck_require__(19), exports);
-tslib_1.__exportStar(__nccwpck_require__(4056), exports);
-tslib_1.__exportStar(__nccwpck_require__(4551), exports);
-tslib_1.__exportStar(__nccwpck_require__(8659), exports);
-tslib_1.__exportStar(__nccwpck_require__(3480), exports);
-tslib_1.__exportStar(__nccwpck_require__(1689), exports);
-tslib_1.__exportStar(__nccwpck_require__(8878), exports);
-tslib_1.__exportStar(__nccwpck_require__(9046), exports);
-tslib_1.__exportStar(__nccwpck_require__(1870), exports);
-tslib_1.__exportStar(__nccwpck_require__(7148), exports);
-tslib_1.__exportStar(__nccwpck_require__(1077), exports);
-tslib_1.__exportStar(__nccwpck_require__(4890), exports);
-tslib_1.__exportStar(__nccwpck_require__(1161), exports);
-tslib_1.__exportStar(__nccwpck_require__(9692), exports);
-tslib_1.__exportStar(__nccwpck_require__(9262), exports);
-tslib_1.__exportStar(__nccwpck_require__(4066), exports);
-tslib_1.__exportStar(__nccwpck_require__(4051), exports);
-tslib_1.__exportStar(__nccwpck_require__(4465), exports);
-tslib_1.__exportStar(__nccwpck_require__(6111), exports);
-tslib_1.__exportStar(__nccwpck_require__(4641), exports);
-tslib_1.__exportStar(__nccwpck_require__(3782), exports);
-tslib_1.__exportStar(__nccwpck_require__(8909), exports);
-tslib_1.__exportStar(__nccwpck_require__(5547), exports);
+tslib_1.__exportStar(__nccwpck_require__(8747), exports);
+tslib_1.__exportStar(__nccwpck_require__(6235), exports);
 tslib_1.__exportStar(__nccwpck_require__(4202), exports);
+tslib_1.__exportStar(__nccwpck_require__(447), exports);
 
 
 /***/ }),
@@ -4339,7 +4346,24 @@ exports.paginateListServices = paginateListServices;
 
 /***/ }),
 
-/***/ 8861:
+/***/ 447:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(4056), exports);
+tslib_1.__exportStar(__nccwpck_require__(5547), exports);
+tslib_1.__exportStar(__nccwpck_require__(8878), exports);
+tslib_1.__exportStar(__nccwpck_require__(1870), exports);
+tslib_1.__exportStar(__nccwpck_require__(1077), exports);
+tslib_1.__exportStar(__nccwpck_require__(1161), exports);
+
+
+/***/ }),
+
+/***/ 2298:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -7879,6 +7903,21 @@ exports.LogoutCommand = LogoutCommand;
 
 /***/ }),
 
+/***/ 5706:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8972), exports);
+tslib_1.__exportStar(__nccwpck_require__(1513), exports);
+tslib_1.__exportStar(__nccwpck_require__(4296), exports);
+tslib_1.__exportStar(__nccwpck_require__(2586), exports);
+
+
+/***/ }),
+
 /***/ 3546:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -7987,16 +8026,11 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(1057), exports);
 tslib_1.__exportStar(__nccwpck_require__(9838), exports);
-tslib_1.__exportStar(__nccwpck_require__(8972), exports);
-tslib_1.__exportStar(__nccwpck_require__(1513), exports);
-tslib_1.__exportStar(__nccwpck_require__(8460), exports);
-tslib_1.__exportStar(__nccwpck_require__(4296), exports);
-tslib_1.__exportStar(__nccwpck_require__(938), exports);
-tslib_1.__exportStar(__nccwpck_require__(2586), exports);
-tslib_1.__exportStar(__nccwpck_require__(849), exports);
+tslib_1.__exportStar(__nccwpck_require__(1057), exports);
+tslib_1.__exportStar(__nccwpck_require__(5706), exports);
 tslib_1.__exportStar(__nccwpck_require__(4952), exports);
+tslib_1.__exportStar(__nccwpck_require__(6773), exports);
 
 
 /***/ }),
@@ -8208,6 +8242,20 @@ async function* paginateListAccounts(config, input, ...additionalArguments) {
     return undefined;
 }
 exports.paginateListAccounts = paginateListAccounts;
+
+
+/***/ }),
+
+/***/ 6773:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(849), exports);
+tslib_1.__exportStar(__nccwpck_require__(8460), exports);
+tslib_1.__exportStar(__nccwpck_require__(938), exports);
 
 
 /***/ }),
@@ -9354,6 +9402,25 @@ exports.GetSessionTokenCommand = GetSessionTokenCommand;
 
 /***/ }),
 
+/***/ 5716:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(9802), exports);
+tslib_1.__exportStar(__nccwpck_require__(2865), exports);
+tslib_1.__exportStar(__nccwpck_require__(7451), exports);
+tslib_1.__exportStar(__nccwpck_require__(4150), exports);
+tslib_1.__exportStar(__nccwpck_require__(9804), exports);
+tslib_1.__exportStar(__nccwpck_require__(4278), exports);
+tslib_1.__exportStar(__nccwpck_require__(7552), exports);
+tslib_1.__exportStar(__nccwpck_require__(3285), exports);
+
+
+/***/ }),
+
 /***/ 8028:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -9566,16 +9633,9 @@ exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(4195), exports);
 tslib_1.__exportStar(__nccwpck_require__(2605), exports);
-tslib_1.__exportStar(__nccwpck_require__(9802), exports);
-tslib_1.__exportStar(__nccwpck_require__(2865), exports);
-tslib_1.__exportStar(__nccwpck_require__(7451), exports);
-tslib_1.__exportStar(__nccwpck_require__(4150), exports);
-tslib_1.__exportStar(__nccwpck_require__(9804), exports);
-tslib_1.__exportStar(__nccwpck_require__(4278), exports);
-tslib_1.__exportStar(__nccwpck_require__(7552), exports);
-tslib_1.__exportStar(__nccwpck_require__(3285), exports);
+tslib_1.__exportStar(__nccwpck_require__(4195), exports);
+tslib_1.__exportStar(__nccwpck_require__(5716), exports);
 tslib_1.__exportStar(__nccwpck_require__(8028), exports);
 tslib_1.__exportStar(__nccwpck_require__(106), exports);
 
@@ -11265,7 +11325,7 @@ exports.NODE_REGION_CONFIG_FILE_OPTIONS = {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(422), exports);
-tslib_1.__exportStar(__nccwpck_require__(1595), exports);
+tslib_1.__exportStar(__nccwpck_require__(174), exports);
 
 
 /***/ }),
@@ -11289,7 +11349,7 @@ exports.normalizeRegion = normalizeRegion;
 
 /***/ }),
 
-/***/ 1595:
+/***/ 174:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -12868,15 +12928,15 @@ exports.defaultDelayDecider = defaultDelayDecider;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(1806), exports);
-tslib_1.__exportStar(__nccwpck_require__(3521), exports);
-tslib_1.__exportStar(__nccwpck_require__(533), exports);
 tslib_1.__exportStar(__nccwpck_require__(7328), exports);
+tslib_1.__exportStar(__nccwpck_require__(6402), exports);
+tslib_1.__exportStar(__nccwpck_require__(533), exports);
 tslib_1.__exportStar(__nccwpck_require__(5192), exports);
 tslib_1.__exportStar(__nccwpck_require__(6160), exports);
 tslib_1.__exportStar(__nccwpck_require__(5940), exports);
-tslib_1.__exportStar(__nccwpck_require__(6402), exports);
+tslib_1.__exportStar(__nccwpck_require__(3521), exports);
 tslib_1.__exportStar(__nccwpck_require__(9572), exports);
+tslib_1.__exportStar(__nccwpck_require__(1806), exports);
 tslib_1.__exportStar(__nccwpck_require__(8580), exports);
 
 
@@ -13022,8 +13082,8 @@ exports.deserializerMiddleware = deserializerMiddleware;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(5648), exports);
-tslib_1.__exportStar(__nccwpck_require__(9511), exports);
 tslib_1.__exportStar(__nccwpck_require__(9328), exports);
+tslib_1.__exportStar(__nccwpck_require__(9511), exports);
 
 
 /***/ }),
@@ -13780,14 +13840,14 @@ exports.getTransformedHeaders = getTransformedHeaders;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(2298), exports);
+tslib_1.__exportStar(__nccwpck_require__(56), exports);
 tslib_1.__exportStar(__nccwpck_require__(2533), exports);
 tslib_1.__exportStar(__nccwpck_require__(2198), exports);
 
 
 /***/ }),
 
-/***/ 2298:
+/***/ 56:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -14233,10 +14293,10 @@ exports.fromStatic = fromStatic;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(1786), exports);
 tslib_1.__exportStar(__nccwpck_require__(1444), exports);
 tslib_1.__exportStar(__nccwpck_require__(529), exports);
 tslib_1.__exportStar(__nccwpck_require__(714), exports);
-tslib_1.__exportStar(__nccwpck_require__(1786), exports);
 
 
 /***/ }),
@@ -14396,9 +14456,9 @@ exports.HttpResponse = HttpResponse;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(2348), exports);
-tslib_1.__exportStar(__nccwpck_require__(2872), exports);
 tslib_1.__exportStar(__nccwpck_require__(6779), exports);
+tslib_1.__exportStar(__nccwpck_require__(2872), exports);
+tslib_1.__exportStar(__nccwpck_require__(2348), exports);
 tslib_1.__exportStar(__nccwpck_require__(5694), exports);
 
 
@@ -15076,7 +15136,7 @@ exports.deleteHeader = deleteHeader;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.normalizeRegionProvider = exports.normalizeCredentialsProvider = exports.prepareRequest = exports.moveHeadersToQuery = exports.getPayloadHash = exports.getCanonicalQuery = exports.getCanonicalHeaders = void 0;
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(1424), exports);
+tslib_1.__exportStar(__nccwpck_require__(5086), exports);
 var getCanonicalHeaders_1 = __nccwpck_require__(3590);
 Object.defineProperty(exports, "getCanonicalHeaders", ({ enumerable: true, get: function () { return getCanonicalHeaders_1.getCanonicalHeaders; } }));
 var getCanonicalQuery_1 = __nccwpck_require__(2019);
@@ -15090,7 +15150,7 @@ Object.defineProperty(exports, "prepareRequest", ({ enumerable: true, get: funct
 var normalizeProvider_1 = __nccwpck_require__(7027);
 Object.defineProperty(exports, "normalizeCredentialsProvider", ({ enumerable: true, get: function () { return normalizeProvider_1.normalizeCredentialsProvider; } }));
 Object.defineProperty(exports, "normalizeRegionProvider", ({ enumerable: true, get: function () { return normalizeProvider_1.normalizeRegionProvider; } }));
-tslib_1.__exportStar(__nccwpck_require__(5086), exports);
+tslib_1.__exportStar(__nccwpck_require__(1424), exports);
 
 
 /***/ }),
@@ -15524,6 +15584,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(6034), exports);
 tslib_1.__exportStar(__nccwpck_require__(4014), exports);
+tslib_1.__exportStar(__nccwpck_require__(8392), exports);
+tslib_1.__exportStar(__nccwpck_require__(4695), exports);
 tslib_1.__exportStar(__nccwpck_require__(2363), exports);
 tslib_1.__exportStar(__nccwpck_require__(1927), exports);
 tslib_1.__exportStar(__nccwpck_require__(6457), exports);
@@ -15531,9 +15593,7 @@ tslib_1.__exportStar(__nccwpck_require__(5830), exports);
 tslib_1.__exportStar(__nccwpck_require__(3613), exports);
 tslib_1.__exportStar(__nccwpck_require__(4809), exports);
 tslib_1.__exportStar(__nccwpck_require__(8000), exports);
-tslib_1.__exportStar(__nccwpck_require__(4695), exports);
 tslib_1.__exportStar(__nccwpck_require__(8730), exports);
-tslib_1.__exportStar(__nccwpck_require__(8392), exports);
 
 
 /***/ }),
@@ -35892,7 +35952,7 @@ var _v4 = _interopRequireDefault(__nccwpck_require__(9120));
 
 var _nil = _interopRequireDefault(__nccwpck_require__(5332));
 
-var _version = _interopRequireDefault(__nccwpck_require__(2414));
+var _version = _interopRequireDefault(__nccwpck_require__(1595));
 
 var _validate = _interopRequireDefault(__nccwpck_require__(6900));
 
@@ -36436,7 +36496,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 2414:
+/***/ 1595:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
