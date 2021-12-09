@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.18...v1.0.19) (2021-12-09)
+
+
+### Bug Fixes
+
+* update deps ([8d9e1f9](https://github.com/scribd/amazon-servicediscovery-service-action/commit/8d9e1f9e80f6bef9f62badfbb6e6c63a9571b490))
+
 ## [1.0.18](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.17...v1.0.18) (2021-12-06)
 
 
