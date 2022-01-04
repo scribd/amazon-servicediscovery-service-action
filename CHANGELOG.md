@@ -1,3 +1,10 @@
+## [1.0.21-alpha.1](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.20...v1.0.21-alpha.1) (2022-01-04)
+
+
+### Bug Fixes
+
+* **deps:** yarn upgrade ([095197a](https://github.com/scribd/amazon-servicediscovery-service-action/commit/095197a22a74734f64655f1da99d7ceb3e2df762))
+
 ## [1.0.20](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.19...v1.0.20) (2021-12-10)
 
 
