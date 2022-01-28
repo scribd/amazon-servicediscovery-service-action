@@ -361,7 +361,7 @@ if (require.main === require.cache[eval('__filename')]) {
   run().catch((err) => {
     const httpStatusCode = err.$metadata ? err.$metadata.httpStatusCode : undefined;
     core.setFailed(`${err.name} (Status code: ${httpStatusCode}): ${err.message}`);
-    core.debug(`Received error: ${JSON.stringify(err)}`);
+    core.debug(`Received error: ${JSON.stringify(err)}`).catch(() => { return err });
     core.debug(err.stack);
     process.exit(1);
   });

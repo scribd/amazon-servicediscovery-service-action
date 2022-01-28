@@ -1,3 +1,10 @@
+## [1.0.23-alpha.1](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.22...v1.0.23-alpha.1) (2022-01-28)
+
+
+### Bug Fixes
+
+* if cannot parse err, just print ([09ea6b6](https://github.com/scribd/amazon-servicediscovery-service-action/commit/09ea6b675b4ecd40cac1a86c69a4ae214963cc43))
+
 ## [1.0.22](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.21...v1.0.22) (2022-01-28)
 
 
