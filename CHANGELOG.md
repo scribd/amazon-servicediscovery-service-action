@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.22...v1.0.23) (2022-02-08)
+
+
+### Bug Fixes
+
+* **deps:** bump @aws-sdk/client-servicediscovery from 3.46.0 to 3.49.0 ([a42df0f](https://github.com/scribd/amazon-servicediscovery-service-action/commit/a42df0ff3fcc5ac21a63a94692b32f5bcd65a069))
+
 ## [1.0.22](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.21...v1.0.22) (2022-01-28)
 
 
