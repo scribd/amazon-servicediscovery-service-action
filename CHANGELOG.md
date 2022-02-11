@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.24...v1.0.25) (2022-02-11)
+
+
+### Bug Fixes
+
+* empty commit to perform a release to test ci fix ([14de196](https://github.com/scribd/amazon-servicediscovery-service-action/commit/14de196cb5ab996ab12a380c24ce1088dee42a7b))
+
 ## [1.0.24](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.23...v1.0.24) (2022-02-11)
 
 
