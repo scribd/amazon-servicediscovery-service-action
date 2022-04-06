@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.28...v1.0.29) (2022-04-06)
+
+
+### Bug Fixes
+
+* **deps:** bump yaml from 1.10.2 to 2.0.0 ([f65891c](https://github.com/scribd/amazon-servicediscovery-service-action/commit/f65891cafe8221ec04b5b44dbc6f9763ce7b44b0))
+
 ## [1.0.28](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.27...v1.0.28) (2022-03-30)
 
 
