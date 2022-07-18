@@ -811,6 +811,13 @@ Object.defineProperty(exports, "summary", ({ enumerable: true, get: function () 
  */
 var summary_2 = __nccwpck_require__(1327);
 Object.defineProperty(exports, "markdownSummary", ({ enumerable: true, get: function () { return summary_2.markdownSummary; } }));
+/**
+ * Path exports
+ */
+var path_utils_1 = __nccwpck_require__(2981);
+Object.defineProperty(exports, "toPosixPath", ({ enumerable: true, get: function () { return path_utils_1.toPosixPath; } }));
+Object.defineProperty(exports, "toWin32Path", ({ enumerable: true, get: function () { return path_utils_1.toWin32Path; } }));
+Object.defineProperty(exports, "toPlatformPath", ({ enumerable: true, get: function () { return path_utils_1.toPlatformPath; } }));
 //# sourceMappingURL=core.js.map
 
 /***/ }),
@@ -945,6 +952,71 @@ class OidcClient {
 }
 exports.OidcClient = OidcClient;
 //# sourceMappingURL=oidc-utils.js.map
+
+/***/ }),
+
+/***/ 2981:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toPlatformPath = exports.toWin32Path = exports.toPosixPath = void 0;
+const path = __importStar(__nccwpck_require__(1017));
+/**
+ * toPosixPath converts the given path to the posix form. On Windows, \\ will be
+ * replaced with /.
+ *
+ * @param pth. Path to transform.
+ * @return string Posix path.
+ */
+function toPosixPath(pth) {
+    return pth.replace(/[\\]/g, '/');
+}
+exports.toPosixPath = toPosixPath;
+/**
+ * toWin32Path converts the given path to the win32 form. On Linux, / will be
+ * replaced with \\.
+ *
+ * @param pth. Path to transform.
+ * @return string Win32 path.
+ */
+function toWin32Path(pth) {
+    return pth.replace(/[/]/g, '\\');
+}
+exports.toWin32Path = toWin32Path;
+/**
+ * toPlatformPath converts the given path to a platform-specific path. It does
+ * this by replacing instances of / and \ with the platform-specific path
+ * separator.
+ *
+ * @param pth The path to platformize.
+ * @return string The platform-specific path.
+ */
+function toPlatformPath(pth) {
+    return pth.replace(/[/\\]/g, path.sep);
+}
+exports.toPlatformPath = toPlatformPath;
+//# sourceMappingURL=path-utils.js.map
 
 /***/ }),
 
@@ -5319,8 +5391,7 @@ const deserializeAws_json1_1CreateHttpNamespaceCommandError = async (output, con
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -5339,10 +5410,12 @@ const deserializeAws_json1_1CreateHttpNamespaceCommandError = async (output, con
             throw await deserializeAws_json1_1TooManyTagsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5367,8 +5440,7 @@ const deserializeAws_json1_1CreatePrivateDnsNamespaceCommandError = async (outpu
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -5387,10 +5459,12 @@ const deserializeAws_json1_1CreatePrivateDnsNamespaceCommandError = async (outpu
             throw await deserializeAws_json1_1TooManyTagsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5415,8 +5489,7 @@ const deserializeAws_json1_1CreatePublicDnsNamespaceCommandError = async (output
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -5435,10 +5508,12 @@ const deserializeAws_json1_1CreatePublicDnsNamespaceCommandError = async (output
             throw await deserializeAws_json1_1TooManyTagsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5463,8 +5538,7 @@ const deserializeAws_json1_1CreateServiceCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5483,10 +5557,12 @@ const deserializeAws_json1_1CreateServiceCommandError = async (output, context) 
             throw await deserializeAws_json1_1TooManyTagsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5511,8 +5587,7 @@ const deserializeAws_json1_1DeleteNamespaceCommandError = async (output, context
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -5528,10 +5603,12 @@ const deserializeAws_json1_1DeleteNamespaceCommandError = async (output, context
             throw await deserializeAws_json1_1ResourceInUseResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5556,8 +5633,7 @@ const deserializeAws_json1_1DeleteServiceCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5570,10 +5646,12 @@ const deserializeAws_json1_1DeleteServiceCommandError = async (output, context) 
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5598,8 +5676,7 @@ const deserializeAws_json1_1DeregisterInstanceCommandError = async (output, cont
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -5618,10 +5695,12 @@ const deserializeAws_json1_1DeregisterInstanceCommandError = async (output, cont
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5646,8 +5725,7 @@ const deserializeAws_json1_1DiscoverInstancesCommandError = async (output, conte
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5663,10 +5741,12 @@ const deserializeAws_json1_1DiscoverInstancesCommandError = async (output, conte
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5691,8 +5771,7 @@ const deserializeAws_json1_1GetInstanceCommandError = async (output, context) =>
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InstanceNotFound":
         case "com.amazonaws.servicediscovery#InstanceNotFound":
@@ -5705,10 +5784,12 @@ const deserializeAws_json1_1GetInstanceCommandError = async (output, context) =>
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5733,8 +5814,7 @@ const deserializeAws_json1_1GetInstancesHealthStatusCommandError = async (output
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InstanceNotFound":
         case "com.amazonaws.servicediscovery#InstanceNotFound":
@@ -5747,10 +5827,12 @@ const deserializeAws_json1_1GetInstancesHealthStatusCommandError = async (output
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5775,8 +5857,7 @@ const deserializeAws_json1_1GetNamespaceCommandError = async (output, context) =
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5786,10 +5867,12 @@ const deserializeAws_json1_1GetNamespaceCommandError = async (output, context) =
             throw await deserializeAws_json1_1NamespaceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5814,8 +5897,7 @@ const deserializeAws_json1_1GetOperationCommandError = async (output, context) =
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5825,10 +5907,12 @@ const deserializeAws_json1_1GetOperationCommandError = async (output, context) =
             throw await deserializeAws_json1_1OperationNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5853,8 +5937,7 @@ const deserializeAws_json1_1GetServiceCommandError = async (output, context) => 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5864,10 +5947,12 @@ const deserializeAws_json1_1GetServiceCommandError = async (output, context) => 
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5892,8 +5977,7 @@ const deserializeAws_json1_1ListInstancesCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -5903,10 +5987,12 @@ const deserializeAws_json1_1ListInstancesCommandError = async (output, context) 
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5931,18 +6017,19 @@ const deserializeAws_json1_1ListNamespacesCommandError = async (output, context)
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
             throw await deserializeAws_json1_1InvalidInputResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -5967,18 +6054,19 @@ const deserializeAws_json1_1ListOperationsCommandError = async (output, context)
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
             throw await deserializeAws_json1_1InvalidInputResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6003,18 +6091,19 @@ const deserializeAws_json1_1ListServicesCommandError = async (output, context) =
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
             throw await deserializeAws_json1_1InvalidInputResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6039,8 +6128,7 @@ const deserializeAws_json1_1ListTagsForResourceCommandError = async (output, con
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -6050,10 +6138,12 @@ const deserializeAws_json1_1ListTagsForResourceCommandError = async (output, con
             throw await deserializeAws_json1_1ResourceNotFoundExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6078,8 +6168,7 @@ const deserializeAws_json1_1RegisterInstanceCommandError = async (output, contex
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -6098,10 +6187,12 @@ const deserializeAws_json1_1RegisterInstanceCommandError = async (output, contex
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6126,8 +6217,7 @@ const deserializeAws_json1_1TagResourceCommandError = async (output, context) =>
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -6140,10 +6230,12 @@ const deserializeAws_json1_1TagResourceCommandError = async (output, context) =>
             throw await deserializeAws_json1_1TooManyTagsExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6168,8 +6260,7 @@ const deserializeAws_json1_1UntagResourceCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidInput":
         case "com.amazonaws.servicediscovery#InvalidInput":
@@ -6179,10 +6270,12 @@ const deserializeAws_json1_1UntagResourceCommandError = async (output, context) 
             throw await deserializeAws_json1_1ResourceNotFoundExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6207,8 +6300,7 @@ const deserializeAws_json1_1UpdateHttpNamespaceCommandError = async (output, con
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -6224,10 +6316,12 @@ const deserializeAws_json1_1UpdateHttpNamespaceCommandError = async (output, con
             throw await deserializeAws_json1_1ResourceInUseResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6249,8 +6343,7 @@ const deserializeAws_json1_1UpdateInstanceCustomHealthStatusCommandError = async
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "CustomHealthNotFound":
         case "com.amazonaws.servicediscovery#CustomHealthNotFound":
@@ -6266,10 +6359,12 @@ const deserializeAws_json1_1UpdateInstanceCustomHealthStatusCommandError = async
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6294,8 +6389,7 @@ const deserializeAws_json1_1UpdatePrivateDnsNamespaceCommandError = async (outpu
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -6311,10 +6405,12 @@ const deserializeAws_json1_1UpdatePrivateDnsNamespaceCommandError = async (outpu
             throw await deserializeAws_json1_1ResourceInUseResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6339,8 +6435,7 @@ const deserializeAws_json1_1UpdatePublicDnsNamespaceCommandError = async (output
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -6356,10 +6451,12 @@ const deserializeAws_json1_1UpdatePublicDnsNamespaceCommandError = async (output
             throw await deserializeAws_json1_1ResourceInUseResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6384,8 +6481,7 @@ const deserializeAws_json1_1UpdateServiceCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "DuplicateRequest":
         case "com.amazonaws.servicediscovery#DuplicateRequest":
@@ -6398,10 +6494,12 @@ const deserializeAws_json1_1UpdateServiceCommandError = async (output, context) 
             throw await deserializeAws_json1_1ServiceNotFoundResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -6547,109 +6645,100 @@ const serializeAws_json1_1CreateHttpNamespaceRequest = (input, context) => {
     var _a;
     return {
         CreatorRequestId: (_a = input.CreatorRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
     };
 };
 const serializeAws_json1_1CreatePrivateDnsNamespaceRequest = (input, context) => {
     var _a;
     return {
         CreatorRequestId: (_a = input.CreatorRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Properties !== undefined &&
-            input.Properties !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Properties != null && {
             Properties: serializeAws_json1_1PrivateDnsNamespaceProperties(input.Properties, context),
         }),
-        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
-        ...(input.Vpc !== undefined && input.Vpc !== null && { Vpc: input.Vpc }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
+        ...(input.Vpc != null && { Vpc: input.Vpc }),
     };
 };
 const serializeAws_json1_1CreatePublicDnsNamespaceRequest = (input, context) => {
     var _a;
     return {
         CreatorRequestId: (_a = input.CreatorRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Properties !== undefined &&
-            input.Properties !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Properties != null && {
             Properties: serializeAws_json1_1PublicDnsNamespaceProperties(input.Properties, context),
         }),
-        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
     };
 };
 const serializeAws_json1_1CreateServiceRequest = (input, context) => {
     var _a;
     return {
         CreatorRequestId: (_a = input.CreatorRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.DnsConfig !== undefined &&
-            input.DnsConfig !== null && { DnsConfig: serializeAws_json1_1DnsConfig(input.DnsConfig, context) }),
-        ...(input.HealthCheckConfig !== undefined &&
-            input.HealthCheckConfig !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.DnsConfig != null && { DnsConfig: serializeAws_json1_1DnsConfig(input.DnsConfig, context) }),
+        ...(input.HealthCheckConfig != null && {
             HealthCheckConfig: serializeAws_json1_1HealthCheckConfig(input.HealthCheckConfig, context),
         }),
-        ...(input.HealthCheckCustomConfig !== undefined &&
-            input.HealthCheckCustomConfig !== null && {
+        ...(input.HealthCheckCustomConfig != null && {
             HealthCheckCustomConfig: serializeAws_json1_1HealthCheckCustomConfig(input.HealthCheckCustomConfig, context),
         }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.NamespaceId !== undefined && input.NamespaceId !== null && { NamespaceId: input.NamespaceId }),
-        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
-        ...(input.Type !== undefined && input.Type !== null && { Type: input.Type }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.NamespaceId != null && { NamespaceId: input.NamespaceId }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
+        ...(input.Type != null && { Type: input.Type }),
     };
 };
 const serializeAws_json1_1DeleteNamespaceRequest = (input, context) => {
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
+        ...(input.Id != null && { Id: input.Id }),
     };
 };
 const serializeAws_json1_1DeleteServiceRequest = (input, context) => {
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
+        ...(input.Id != null && { Id: input.Id }),
     };
 };
 const serializeAws_json1_1DeregisterInstanceRequest = (input, context) => {
     return {
-        ...(input.InstanceId !== undefined && input.InstanceId !== null && { InstanceId: input.InstanceId }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
+        ...(input.InstanceId != null && { InstanceId: input.InstanceId }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
     };
 };
 const serializeAws_json1_1DiscoverInstancesRequest = (input, context) => {
     return {
-        ...(input.HealthStatus !== undefined && input.HealthStatus !== null && { HealthStatus: input.HealthStatus }),
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NamespaceName !== undefined && input.NamespaceName !== null && { NamespaceName: input.NamespaceName }),
-        ...(input.OptionalParameters !== undefined &&
-            input.OptionalParameters !== null && {
+        ...(input.HealthStatus != null && { HealthStatus: input.HealthStatus }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NamespaceName != null && { NamespaceName: input.NamespaceName }),
+        ...(input.OptionalParameters != null && {
             OptionalParameters: serializeAws_json1_1Attributes(input.OptionalParameters, context),
         }),
-        ...(input.QueryParameters !== undefined &&
-            input.QueryParameters !== null && {
+        ...(input.QueryParameters != null && {
             QueryParameters: serializeAws_json1_1Attributes(input.QueryParameters, context),
         }),
-        ...(input.ServiceName !== undefined && input.ServiceName !== null && { ServiceName: input.ServiceName }),
+        ...(input.ServiceName != null && { ServiceName: input.ServiceName }),
     };
 };
 const serializeAws_json1_1DnsConfig = (input, context) => {
     return {
-        ...(input.DnsRecords !== undefined &&
-            input.DnsRecords !== null && { DnsRecords: serializeAws_json1_1DnsRecordList(input.DnsRecords, context) }),
-        ...(input.NamespaceId !== undefined && input.NamespaceId !== null && { NamespaceId: input.NamespaceId }),
-        ...(input.RoutingPolicy !== undefined && input.RoutingPolicy !== null && { RoutingPolicy: input.RoutingPolicy }),
+        ...(input.DnsRecords != null && { DnsRecords: serializeAws_json1_1DnsRecordList(input.DnsRecords, context) }),
+        ...(input.NamespaceId != null && { NamespaceId: input.NamespaceId }),
+        ...(input.RoutingPolicy != null && { RoutingPolicy: input.RoutingPolicy }),
     };
 };
 const serializeAws_json1_1DnsConfigChange = (input, context) => {
     return {
-        ...(input.DnsRecords !== undefined &&
-            input.DnsRecords !== null && { DnsRecords: serializeAws_json1_1DnsRecordList(input.DnsRecords, context) }),
+        ...(input.DnsRecords != null && { DnsRecords: serializeAws_json1_1DnsRecordList(input.DnsRecords, context) }),
     };
 };
 const serializeAws_json1_1DnsRecord = (input, context) => {
     return {
-        ...(input.TTL !== undefined && input.TTL !== null && { TTL: input.TTL }),
-        ...(input.Type !== undefined && input.Type !== null && { Type: input.Type }),
+        ...(input.TTL != null && { TTL: input.TTL }),
+        ...(input.Type != null && { Type: input.Type }),
     };
 };
 const serializeAws_json1_1DnsRecordList = (input, context) => {
@@ -6674,51 +6763,48 @@ const serializeAws_json1_1FilterValues = (input, context) => {
 };
 const serializeAws_json1_1GetInstanceRequest = (input, context) => {
     return {
-        ...(input.InstanceId !== undefined && input.InstanceId !== null && { InstanceId: input.InstanceId }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
+        ...(input.InstanceId != null && { InstanceId: input.InstanceId }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
     };
 };
 const serializeAws_json1_1GetInstancesHealthStatusRequest = (input, context) => {
     return {
-        ...(input.Instances !== undefined &&
-            input.Instances !== null && { Instances: serializeAws_json1_1InstanceIdList(input.Instances, context) }),
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken !== undefined && input.NextToken !== null && { NextToken: input.NextToken }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
+        ...(input.Instances != null && { Instances: serializeAws_json1_1InstanceIdList(input.Instances, context) }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
     };
 };
 const serializeAws_json1_1GetNamespaceRequest = (input, context) => {
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
+        ...(input.Id != null && { Id: input.Id }),
     };
 };
 const serializeAws_json1_1GetOperationRequest = (input, context) => {
     return {
-        ...(input.OperationId !== undefined && input.OperationId !== null && { OperationId: input.OperationId }),
+        ...(input.OperationId != null && { OperationId: input.OperationId }),
     };
 };
 const serializeAws_json1_1GetServiceRequest = (input, context) => {
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
+        ...(input.Id != null && { Id: input.Id }),
     };
 };
 const serializeAws_json1_1HealthCheckConfig = (input, context) => {
     return {
-        ...(input.FailureThreshold !== undefined &&
-            input.FailureThreshold !== null && { FailureThreshold: input.FailureThreshold }),
-        ...(input.ResourcePath !== undefined && input.ResourcePath !== null && { ResourcePath: input.ResourcePath }),
-        ...(input.Type !== undefined && input.Type !== null && { Type: input.Type }),
+        ...(input.FailureThreshold != null && { FailureThreshold: input.FailureThreshold }),
+        ...(input.ResourcePath != null && { ResourcePath: input.ResourcePath }),
+        ...(input.Type != null && { Type: input.Type }),
     };
 };
 const serializeAws_json1_1HealthCheckCustomConfig = (input, context) => {
     return {
-        ...(input.FailureThreshold !== undefined &&
-            input.FailureThreshold !== null && { FailureThreshold: input.FailureThreshold }),
+        ...(input.FailureThreshold != null && { FailureThreshold: input.FailureThreshold }),
     };
 };
 const serializeAws_json1_1HttpNamespaceChange = (input, context) => {
     return {
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
+        ...(input.Description != null && { Description: input.Description }),
     };
 };
 const serializeAws_json1_1InstanceIdList = (input, context) => {
@@ -6733,46 +6819,42 @@ const serializeAws_json1_1InstanceIdList = (input, context) => {
 };
 const serializeAws_json1_1ListInstancesRequest = (input, context) => {
     return {
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken !== undefined && input.NextToken !== null && { NextToken: input.NextToken }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
     };
 };
 const serializeAws_json1_1ListNamespacesRequest = (input, context) => {
     return {
-        ...(input.Filters !== undefined &&
-            input.Filters !== null && { Filters: serializeAws_json1_1NamespaceFilters(input.Filters, context) }),
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken !== undefined && input.NextToken !== null && { NextToken: input.NextToken }),
+        ...(input.Filters != null && { Filters: serializeAws_json1_1NamespaceFilters(input.Filters, context) }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
     };
 };
 const serializeAws_json1_1ListOperationsRequest = (input, context) => {
     return {
-        ...(input.Filters !== undefined &&
-            input.Filters !== null && { Filters: serializeAws_json1_1OperationFilters(input.Filters, context) }),
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken !== undefined && input.NextToken !== null && { NextToken: input.NextToken }),
+        ...(input.Filters != null && { Filters: serializeAws_json1_1OperationFilters(input.Filters, context) }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
     };
 };
 const serializeAws_json1_1ListServicesRequest = (input, context) => {
     return {
-        ...(input.Filters !== undefined &&
-            input.Filters !== null && { Filters: serializeAws_json1_1ServiceFilters(input.Filters, context) }),
-        ...(input.MaxResults !== undefined && input.MaxResults !== null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken !== undefined && input.NextToken !== null && { NextToken: input.NextToken }),
+        ...(input.Filters != null && { Filters: serializeAws_json1_1ServiceFilters(input.Filters, context) }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
     };
 };
 const serializeAws_json1_1ListTagsForResourceRequest = (input, context) => {
     return {
-        ...(input.ResourceARN !== undefined && input.ResourceARN !== null && { ResourceARN: input.ResourceARN }),
+        ...(input.ResourceARN != null && { ResourceARN: input.ResourceARN }),
     };
 };
 const serializeAws_json1_1NamespaceFilter = (input, context) => {
     return {
-        ...(input.Condition !== undefined && input.Condition !== null && { Condition: input.Condition }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Values !== undefined &&
-            input.Values !== null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
+        ...(input.Condition != null && { Condition: input.Condition }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Values != null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
     };
 };
 const serializeAws_json1_1NamespaceFilters = (input, context) => {
@@ -6787,10 +6869,9 @@ const serializeAws_json1_1NamespaceFilters = (input, context) => {
 };
 const serializeAws_json1_1OperationFilter = (input, context) => {
     return {
-        ...(input.Condition !== undefined && input.Condition !== null && { Condition: input.Condition }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Values !== undefined &&
-            input.Values !== null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
+        ...(input.Condition != null && { Condition: input.Condition }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Values != null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
     };
 };
 const serializeAws_json1_1OperationFilters = (input, context) => {
@@ -6805,101 +6886,91 @@ const serializeAws_json1_1OperationFilters = (input, context) => {
 };
 const serializeAws_json1_1PrivateDnsNamespaceChange = (input, context) => {
     return {
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.Properties !== undefined &&
-            input.Properties !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.Properties != null && {
             Properties: serializeAws_json1_1PrivateDnsNamespacePropertiesChange(input.Properties, context),
         }),
     };
 };
 const serializeAws_json1_1PrivateDnsNamespaceProperties = (input, context) => {
     return {
-        ...(input.DnsProperties !== undefined &&
-            input.DnsProperties !== null && {
+        ...(input.DnsProperties != null && {
             DnsProperties: serializeAws_json1_1PrivateDnsPropertiesMutable(input.DnsProperties, context),
         }),
     };
 };
 const serializeAws_json1_1PrivateDnsNamespacePropertiesChange = (input, context) => {
     return {
-        ...(input.DnsProperties !== undefined &&
-            input.DnsProperties !== null && {
+        ...(input.DnsProperties != null && {
             DnsProperties: serializeAws_json1_1PrivateDnsPropertiesMutableChange(input.DnsProperties, context),
         }),
     };
 };
 const serializeAws_json1_1PrivateDnsPropertiesMutable = (input, context) => {
     return {
-        ...(input.SOA !== undefined && input.SOA !== null && { SOA: serializeAws_json1_1SOA(input.SOA, context) }),
+        ...(input.SOA != null && { SOA: serializeAws_json1_1SOA(input.SOA, context) }),
     };
 };
 const serializeAws_json1_1PrivateDnsPropertiesMutableChange = (input, context) => {
     return {
-        ...(input.SOA !== undefined && input.SOA !== null && { SOA: serializeAws_json1_1SOAChange(input.SOA, context) }),
+        ...(input.SOA != null && { SOA: serializeAws_json1_1SOAChange(input.SOA, context) }),
     };
 };
 const serializeAws_json1_1PublicDnsNamespaceChange = (input, context) => {
     return {
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.Properties !== undefined &&
-            input.Properties !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.Properties != null && {
             Properties: serializeAws_json1_1PublicDnsNamespacePropertiesChange(input.Properties, context),
         }),
     };
 };
 const serializeAws_json1_1PublicDnsNamespaceProperties = (input, context) => {
     return {
-        ...(input.DnsProperties !== undefined &&
-            input.DnsProperties !== null && {
+        ...(input.DnsProperties != null && {
             DnsProperties: serializeAws_json1_1PublicDnsPropertiesMutable(input.DnsProperties, context),
         }),
     };
 };
 const serializeAws_json1_1PublicDnsNamespacePropertiesChange = (input, context) => {
     return {
-        ...(input.DnsProperties !== undefined &&
-            input.DnsProperties !== null && {
+        ...(input.DnsProperties != null && {
             DnsProperties: serializeAws_json1_1PublicDnsPropertiesMutableChange(input.DnsProperties, context),
         }),
     };
 };
 const serializeAws_json1_1PublicDnsPropertiesMutable = (input, context) => {
     return {
-        ...(input.SOA !== undefined && input.SOA !== null && { SOA: serializeAws_json1_1SOA(input.SOA, context) }),
+        ...(input.SOA != null && { SOA: serializeAws_json1_1SOA(input.SOA, context) }),
     };
 };
 const serializeAws_json1_1PublicDnsPropertiesMutableChange = (input, context) => {
     return {
-        ...(input.SOA !== undefined && input.SOA !== null && { SOA: serializeAws_json1_1SOAChange(input.SOA, context) }),
+        ...(input.SOA != null && { SOA: serializeAws_json1_1SOAChange(input.SOA, context) }),
     };
 };
 const serializeAws_json1_1RegisterInstanceRequest = (input, context) => {
     var _a;
     return {
-        ...(input.Attributes !== undefined &&
-            input.Attributes !== null && { Attributes: serializeAws_json1_1Attributes(input.Attributes, context) }),
+        ...(input.Attributes != null && { Attributes: serializeAws_json1_1Attributes(input.Attributes, context) }),
         CreatorRequestId: (_a = input.CreatorRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
-        ...(input.InstanceId !== undefined && input.InstanceId !== null && { InstanceId: input.InstanceId }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
+        ...(input.InstanceId != null && { InstanceId: input.InstanceId }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
     };
 };
 const serializeAws_json1_1ServiceChange = (input, context) => {
     return {
-        ...(input.Description !== undefined && input.Description !== null && { Description: input.Description }),
-        ...(input.DnsConfig !== undefined &&
-            input.DnsConfig !== null && { DnsConfig: serializeAws_json1_1DnsConfigChange(input.DnsConfig, context) }),
-        ...(input.HealthCheckConfig !== undefined &&
-            input.HealthCheckConfig !== null && {
+        ...(input.Description != null && { Description: input.Description }),
+        ...(input.DnsConfig != null && { DnsConfig: serializeAws_json1_1DnsConfigChange(input.DnsConfig, context) }),
+        ...(input.HealthCheckConfig != null && {
             HealthCheckConfig: serializeAws_json1_1HealthCheckConfig(input.HealthCheckConfig, context),
         }),
     };
 };
 const serializeAws_json1_1ServiceFilter = (input, context) => {
     return {
-        ...(input.Condition !== undefined && input.Condition !== null && { Condition: input.Condition }),
-        ...(input.Name !== undefined && input.Name !== null && { Name: input.Name }),
-        ...(input.Values !== undefined &&
-            input.Values !== null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
+        ...(input.Condition != null && { Condition: input.Condition }),
+        ...(input.Name != null && { Name: input.Name }),
+        ...(input.Values != null && { Values: serializeAws_json1_1FilterValues(input.Values, context) }),
     };
 };
 const serializeAws_json1_1ServiceFilters = (input, context) => {
@@ -6914,18 +6985,18 @@ const serializeAws_json1_1ServiceFilters = (input, context) => {
 };
 const serializeAws_json1_1SOA = (input, context) => {
     return {
-        ...(input.TTL !== undefined && input.TTL !== null && { TTL: input.TTL }),
+        ...(input.TTL != null && { TTL: input.TTL }),
     };
 };
 const serializeAws_json1_1SOAChange = (input, context) => {
     return {
-        ...(input.TTL !== undefined && input.TTL !== null && { TTL: input.TTL }),
+        ...(input.TTL != null && { TTL: input.TTL }),
     };
 };
 const serializeAws_json1_1Tag = (input, context) => {
     return {
-        ...(input.Key !== undefined && input.Key !== null && { Key: input.Key }),
-        ...(input.Value !== undefined && input.Value !== null && { Value: input.Value }),
+        ...(input.Key != null && { Key: input.Key }),
+        ...(input.Value != null && { Value: input.Value }),
     };
 };
 const serializeAws_json1_1TagKeyList = (input, context) => {
@@ -6950,39 +7021,36 @@ const serializeAws_json1_1TagList = (input, context) => {
 };
 const serializeAws_json1_1TagResourceRequest = (input, context) => {
     return {
-        ...(input.ResourceARN !== undefined && input.ResourceARN !== null && { ResourceARN: input.ResourceARN }),
-        ...(input.Tags !== undefined && input.Tags !== null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
+        ...(input.ResourceARN != null && { ResourceARN: input.ResourceARN }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_1TagList(input.Tags, context) }),
     };
 };
 const serializeAws_json1_1UntagResourceRequest = (input, context) => {
     return {
-        ...(input.ResourceARN !== undefined && input.ResourceARN !== null && { ResourceARN: input.ResourceARN }),
-        ...(input.TagKeys !== undefined &&
-            input.TagKeys !== null && { TagKeys: serializeAws_json1_1TagKeyList(input.TagKeys, context) }),
+        ...(input.ResourceARN != null && { ResourceARN: input.ResourceARN }),
+        ...(input.TagKeys != null && { TagKeys: serializeAws_json1_1TagKeyList(input.TagKeys, context) }),
     };
 };
 const serializeAws_json1_1UpdateHttpNamespaceRequest = (input, context) => {
     var _a;
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
-        ...(input.Namespace !== undefined &&
-            input.Namespace !== null && { Namespace: serializeAws_json1_1HttpNamespaceChange(input.Namespace, context) }),
+        ...(input.Id != null && { Id: input.Id }),
+        ...(input.Namespace != null && { Namespace: serializeAws_json1_1HttpNamespaceChange(input.Namespace, context) }),
         UpdaterRequestId: (_a = input.UpdaterRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
     };
 };
 const serializeAws_json1_1UpdateInstanceCustomHealthStatusRequest = (input, context) => {
     return {
-        ...(input.InstanceId !== undefined && input.InstanceId !== null && { InstanceId: input.InstanceId }),
-        ...(input.ServiceId !== undefined && input.ServiceId !== null && { ServiceId: input.ServiceId }),
-        ...(input.Status !== undefined && input.Status !== null && { Status: input.Status }),
+        ...(input.InstanceId != null && { InstanceId: input.InstanceId }),
+        ...(input.ServiceId != null && { ServiceId: input.ServiceId }),
+        ...(input.Status != null && { Status: input.Status }),
     };
 };
 const serializeAws_json1_1UpdatePrivateDnsNamespaceRequest = (input, context) => {
     var _a;
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
-        ...(input.Namespace !== undefined &&
-            input.Namespace !== null && {
+        ...(input.Id != null && { Id: input.Id }),
+        ...(input.Namespace != null && {
             Namespace: serializeAws_json1_1PrivateDnsNamespaceChange(input.Namespace, context),
         }),
         UpdaterRequestId: (_a = input.UpdaterRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
@@ -6991,9 +7059,8 @@ const serializeAws_json1_1UpdatePrivateDnsNamespaceRequest = (input, context) =>
 const serializeAws_json1_1UpdatePublicDnsNamespaceRequest = (input, context) => {
     var _a;
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
-        ...(input.Namespace !== undefined &&
-            input.Namespace !== null && {
+        ...(input.Id != null && { Id: input.Id }),
+        ...(input.Namespace != null && {
             Namespace: serializeAws_json1_1PublicDnsNamespaceChange(input.Namespace, context),
         }),
         UpdaterRequestId: (_a = input.UpdaterRequestId) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
@@ -7001,9 +7068,8 @@ const serializeAws_json1_1UpdatePublicDnsNamespaceRequest = (input, context) => 
 };
 const serializeAws_json1_1UpdateServiceRequest = (input, context) => {
     return {
-        ...(input.Id !== undefined && input.Id !== null && { Id: input.Id }),
-        ...(input.Service !== undefined &&
-            input.Service !== null && { Service: serializeAws_json1_1ServiceChange(input.Service, context) }),
+        ...(input.Id != null && { Id: input.Id }),
+        ...(input.Service != null && { Service: serializeAws_json1_1ServiceChange(input.Service, context) }),
     };
 };
 const deserializeAws_json1_1Attributes = (output, context) => {
@@ -7034,9 +7100,7 @@ const deserializeAws_json1_1CreatePublicDnsNamespaceResponse = (output, context)
 };
 const deserializeAws_json1_1CreateServiceResponse = (output, context) => {
     return {
-        Service: output.Service !== undefined && output.Service !== null
-            ? deserializeAws_json1_1Service(output.Service, context)
-            : undefined,
+        Service: output.Service != null ? deserializeAws_json1_1Service(output.Service, context) : undefined,
     };
 };
 const deserializeAws_json1_1CustomHealthNotFound = (output, context) => {
@@ -7059,16 +7123,12 @@ const deserializeAws_json1_1DeregisterInstanceResponse = (output, context) => {
 };
 const deserializeAws_json1_1DiscoverInstancesResponse = (output, context) => {
     return {
-        Instances: output.Instances !== undefined && output.Instances !== null
-            ? deserializeAws_json1_1HttpInstanceSummaryList(output.Instances, context)
-            : undefined,
+        Instances: output.Instances != null ? deserializeAws_json1_1HttpInstanceSummaryList(output.Instances, context) : undefined,
     };
 };
 const deserializeAws_json1_1DnsConfig = (output, context) => {
     return {
-        DnsRecords: output.DnsRecords !== undefined && output.DnsRecords !== null
-            ? deserializeAws_json1_1DnsRecordList(output.DnsRecords, context)
-            : undefined,
+        DnsRecords: output.DnsRecords != null ? deserializeAws_json1_1DnsRecordList(output.DnsRecords, context) : undefined,
         NamespaceId: (0, smithy_client_1.expectString)(output.NamespaceId),
         RoutingPolicy: (0, smithy_client_1.expectString)(output.RoutingPolicy),
     };
@@ -7076,7 +7136,7 @@ const deserializeAws_json1_1DnsConfig = (output, context) => {
 const deserializeAws_json1_1DnsProperties = (output, context) => {
     return {
         HostedZoneId: (0, smithy_client_1.expectString)(output.HostedZoneId),
-        SOA: output.SOA !== undefined && output.SOA !== null ? deserializeAws_json1_1SOA(output.SOA, context) : undefined,
+        SOA: output.SOA != null ? deserializeAws_json1_1SOA(output.SOA, context) : undefined,
     };
 };
 const deserializeAws_json1_1DnsRecord = (output, context) => {
@@ -7104,38 +7164,28 @@ const deserializeAws_json1_1DuplicateRequest = (output, context) => {
 };
 const deserializeAws_json1_1GetInstanceResponse = (output, context) => {
     return {
-        Instance: output.Instance !== undefined && output.Instance !== null
-            ? deserializeAws_json1_1Instance(output.Instance, context)
-            : undefined,
+        Instance: output.Instance != null ? deserializeAws_json1_1Instance(output.Instance, context) : undefined,
     };
 };
 const deserializeAws_json1_1GetInstancesHealthStatusResponse = (output, context) => {
     return {
         NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        Status: output.Status !== undefined && output.Status !== null
-            ? deserializeAws_json1_1InstanceHealthStatusMap(output.Status, context)
-            : undefined,
+        Status: output.Status != null ? deserializeAws_json1_1InstanceHealthStatusMap(output.Status, context) : undefined,
     };
 };
 const deserializeAws_json1_1GetNamespaceResponse = (output, context) => {
     return {
-        Namespace: output.Namespace !== undefined && output.Namespace !== null
-            ? deserializeAws_json1_1Namespace(output.Namespace, context)
-            : undefined,
+        Namespace: output.Namespace != null ? deserializeAws_json1_1Namespace(output.Namespace, context) : undefined,
     };
 };
 const deserializeAws_json1_1GetOperationResponse = (output, context) => {
     return {
-        Operation: output.Operation !== undefined && output.Operation !== null
-            ? deserializeAws_json1_1Operation(output.Operation, context)
-            : undefined,
+        Operation: output.Operation != null ? deserializeAws_json1_1Operation(output.Operation, context) : undefined,
     };
 };
 const deserializeAws_json1_1GetServiceResponse = (output, context) => {
     return {
-        Service: output.Service !== undefined && output.Service !== null
-            ? deserializeAws_json1_1Service(output.Service, context)
-            : undefined,
+        Service: output.Service != null ? deserializeAws_json1_1Service(output.Service, context) : undefined,
     };
 };
 const deserializeAws_json1_1HealthCheckConfig = (output, context) => {
@@ -7152,9 +7202,7 @@ const deserializeAws_json1_1HealthCheckCustomConfig = (output, context) => {
 };
 const deserializeAws_json1_1HttpInstanceSummary = (output, context) => {
     return {
-        Attributes: output.Attributes !== undefined && output.Attributes !== null
-            ? deserializeAws_json1_1Attributes(output.Attributes, context)
-            : undefined,
+        Attributes: output.Attributes != null ? deserializeAws_json1_1Attributes(output.Attributes, context) : undefined,
         HealthStatus: (0, smithy_client_1.expectString)(output.HealthStatus),
         InstanceId: (0, smithy_client_1.expectString)(output.InstanceId),
         NamespaceName: (0, smithy_client_1.expectString)(output.NamespaceName),
@@ -7179,9 +7227,7 @@ const deserializeAws_json1_1HttpProperties = (output, context) => {
 };
 const deserializeAws_json1_1Instance = (output, context) => {
     return {
-        Attributes: output.Attributes !== undefined && output.Attributes !== null
-            ? deserializeAws_json1_1Attributes(output.Attributes, context)
-            : undefined,
+        Attributes: output.Attributes != null ? deserializeAws_json1_1Attributes(output.Attributes, context) : undefined,
         CreatorRequestId: (0, smithy_client_1.expectString)(output.CreatorRequestId),
         Id: (0, smithy_client_1.expectString)(output.Id),
     };
@@ -7204,9 +7250,7 @@ const deserializeAws_json1_1InstanceNotFound = (output, context) => {
 };
 const deserializeAws_json1_1InstanceSummary = (output, context) => {
     return {
-        Attributes: output.Attributes !== undefined && output.Attributes !== null
-            ? deserializeAws_json1_1Attributes(output.Attributes, context)
-            : undefined,
+        Attributes: output.Attributes != null ? deserializeAws_json1_1Attributes(output.Attributes, context) : undefined,
         Id: (0, smithy_client_1.expectString)(output.Id),
     };
 };
@@ -7228,56 +7272,42 @@ const deserializeAws_json1_1InvalidInput = (output, context) => {
 };
 const deserializeAws_json1_1ListInstancesResponse = (output, context) => {
     return {
-        Instances: output.Instances !== undefined && output.Instances !== null
-            ? deserializeAws_json1_1InstanceSummaryList(output.Instances, context)
-            : undefined,
+        Instances: output.Instances != null ? deserializeAws_json1_1InstanceSummaryList(output.Instances, context) : undefined,
         NextToken: (0, smithy_client_1.expectString)(output.NextToken),
     };
 };
 const deserializeAws_json1_1ListNamespacesResponse = (output, context) => {
     return {
-        Namespaces: output.Namespaces !== undefined && output.Namespaces !== null
-            ? deserializeAws_json1_1NamespaceSummariesList(output.Namespaces, context)
-            : undefined,
+        Namespaces: output.Namespaces != null ? deserializeAws_json1_1NamespaceSummariesList(output.Namespaces, context) : undefined,
         NextToken: (0, smithy_client_1.expectString)(output.NextToken),
     };
 };
 const deserializeAws_json1_1ListOperationsResponse = (output, context) => {
     return {
         NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        Operations: output.Operations !== undefined && output.Operations !== null
-            ? deserializeAws_json1_1OperationSummaryList(output.Operations, context)
-            : undefined,
+        Operations: output.Operations != null ? deserializeAws_json1_1OperationSummaryList(output.Operations, context) : undefined,
     };
 };
 const deserializeAws_json1_1ListServicesResponse = (output, context) => {
     return {
         NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        Services: output.Services !== undefined && output.Services !== null
-            ? deserializeAws_json1_1ServiceSummariesList(output.Services, context)
-            : undefined,
+        Services: output.Services != null ? deserializeAws_json1_1ServiceSummariesList(output.Services, context) : undefined,
     };
 };
 const deserializeAws_json1_1ListTagsForResourceResponse = (output, context) => {
     return {
-        Tags: output.Tags !== undefined && output.Tags !== null
-            ? deserializeAws_json1_1TagList(output.Tags, context)
-            : undefined,
+        Tags: output.Tags != null ? deserializeAws_json1_1TagList(output.Tags, context) : undefined,
     };
 };
 const deserializeAws_json1_1Namespace = (output, context) => {
     return {
         Arn: (0, smithy_client_1.expectString)(output.Arn),
-        CreateDate: output.CreateDate !== undefined && output.CreateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate)))
-            : undefined,
+        CreateDate: output.CreateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate))) : undefined,
         CreatorRequestId: (0, smithy_client_1.expectString)(output.CreatorRequestId),
         Description: (0, smithy_client_1.expectString)(output.Description),
         Id: (0, smithy_client_1.expectString)(output.Id),
         Name: (0, smithy_client_1.expectString)(output.Name),
-        Properties: output.Properties !== undefined && output.Properties !== null
-            ? deserializeAws_json1_1NamespaceProperties(output.Properties, context)
-            : undefined,
+        Properties: output.Properties != null ? deserializeAws_json1_1NamespaceProperties(output.Properties, context) : undefined,
         ServiceCount: (0, smithy_client_1.expectInt32)(output.ServiceCount),
         Type: (0, smithy_client_1.expectString)(output.Type),
     };
@@ -7296,12 +7326,8 @@ const deserializeAws_json1_1NamespaceNotFound = (output, context) => {
 };
 const deserializeAws_json1_1NamespaceProperties = (output, context) => {
     return {
-        DnsProperties: output.DnsProperties !== undefined && output.DnsProperties !== null
-            ? deserializeAws_json1_1DnsProperties(output.DnsProperties, context)
-            : undefined,
-        HttpProperties: output.HttpProperties !== undefined && output.HttpProperties !== null
-            ? deserializeAws_json1_1HttpProperties(output.HttpProperties, context)
-            : undefined,
+        DnsProperties: output.DnsProperties != null ? deserializeAws_json1_1DnsProperties(output.DnsProperties, context) : undefined,
+        HttpProperties: output.HttpProperties != null ? deserializeAws_json1_1HttpProperties(output.HttpProperties, context) : undefined,
     };
 };
 const deserializeAws_json1_1NamespaceSummariesList = (output, context) => {
@@ -7318,35 +7344,25 @@ const deserializeAws_json1_1NamespaceSummariesList = (output, context) => {
 const deserializeAws_json1_1NamespaceSummary = (output, context) => {
     return {
         Arn: (0, smithy_client_1.expectString)(output.Arn),
-        CreateDate: output.CreateDate !== undefined && output.CreateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate)))
-            : undefined,
+        CreateDate: output.CreateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate))) : undefined,
         Description: (0, smithy_client_1.expectString)(output.Description),
         Id: (0, smithy_client_1.expectString)(output.Id),
         Name: (0, smithy_client_1.expectString)(output.Name),
-        Properties: output.Properties !== undefined && output.Properties !== null
-            ? deserializeAws_json1_1NamespaceProperties(output.Properties, context)
-            : undefined,
+        Properties: output.Properties != null ? deserializeAws_json1_1NamespaceProperties(output.Properties, context) : undefined,
         ServiceCount: (0, smithy_client_1.expectInt32)(output.ServiceCount),
         Type: (0, smithy_client_1.expectString)(output.Type),
     };
 };
 const deserializeAws_json1_1Operation = (output, context) => {
     return {
-        CreateDate: output.CreateDate !== undefined && output.CreateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate)))
-            : undefined,
+        CreateDate: output.CreateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate))) : undefined,
         ErrorCode: (0, smithy_client_1.expectString)(output.ErrorCode),
         ErrorMessage: (0, smithy_client_1.expectString)(output.ErrorMessage),
         Id: (0, smithy_client_1.expectString)(output.Id),
         Status: (0, smithy_client_1.expectString)(output.Status),
-        Targets: output.Targets !== undefined && output.Targets !== null
-            ? deserializeAws_json1_1OperationTargetsMap(output.Targets, context)
-            : undefined,
+        Targets: output.Targets != null ? deserializeAws_json1_1OperationTargetsMap(output.Targets, context) : undefined,
         Type: (0, smithy_client_1.expectString)(output.Type),
-        UpdateDate: output.UpdateDate !== undefined && output.UpdateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdateDate)))
-            : undefined,
+        UpdateDate: output.UpdateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdateDate))) : undefined,
     };
 };
 const deserializeAws_json1_1OperationNotFound = (output, context) => {
@@ -7410,18 +7426,14 @@ const deserializeAws_json1_1ResourceNotFoundException = (output, context) => {
 const deserializeAws_json1_1Service = (output, context) => {
     return {
         Arn: (0, smithy_client_1.expectString)(output.Arn),
-        CreateDate: output.CreateDate !== undefined && output.CreateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate)))
-            : undefined,
+        CreateDate: output.CreateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate))) : undefined,
         CreatorRequestId: (0, smithy_client_1.expectString)(output.CreatorRequestId),
         Description: (0, smithy_client_1.expectString)(output.Description),
-        DnsConfig: output.DnsConfig !== undefined && output.DnsConfig !== null
-            ? deserializeAws_json1_1DnsConfig(output.DnsConfig, context)
-            : undefined,
-        HealthCheckConfig: output.HealthCheckConfig !== undefined && output.HealthCheckConfig !== null
+        DnsConfig: output.DnsConfig != null ? deserializeAws_json1_1DnsConfig(output.DnsConfig, context) : undefined,
+        HealthCheckConfig: output.HealthCheckConfig != null
             ? deserializeAws_json1_1HealthCheckConfig(output.HealthCheckConfig, context)
             : undefined,
-        HealthCheckCustomConfig: output.HealthCheckCustomConfig !== undefined && output.HealthCheckCustomConfig !== null
+        HealthCheckCustomConfig: output.HealthCheckCustomConfig != null
             ? deserializeAws_json1_1HealthCheckCustomConfig(output.HealthCheckCustomConfig, context)
             : undefined,
         Id: (0, smithy_client_1.expectString)(output.Id),
@@ -7457,17 +7469,13 @@ const deserializeAws_json1_1ServiceSummariesList = (output, context) => {
 const deserializeAws_json1_1ServiceSummary = (output, context) => {
     return {
         Arn: (0, smithy_client_1.expectString)(output.Arn),
-        CreateDate: output.CreateDate !== undefined && output.CreateDate !== null
-            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate)))
-            : undefined,
+        CreateDate: output.CreateDate != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreateDate))) : undefined,
         Description: (0, smithy_client_1.expectString)(output.Description),
-        DnsConfig: output.DnsConfig !== undefined && output.DnsConfig !== null
-            ? deserializeAws_json1_1DnsConfig(output.DnsConfig, context)
-            : undefined,
-        HealthCheckConfig: output.HealthCheckConfig !== undefined && output.HealthCheckConfig !== null
+        DnsConfig: output.DnsConfig != null ? deserializeAws_json1_1DnsConfig(output.DnsConfig, context) : undefined,
+        HealthCheckConfig: output.HealthCheckConfig != null
             ? deserializeAws_json1_1HealthCheckConfig(output.HealthCheckConfig, context)
             : undefined,
-        HealthCheckCustomConfig: output.HealthCheckCustomConfig !== undefined && output.HealthCheckCustomConfig !== null
+        HealthCheckCustomConfig: output.HealthCheckCustomConfig != null
             ? deserializeAws_json1_1HealthCheckCustomConfig(output.HealthCheckCustomConfig, context)
             : undefined,
         Id: (0, smithy_client_1.expectString)(output.Id),
@@ -7592,7 +7600,6 @@ const loadRestJsonErrorCode = (output, data) => {
     if (data["__type"] !== undefined) {
         return sanitizeErrorCode(data["__type"]);
     }
-    return "";
 };
 
 
@@ -8000,6 +8007,15 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultRegionInfoProvider = void 0;
 const config_resolver_1 = __nccwpck_require__(6153);
 const regionHash = {
+    "ap-east-1": {
+        variants: [
+            {
+                hostname: "portal.sso.ap-east-1.amazonaws.com",
+                tags: [],
+            },
+        ],
+        signingRegion: "ap-east-1",
+    },
     "ap-northeast-1": {
         variants: [
             {
@@ -8081,6 +8097,15 @@ const regionHash = {
         ],
         signingRegion: "eu-north-1",
     },
+    "eu-south-1": {
+        variants: [
+            {
+                hostname: "portal.sso.eu-south-1.amazonaws.com",
+                tags: [],
+            },
+        ],
+        signingRegion: "eu-south-1",
+    },
     "eu-west-1": {
         variants: [
             {
@@ -8107,6 +8132,15 @@ const regionHash = {
             },
         ],
         signingRegion: "eu-west-3",
+    },
+    "me-south-1": {
+        variants: [
+            {
+                hostname: "portal.sso.me-south-1.amazonaws.com",
+                tags: [],
+            },
+        ],
+        signingRegion: "me-south-1",
     },
     "sa-east-1": {
         variants: [
@@ -8707,8 +8741,7 @@ const deserializeAws_restJson1GetRoleCredentialsCommandError = async (output, co
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
@@ -8724,10 +8757,12 @@ const deserializeAws_restJson1GetRoleCredentialsCommandError = async (output, co
             throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new SSOServiceException_1.SSOServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -8757,8 +8792,7 @@ const deserializeAws_restJson1ListAccountRolesCommandError = async (output, cont
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
@@ -8774,10 +8808,12 @@ const deserializeAws_restJson1ListAccountRolesCommandError = async (output, cont
             throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new SSOServiceException_1.SSOServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -8807,8 +8843,7 @@ const deserializeAws_restJson1ListAccountsCommandError = async (output, context)
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
@@ -8824,10 +8859,12 @@ const deserializeAws_restJson1ListAccountsCommandError = async (output, context)
             throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new SSOServiceException_1.SSOServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -8849,8 +8886,7 @@ const deserializeAws_restJson1LogoutCommandError = async (output, context) => {
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidRequestException":
         case "com.amazonaws.sso#InvalidRequestException":
@@ -8863,10 +8899,12 @@ const deserializeAws_restJson1LogoutCommandError = async (output, context) => {
             throw await deserializeAws_restJson1UnauthorizedExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new SSOServiceException_1.SSOServiceException({
-                name: parsedBody.code || parsedBody.Code || errorCode,
+                name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody);
     }
@@ -9011,7 +9049,6 @@ const loadRestJsonErrorCode = (output, data) => {
     if (data["__type"] !== undefined) {
         return sanitizeErrorCode(data["__type"]);
     }
-    return "";
 };
 
 
@@ -10399,8 +10436,7 @@ const deserializeAws_queryAssumeRoleCommandError = async (output, context) => {
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
@@ -10416,10 +10452,12 @@ const deserializeAws_queryAssumeRoleCommandError = async (output, context) => {
             throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10444,8 +10482,7 @@ const deserializeAws_queryAssumeRoleWithSAMLCommandError = async (output, contex
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
@@ -10467,10 +10504,12 @@ const deserializeAws_queryAssumeRoleWithSAMLCommandError = async (output, contex
             throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10495,8 +10534,7 @@ const deserializeAws_queryAssumeRoleWithWebIdentityCommandError = async (output,
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "ExpiredTokenException":
         case "com.amazonaws.sts#ExpiredTokenException":
@@ -10521,10 +10559,12 @@ const deserializeAws_queryAssumeRoleWithWebIdentityCommandError = async (output,
             throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10549,18 +10589,19 @@ const deserializeAws_queryDecodeAuthorizationMessageCommandError = async (output
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "InvalidAuthorizationMessageException":
         case "com.amazonaws.sts#InvalidAuthorizationMessageException":
             throw await deserializeAws_queryInvalidAuthorizationMessageExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10585,15 +10626,16 @@ const deserializeAws_queryGetAccessKeyInfoCommandError = async (output, context)
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10618,15 +10660,16 @@ const deserializeAws_queryGetCallerIdentityCommandError = async (output, context
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10651,8 +10694,7 @@ const deserializeAws_queryGetFederationTokenCommandError = async (output, contex
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "MalformedPolicyDocumentException":
         case "com.amazonaws.sts#MalformedPolicyDocumentException":
@@ -10665,10 +10707,12 @@ const deserializeAws_queryGetFederationTokenCommandError = async (output, contex
             throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -10693,18 +10737,19 @@ const deserializeAws_queryGetSessionTokenCommandError = async (output, context) 
         body: await parseBody(output.body, context),
     };
     let response;
-    let errorCode = "UnknownError";
-    errorCode = loadQueryErrorCode(output, parsedOutput.body);
+    const errorCode = loadQueryErrorCode(output, parsedOutput.body);
     switch (errorCode) {
         case "RegionDisabledException":
         case "com.amazonaws.sts#RegionDisabledException":
             throw await deserializeAws_queryRegionDisabledExceptionResponse(parsedOutput, context);
         default:
             const parsedBody = parsedOutput.body;
+            const $metadata = deserializeMetadata(output);
+            const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
             response = new STSServiceException_1.STSServiceException({
-                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode,
+                name: parsedBody.Error.code || parsedBody.Error.Code || errorCode || statusCode || "UnknowError",
                 $fault: "client",
-                $metadata: deserializeMetadata(output),
+                $metadata,
             });
             throw (0, smithy_client_1.decorateServiceException)(response, parsedBody.Error);
     }
@@ -11341,7 +11386,6 @@ const loadQueryErrorCode = (output, data) => {
     if (output.statusCode == 404) {
         return "NotFound";
     }
-    return "";
 };
 
 
@@ -15574,19 +15618,26 @@ const parseIni = (iniData) => {
     const map = {};
     let currentSection;
     for (let line of iniData.split(/\r?\n/)) {
-        line = line.split(/(^|\s)[;#]/)[0];
-        const section = line.match(/^\s*\[([^\[\]]+)]\s*$/);
-        if (section) {
-            currentSection = section[1];
+        line = line.split(/(^|\s)[;#]/)[0].trim();
+        const isSection = line[0] === "[" && line[line.length - 1] === "]";
+        if (isSection) {
+            currentSection = line.substring(1, line.length - 1);
             if (profileNameBlockList.includes(currentSection)) {
                 throw new Error(`Found invalid profile name "${currentSection}"`);
             }
         }
         else if (currentSection) {
-            const item = line.match(/^\s*(.+?)\s*=\s*(.+?)\s*$/);
-            if (item) {
+            const indexOfEqualsSign = line.indexOf("=");
+            const start = 0;
+            const end = line.length - 1;
+            const isAssignment = indexOfEqualsSign !== -1 && indexOfEqualsSign !== start && indexOfEqualsSign !== end;
+            if (isAssignment) {
+                const [name, value] = [
+                    line.substring(0, indexOfEqualsSign).trim(),
+                    line.substring(indexOfEqualsSign + 1).trim(),
+                ];
                 map[currentSection] = map[currentSection] || {};
-                map[currentSection][item[1]] = item[2];
+                map[currentSection][name] = value;
             }
         }
     }
@@ -15956,6 +16007,9 @@ const constants_1 = __nccwpck_require__(342);
 const getCanonicalHeaders = ({ headers }, unsignableHeaders, signableHeaders) => {
     const canonical = {};
     for (const headerName of Object.keys(headers).sort()) {
+        if (!headers[headerName]) {
+            continue;
+        }
         const canonicalHeaderName = headerName.toLowerCase();
         if (canonicalHeaderName in constants_1.ALWAYS_UNSIGNABLE_HEADERS ||
             (unsignableHeaders === null || unsignableHeaders === void 0 ? void 0 : unsignableHeaders.has(canonicalHeaderName)) ||
@@ -37853,7 +37907,7 @@ module.exports = require("util");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.105.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.105.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/credential-provider-node":"3.105.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-recursion-detection":"3.105.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-signing":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.94.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.99.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.99.0","@aws-sdk/util-defaults-mode-node":"3.99.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.128.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.128.0","@aws-sdk/config-resolver":"3.128.0","@aws-sdk/credential-provider-node":"3.128.0","@aws-sdk/fetch-http-handler":"3.127.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.128.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.128.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
 
 /***/ }),
 
@@ -37861,7 +37915,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","descrip
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.105.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-recursion-detection":"3.105.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.94.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.99.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.99.0","@aws-sdk/util-defaults-mode-node":"3.99.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.128.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.128.0","@aws-sdk/fetch-http-handler":"3.127.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.128.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -37869,7 +37923,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.105.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.80.0","@aws-sdk/credential-provider-node":"3.105.0","@aws-sdk/fetch-http-handler":"3.78.0","@aws-sdk/hash-node":"3.78.0","@aws-sdk/invalid-dependency":"3.78.0","@aws-sdk/middleware-content-length":"3.78.0","@aws-sdk/middleware-host-header":"3.78.0","@aws-sdk/middleware-logger":"3.78.0","@aws-sdk/middleware-recursion-detection":"3.105.0","@aws-sdk/middleware-retry":"3.80.0","@aws-sdk/middleware-sdk-sts":"3.78.0","@aws-sdk/middleware-serde":"3.78.0","@aws-sdk/middleware-signing":"3.78.0","@aws-sdk/middleware-stack":"3.78.0","@aws-sdk/middleware-user-agent":"3.78.0","@aws-sdk/node-config-provider":"3.80.0","@aws-sdk/node-http-handler":"3.94.0","@aws-sdk/protocol-http":"3.78.0","@aws-sdk/smithy-client":"3.99.0","@aws-sdk/types":"3.78.0","@aws-sdk/url-parser":"3.78.0","@aws-sdk/util-base64-browser":"3.58.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.99.0","@aws-sdk/util-defaults-mode-node":"3.99.0","@aws-sdk/util-user-agent-browser":"3.78.0","@aws-sdk/util-user-agent-node":"3.80.0","@aws-sdk/util-utf8-browser":"3.55.0","@aws-sdk/util-utf8-node":"3.55.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.128.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.128.0","@aws-sdk/credential-provider-node":"3.128.0","@aws-sdk/fetch-http-handler":"3.127.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-sdk-sts":"3.128.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.128.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.128.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
