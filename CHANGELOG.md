@@ -1,3 +1,12 @@
+## [1.0.42](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.41...v1.0.42) (2022-07-25)
+
+
+### Bug Fixes
+
+* **deps:** update to client 0.131.0 ([71baa5a](https://github.com/scribd/amazon-servicediscovery-service-action/commit/71baa5a6f3ca9ef63fea10f9d3175e3e1893e165))
+* **deps:** yarn upgrade 20220722 ([ffb1ffc](https://github.com/scribd/amazon-servicediscovery-service-action/commit/ffb1ffca801b57c361b1fd5cbcfba697f3070da6))
+* **deps:** yarn upgrade vercel 0.34.0 ([97c7d1c](https://github.com/scribd/amazon-servicediscovery-service-action/commit/97c7d1c13211ea12da757d7f8e702b37906552d4))
+
 ## [1.0.41](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.40...v1.0.41) (2022-07-22)
 
 
