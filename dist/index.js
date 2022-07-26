@@ -2601,8 +2601,8 @@ class CreateHttpNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.CreateHttpNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateHttpNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.CreateHttpNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateHttpNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2645,8 +2645,8 @@ class CreatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.CreatePrivateDnsNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreatePrivateDnsNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.CreatePrivateDnsNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreatePrivateDnsNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2689,8 +2689,8 @@ class CreatePublicDnsNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.CreatePublicDnsNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreatePublicDnsNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.CreatePublicDnsNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreatePublicDnsNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2733,8 +2733,8 @@ class CreateServiceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.CreateServiceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateServiceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.CreateServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateServiceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2777,8 +2777,8 @@ class DeleteNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.DeleteNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2821,8 +2821,8 @@ class DeleteServiceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteServiceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteServiceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.DeleteServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteServiceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2865,8 +2865,8 @@ class DeregisterInstanceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.DeregisterInstanceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeregisterInstanceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.DeregisterInstanceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeregisterInstanceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2909,8 +2909,8 @@ class DiscoverInstancesCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.DiscoverInstancesRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DiscoverInstancesResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.DiscoverInstancesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DiscoverInstancesResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2953,8 +2953,8 @@ class GetInstanceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetInstanceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetInstanceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetInstanceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetInstanceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -2997,8 +2997,8 @@ class GetInstancesHealthStatusCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetInstancesHealthStatusRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetInstancesHealthStatusResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetInstancesHealthStatusRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetInstancesHealthStatusResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3041,8 +3041,8 @@ class GetNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3085,8 +3085,8 @@ class GetOperationCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetOperationRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetOperationResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetOperationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetOperationResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3129,8 +3129,8 @@ class GetServiceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetServiceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetServiceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetServiceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3173,8 +3173,8 @@ class ListInstancesCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListInstancesRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListInstancesResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListInstancesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListInstancesResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3217,8 +3217,8 @@ class ListNamespacesCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListNamespacesRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListNamespacesResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListNamespacesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListNamespacesResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3261,8 +3261,8 @@ class ListOperationsCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListOperationsRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListOperationsResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListOperationsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListOperationsResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3305,8 +3305,8 @@ class ListServicesCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListServicesRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListServicesResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListServicesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListServicesResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3349,8 +3349,8 @@ class ListTagsForResourceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListTagsForResourceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListTagsForResourceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListTagsForResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListTagsForResourceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3393,8 +3393,8 @@ class RegisterInstanceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.RegisterInstanceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.RegisterInstanceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.RegisterInstanceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.RegisterInstanceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3437,8 +3437,8 @@ class TagResourceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.TagResourceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.TagResourceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.TagResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.TagResourceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3481,8 +3481,8 @@ class UntagResourceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UntagResourceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UntagResourceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UntagResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UntagResourceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3525,8 +3525,8 @@ class UpdateHttpNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UpdateHttpNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UpdateHttpNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UpdateHttpNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdateHttpNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3569,7 +3569,7 @@ class UpdateInstanceCustomHealthStatusCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UpdateInstanceCustomHealthStatusRequest.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UpdateInstanceCustomHealthStatusRequestFilterSensitiveLog,
             outputFilterSensitiveLog: (output) => output,
         };
         const { requestHandler } = configuration;
@@ -3613,8 +3613,8 @@ class UpdatePrivateDnsNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UpdatePrivateDnsNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UpdatePrivateDnsNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UpdatePrivateDnsNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdatePrivateDnsNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3657,8 +3657,8 @@ class UpdatePublicDnsNamespaceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UpdatePublicDnsNamespaceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UpdatePublicDnsNamespaceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UpdatePublicDnsNamespaceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdatePublicDnsNamespaceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -3701,8 +3701,8 @@ class UpdateServiceCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.UpdateServiceRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UpdateServiceResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.UpdateServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdateServiceResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -4022,28 +4022,10 @@ tslib_1.__exportStar(__nccwpck_require__(9096), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DnsProperties = exports.DnsConfigChange = exports.RequestLimitExceeded = exports.DiscoverInstancesResponse = exports.HttpInstanceSummary = exports.HealthStatus = exports.DiscoverInstancesRequest = exports.HealthStatusFilter = exports.InstanceNotFound = exports.DeregisterInstanceResponse = exports.DeregisterInstanceRequest = exports.ServiceNotFound = exports.DeleteServiceResponse = exports.DeleteServiceRequest = exports.ResourceInUse = exports.DeleteNamespaceResponse = exports.DeleteNamespaceRequest = exports.CustomHealthStatus = exports.CustomHealthNotFound = exports.ServiceAlreadyExists = exports.NamespaceNotFound = exports.CreateServiceResponse = exports.Service = exports.ServiceType = exports.CreateServiceRequest = exports.ServiceTypeOption = exports.HealthCheckCustomConfig = exports.HealthCheckConfig = exports.HealthCheckType = exports.DnsConfig = exports.RoutingPolicy = exports.DnsRecord = exports.RecordType = exports.CreatePublicDnsNamespaceResponse = exports.CreatePublicDnsNamespaceRequest = exports.PublicDnsNamespaceProperties = exports.PublicDnsPropertiesMutable = exports.CreatePrivateDnsNamespaceResponse = exports.CreatePrivateDnsNamespaceRequest = exports.PrivateDnsNamespaceProperties = exports.PrivateDnsPropertiesMutable = exports.SOA = exports.TooManyTagsException = exports.ResourceLimitExceeded = exports.NamespaceAlreadyExists = exports.InvalidInput = exports.DuplicateRequest = exports.CreateHttpNamespaceResponse = exports.CreateHttpNamespaceRequest = exports.Tag = void 0;
-exports.PublicDnsNamespaceChange = exports.PublicDnsNamespacePropertiesChange = exports.PublicDnsPropertiesMutableChange = exports.PrivateDnsNamespaceChange = exports.PrivateDnsNamespacePropertiesChange = exports.PrivateDnsPropertiesMutableChange = exports.SOAChange = exports.ResourceNotFoundException = exports.ListTagsForResourceResponse = exports.ListTagsForResourceRequest = exports.ListServicesResponse = exports.ServiceSummary = exports.ListServicesRequest = exports.ServiceFilter = exports.ServiceFilterName = exports.ListOperationsResponse = exports.OperationSummary = exports.ListOperationsRequest = exports.OperationFilter = exports.OperationFilterName = exports.ListNamespacesResponse = exports.NamespaceSummary = exports.ListNamespacesRequest = exports.NamespaceFilter = exports.NamespaceFilterName = exports.ListInstancesResponse = exports.ListInstancesRequest = exports.InstanceSummary = exports.HttpNamespaceChange = exports.GetServiceResponse = exports.GetServiceRequest = exports.OperationNotFound = exports.GetOperationResponse = exports.Operation = exports.OperationType = exports.OperationTargetType = exports.OperationStatus = exports.GetOperationRequest = exports.GetNamespaceResponse = exports.Namespace = exports.NamespaceType = exports.NamespaceProperties = exports.HttpProperties = exports.GetNamespaceRequest = exports.GetInstancesHealthStatusResponse = exports.GetInstancesHealthStatusRequest = exports.GetInstanceResponse = exports.Instance = exports.GetInstanceRequest = exports.FilterCondition = void 0;
-exports.UpdateServiceResponse = exports.UpdateServiceRequest = exports.ServiceChange = exports.UpdatePublicDnsNamespaceResponse = exports.UpdatePublicDnsNamespaceRequest = exports.UpdatePrivateDnsNamespaceResponse = exports.UpdatePrivateDnsNamespaceRequest = exports.UpdateInstanceCustomHealthStatusRequest = exports.UpdateHttpNamespaceResponse = exports.UpdateHttpNamespaceRequest = exports.UntagResourceResponse = exports.UntagResourceRequest = exports.TagResourceResponse = exports.TagResourceRequest = exports.RegisterInstanceResponse = exports.RegisterInstanceRequest = void 0;
+exports.DeleteNamespaceRequestFilterSensitiveLog = exports.CreateServiceResponseFilterSensitiveLog = exports.ServiceFilterSensitiveLog = exports.CreateServiceRequestFilterSensitiveLog = exports.HealthCheckCustomConfigFilterSensitiveLog = exports.HealthCheckConfigFilterSensitiveLog = exports.DnsConfigFilterSensitiveLog = exports.DnsRecordFilterSensitiveLog = exports.CreatePublicDnsNamespaceResponseFilterSensitiveLog = exports.CreatePublicDnsNamespaceRequestFilterSensitiveLog = exports.PublicDnsNamespacePropertiesFilterSensitiveLog = exports.PublicDnsPropertiesMutableFilterSensitiveLog = exports.CreatePrivateDnsNamespaceResponseFilterSensitiveLog = exports.CreatePrivateDnsNamespaceRequestFilterSensitiveLog = exports.PrivateDnsNamespacePropertiesFilterSensitiveLog = exports.PrivateDnsPropertiesMutableFilterSensitiveLog = exports.SOAFilterSensitiveLog = exports.CreateHttpNamespaceResponseFilterSensitiveLog = exports.CreateHttpNamespaceRequestFilterSensitiveLog = exports.TagFilterSensitiveLog = exports.ResourceNotFoundException = exports.ServiceFilterName = exports.OperationFilterName = exports.NamespaceFilterName = exports.OperationNotFound = exports.OperationType = exports.OperationTargetType = exports.OperationStatus = exports.NamespaceType = exports.FilterCondition = exports.RequestLimitExceeded = exports.HealthStatus = exports.HealthStatusFilter = exports.InstanceNotFound = exports.ServiceNotFound = exports.ResourceInUse = exports.CustomHealthStatus = exports.CustomHealthNotFound = exports.ServiceAlreadyExists = exports.NamespaceNotFound = exports.ServiceType = exports.ServiceTypeOption = exports.HealthCheckType = exports.RoutingPolicy = exports.RecordType = exports.TooManyTagsException = exports.ResourceLimitExceeded = exports.NamespaceAlreadyExists = exports.InvalidInput = exports.DuplicateRequest = void 0;
+exports.PublicDnsNamespaceChangeFilterSensitiveLog = exports.PublicDnsNamespacePropertiesChangeFilterSensitiveLog = exports.PublicDnsPropertiesMutableChangeFilterSensitiveLog = exports.PrivateDnsNamespaceChangeFilterSensitiveLog = exports.PrivateDnsNamespacePropertiesChangeFilterSensitiveLog = exports.PrivateDnsPropertiesMutableChangeFilterSensitiveLog = exports.SOAChangeFilterSensitiveLog = exports.ListTagsForResourceResponseFilterSensitiveLog = exports.ListTagsForResourceRequestFilterSensitiveLog = exports.ListServicesResponseFilterSensitiveLog = exports.ServiceSummaryFilterSensitiveLog = exports.ListServicesRequestFilterSensitiveLog = exports.ServiceFilterFilterSensitiveLog = exports.ListOperationsResponseFilterSensitiveLog = exports.OperationSummaryFilterSensitiveLog = exports.ListOperationsRequestFilterSensitiveLog = exports.OperationFilterFilterSensitiveLog = exports.ListNamespacesResponseFilterSensitiveLog = exports.NamespaceSummaryFilterSensitiveLog = exports.ListNamespacesRequestFilterSensitiveLog = exports.NamespaceFilterFilterSensitiveLog = exports.ListInstancesResponseFilterSensitiveLog = exports.ListInstancesRequestFilterSensitiveLog = exports.InstanceSummaryFilterSensitiveLog = exports.HttpNamespaceChangeFilterSensitiveLog = exports.GetServiceResponseFilterSensitiveLog = exports.GetServiceRequestFilterSensitiveLog = exports.GetOperationResponseFilterSensitiveLog = exports.OperationFilterSensitiveLog = exports.GetOperationRequestFilterSensitiveLog = exports.GetNamespaceResponseFilterSensitiveLog = exports.NamespaceFilterSensitiveLog = exports.NamespacePropertiesFilterSensitiveLog = exports.HttpPropertiesFilterSensitiveLog = exports.GetNamespaceRequestFilterSensitiveLog = exports.GetInstancesHealthStatusResponseFilterSensitiveLog = exports.GetInstancesHealthStatusRequestFilterSensitiveLog = exports.GetInstanceResponseFilterSensitiveLog = exports.InstanceFilterSensitiveLog = exports.GetInstanceRequestFilterSensitiveLog = exports.DnsPropertiesFilterSensitiveLog = exports.DnsConfigChangeFilterSensitiveLog = exports.DiscoverInstancesResponseFilterSensitiveLog = exports.HttpInstanceSummaryFilterSensitiveLog = exports.DiscoverInstancesRequestFilterSensitiveLog = exports.DeregisterInstanceResponseFilterSensitiveLog = exports.DeregisterInstanceRequestFilterSensitiveLog = exports.DeleteServiceResponseFilterSensitiveLog = exports.DeleteServiceRequestFilterSensitiveLog = exports.DeleteNamespaceResponseFilterSensitiveLog = void 0;
+exports.UpdateServiceResponseFilterSensitiveLog = exports.UpdateServiceRequestFilterSensitiveLog = exports.ServiceChangeFilterSensitiveLog = exports.UpdatePublicDnsNamespaceResponseFilterSensitiveLog = exports.UpdatePublicDnsNamespaceRequestFilterSensitiveLog = exports.UpdatePrivateDnsNamespaceResponseFilterSensitiveLog = exports.UpdatePrivateDnsNamespaceRequestFilterSensitiveLog = exports.UpdateInstanceCustomHealthStatusRequestFilterSensitiveLog = exports.UpdateHttpNamespaceResponseFilterSensitiveLog = exports.UpdateHttpNamespaceRequestFilterSensitiveLog = exports.UntagResourceResponseFilterSensitiveLog = exports.UntagResourceRequestFilterSensitiveLog = exports.TagResourceResponseFilterSensitiveLog = exports.TagResourceRequestFilterSensitiveLog = exports.RegisterInstanceResponseFilterSensitiveLog = exports.RegisterInstanceRequestFilterSensitiveLog = void 0;
 const ServiceDiscoveryServiceException_1 = __nccwpck_require__(1715);
-var Tag;
-(function (Tag) {
-    Tag.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Tag = exports.Tag || (exports.Tag = {}));
-var CreateHttpNamespaceRequest;
-(function (CreateHttpNamespaceRequest) {
-    CreateHttpNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreateHttpNamespaceRequest = exports.CreateHttpNamespaceRequest || (exports.CreateHttpNamespaceRequest = {}));
-var CreateHttpNamespaceResponse;
-(function (CreateHttpNamespaceResponse) {
-    CreateHttpNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreateHttpNamespaceResponse = exports.CreateHttpNamespaceResponse || (exports.CreateHttpNamespaceResponse = {}));
 class DuplicateRequest extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4118,60 +4100,6 @@ class TooManyTagsException extends ServiceDiscoveryServiceException_1.ServiceDis
     }
 }
 exports.TooManyTagsException = TooManyTagsException;
-var SOA;
-(function (SOA) {
-    SOA.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(SOA = exports.SOA || (exports.SOA = {}));
-var PrivateDnsPropertiesMutable;
-(function (PrivateDnsPropertiesMutable) {
-    PrivateDnsPropertiesMutable.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PrivateDnsPropertiesMutable = exports.PrivateDnsPropertiesMutable || (exports.PrivateDnsPropertiesMutable = {}));
-var PrivateDnsNamespaceProperties;
-(function (PrivateDnsNamespaceProperties) {
-    PrivateDnsNamespaceProperties.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PrivateDnsNamespaceProperties = exports.PrivateDnsNamespaceProperties || (exports.PrivateDnsNamespaceProperties = {}));
-var CreatePrivateDnsNamespaceRequest;
-(function (CreatePrivateDnsNamespaceRequest) {
-    CreatePrivateDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreatePrivateDnsNamespaceRequest = exports.CreatePrivateDnsNamespaceRequest || (exports.CreatePrivateDnsNamespaceRequest = {}));
-var CreatePrivateDnsNamespaceResponse;
-(function (CreatePrivateDnsNamespaceResponse) {
-    CreatePrivateDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreatePrivateDnsNamespaceResponse = exports.CreatePrivateDnsNamespaceResponse || (exports.CreatePrivateDnsNamespaceResponse = {}));
-var PublicDnsPropertiesMutable;
-(function (PublicDnsPropertiesMutable) {
-    PublicDnsPropertiesMutable.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PublicDnsPropertiesMutable = exports.PublicDnsPropertiesMutable || (exports.PublicDnsPropertiesMutable = {}));
-var PublicDnsNamespaceProperties;
-(function (PublicDnsNamespaceProperties) {
-    PublicDnsNamespaceProperties.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PublicDnsNamespaceProperties = exports.PublicDnsNamespaceProperties || (exports.PublicDnsNamespaceProperties = {}));
-var CreatePublicDnsNamespaceRequest;
-(function (CreatePublicDnsNamespaceRequest) {
-    CreatePublicDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreatePublicDnsNamespaceRequest = exports.CreatePublicDnsNamespaceRequest || (exports.CreatePublicDnsNamespaceRequest = {}));
-var CreatePublicDnsNamespaceResponse;
-(function (CreatePublicDnsNamespaceResponse) {
-    CreatePublicDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreatePublicDnsNamespaceResponse = exports.CreatePublicDnsNamespaceResponse || (exports.CreatePublicDnsNamespaceResponse = {}));
 var RecordType;
 (function (RecordType) {
     RecordType["A"] = "A";
@@ -4179,69 +4107,27 @@ var RecordType;
     RecordType["CNAME"] = "CNAME";
     RecordType["SRV"] = "SRV";
 })(RecordType = exports.RecordType || (exports.RecordType = {}));
-var DnsRecord;
-(function (DnsRecord) {
-    DnsRecord.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DnsRecord = exports.DnsRecord || (exports.DnsRecord = {}));
 var RoutingPolicy;
 (function (RoutingPolicy) {
     RoutingPolicy["MULTIVALUE"] = "MULTIVALUE";
     RoutingPolicy["WEIGHTED"] = "WEIGHTED";
 })(RoutingPolicy = exports.RoutingPolicy || (exports.RoutingPolicy = {}));
-var DnsConfig;
-(function (DnsConfig) {
-    DnsConfig.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DnsConfig = exports.DnsConfig || (exports.DnsConfig = {}));
 var HealthCheckType;
 (function (HealthCheckType) {
     HealthCheckType["HTTP"] = "HTTP";
     HealthCheckType["HTTPS"] = "HTTPS";
     HealthCheckType["TCP"] = "TCP";
 })(HealthCheckType = exports.HealthCheckType || (exports.HealthCheckType = {}));
-var HealthCheckConfig;
-(function (HealthCheckConfig) {
-    HealthCheckConfig.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(HealthCheckConfig = exports.HealthCheckConfig || (exports.HealthCheckConfig = {}));
-var HealthCheckCustomConfig;
-(function (HealthCheckCustomConfig) {
-    HealthCheckCustomConfig.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(HealthCheckCustomConfig = exports.HealthCheckCustomConfig || (exports.HealthCheckCustomConfig = {}));
 var ServiceTypeOption;
 (function (ServiceTypeOption) {
     ServiceTypeOption["HTTP"] = "HTTP";
 })(ServiceTypeOption = exports.ServiceTypeOption || (exports.ServiceTypeOption = {}));
-var CreateServiceRequest;
-(function (CreateServiceRequest) {
-    CreateServiceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreateServiceRequest = exports.CreateServiceRequest || (exports.CreateServiceRequest = {}));
 var ServiceType;
 (function (ServiceType) {
     ServiceType["DNS"] = "DNS";
     ServiceType["DNS_HTTP"] = "DNS_HTTP";
     ServiceType["HTTP"] = "HTTP";
 })(ServiceType = exports.ServiceType || (exports.ServiceType = {}));
-var Service;
-(function (Service) {
-    Service.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Service = exports.Service || (exports.Service = {}));
-var CreateServiceResponse;
-(function (CreateServiceResponse) {
-    CreateServiceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(CreateServiceResponse = exports.CreateServiceResponse || (exports.CreateServiceResponse = {}));
 class NamespaceNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4291,18 +4177,6 @@ var CustomHealthStatus;
     CustomHealthStatus["HEALTHY"] = "HEALTHY";
     CustomHealthStatus["UNHEALTHY"] = "UNHEALTHY";
 })(CustomHealthStatus = exports.CustomHealthStatus || (exports.CustomHealthStatus = {}));
-var DeleteNamespaceRequest;
-(function (DeleteNamespaceRequest) {
-    DeleteNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeleteNamespaceRequest = exports.DeleteNamespaceRequest || (exports.DeleteNamespaceRequest = {}));
-var DeleteNamespaceResponse;
-(function (DeleteNamespaceResponse) {
-    DeleteNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeleteNamespaceResponse = exports.DeleteNamespaceResponse || (exports.DeleteNamespaceResponse = {}));
 class ResourceInUse extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4317,18 +4191,6 @@ class ResourceInUse extends ServiceDiscoveryServiceException_1.ServiceDiscoveryS
     }
 }
 exports.ResourceInUse = ResourceInUse;
-var DeleteServiceRequest;
-(function (DeleteServiceRequest) {
-    DeleteServiceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeleteServiceRequest = exports.DeleteServiceRequest || (exports.DeleteServiceRequest = {}));
-var DeleteServiceResponse;
-(function (DeleteServiceResponse) {
-    DeleteServiceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeleteServiceResponse = exports.DeleteServiceResponse || (exports.DeleteServiceResponse = {}));
 class ServiceNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4343,18 +4205,6 @@ class ServiceNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscover
     }
 }
 exports.ServiceNotFound = ServiceNotFound;
-var DeregisterInstanceRequest;
-(function (DeregisterInstanceRequest) {
-    DeregisterInstanceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeregisterInstanceRequest = exports.DeregisterInstanceRequest || (exports.DeregisterInstanceRequest = {}));
-var DeregisterInstanceResponse;
-(function (DeregisterInstanceResponse) {
-    DeregisterInstanceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DeregisterInstanceResponse = exports.DeregisterInstanceResponse || (exports.DeregisterInstanceResponse = {}));
 class InstanceNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4376,30 +4226,12 @@ var HealthStatusFilter;
     HealthStatusFilter["HEALTHY_OR_ELSE_ALL"] = "HEALTHY_OR_ELSE_ALL";
     HealthStatusFilter["UNHEALTHY"] = "UNHEALTHY";
 })(HealthStatusFilter = exports.HealthStatusFilter || (exports.HealthStatusFilter = {}));
-var DiscoverInstancesRequest;
-(function (DiscoverInstancesRequest) {
-    DiscoverInstancesRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DiscoverInstancesRequest = exports.DiscoverInstancesRequest || (exports.DiscoverInstancesRequest = {}));
 var HealthStatus;
 (function (HealthStatus) {
     HealthStatus["HEALTHY"] = "HEALTHY";
     HealthStatus["UNHEALTHY"] = "UNHEALTHY";
     HealthStatus["UNKNOWN"] = "UNKNOWN";
 })(HealthStatus = exports.HealthStatus || (exports.HealthStatus = {}));
-var HttpInstanceSummary;
-(function (HttpInstanceSummary) {
-    HttpInstanceSummary.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(HttpInstanceSummary = exports.HttpInstanceSummary || (exports.HttpInstanceSummary = {}));
-var DiscoverInstancesResponse;
-(function (DiscoverInstancesResponse) {
-    DiscoverInstancesResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DiscoverInstancesResponse = exports.DiscoverInstancesResponse || (exports.DiscoverInstancesResponse = {}));
 class RequestLimitExceeded extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4414,96 +4246,18 @@ class RequestLimitExceeded extends ServiceDiscoveryServiceException_1.ServiceDis
     }
 }
 exports.RequestLimitExceeded = RequestLimitExceeded;
-var DnsConfigChange;
-(function (DnsConfigChange) {
-    DnsConfigChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DnsConfigChange = exports.DnsConfigChange || (exports.DnsConfigChange = {}));
-var DnsProperties;
-(function (DnsProperties) {
-    DnsProperties.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DnsProperties = exports.DnsProperties || (exports.DnsProperties = {}));
 var FilterCondition;
 (function (FilterCondition) {
     FilterCondition["BETWEEN"] = "BETWEEN";
     FilterCondition["EQ"] = "EQ";
     FilterCondition["IN"] = "IN";
 })(FilterCondition = exports.FilterCondition || (exports.FilterCondition = {}));
-var GetInstanceRequest;
-(function (GetInstanceRequest) {
-    GetInstanceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetInstanceRequest = exports.GetInstanceRequest || (exports.GetInstanceRequest = {}));
-var Instance;
-(function (Instance) {
-    Instance.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Instance = exports.Instance || (exports.Instance = {}));
-var GetInstanceResponse;
-(function (GetInstanceResponse) {
-    GetInstanceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetInstanceResponse = exports.GetInstanceResponse || (exports.GetInstanceResponse = {}));
-var GetInstancesHealthStatusRequest;
-(function (GetInstancesHealthStatusRequest) {
-    GetInstancesHealthStatusRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetInstancesHealthStatusRequest = exports.GetInstancesHealthStatusRequest || (exports.GetInstancesHealthStatusRequest = {}));
-var GetInstancesHealthStatusResponse;
-(function (GetInstancesHealthStatusResponse) {
-    GetInstancesHealthStatusResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetInstancesHealthStatusResponse = exports.GetInstancesHealthStatusResponse || (exports.GetInstancesHealthStatusResponse = {}));
-var GetNamespaceRequest;
-(function (GetNamespaceRequest) {
-    GetNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetNamespaceRequest = exports.GetNamespaceRequest || (exports.GetNamespaceRequest = {}));
-var HttpProperties;
-(function (HttpProperties) {
-    HttpProperties.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(HttpProperties = exports.HttpProperties || (exports.HttpProperties = {}));
-var NamespaceProperties;
-(function (NamespaceProperties) {
-    NamespaceProperties.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(NamespaceProperties = exports.NamespaceProperties || (exports.NamespaceProperties = {}));
 var NamespaceType;
 (function (NamespaceType) {
     NamespaceType["DNS_PRIVATE"] = "DNS_PRIVATE";
     NamespaceType["DNS_PUBLIC"] = "DNS_PUBLIC";
     NamespaceType["HTTP"] = "HTTP";
 })(NamespaceType = exports.NamespaceType || (exports.NamespaceType = {}));
-var Namespace;
-(function (Namespace) {
-    Namespace.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Namespace = exports.Namespace || (exports.Namespace = {}));
-var GetNamespaceResponse;
-(function (GetNamespaceResponse) {
-    GetNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetNamespaceResponse = exports.GetNamespaceResponse || (exports.GetNamespaceResponse = {}));
-var GetOperationRequest;
-(function (GetOperationRequest) {
-    GetOperationRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetOperationRequest = exports.GetOperationRequest || (exports.GetOperationRequest = {}));
 var OperationStatus;
 (function (OperationStatus) {
     OperationStatus["FAIL"] = "FAIL";
@@ -4526,18 +4280,6 @@ var OperationType;
     OperationType["UPDATE_NAMESPACE"] = "UPDATE_NAMESPACE";
     OperationType["UPDATE_SERVICE"] = "UPDATE_SERVICE";
 })(OperationType = exports.OperationType || (exports.OperationType = {}));
-var Operation;
-(function (Operation) {
-    Operation.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Operation = exports.Operation || (exports.Operation = {}));
-var GetOperationResponse;
-(function (GetOperationResponse) {
-    GetOperationResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetOperationResponse = exports.GetOperationResponse || (exports.GetOperationResponse = {}));
 class OperationNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4552,70 +4294,10 @@ class OperationNotFound extends ServiceDiscoveryServiceException_1.ServiceDiscov
     }
 }
 exports.OperationNotFound = OperationNotFound;
-var GetServiceRequest;
-(function (GetServiceRequest) {
-    GetServiceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetServiceRequest = exports.GetServiceRequest || (exports.GetServiceRequest = {}));
-var GetServiceResponse;
-(function (GetServiceResponse) {
-    GetServiceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetServiceResponse = exports.GetServiceResponse || (exports.GetServiceResponse = {}));
-var HttpNamespaceChange;
-(function (HttpNamespaceChange) {
-    HttpNamespaceChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(HttpNamespaceChange = exports.HttpNamespaceChange || (exports.HttpNamespaceChange = {}));
-var InstanceSummary;
-(function (InstanceSummary) {
-    InstanceSummary.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(InstanceSummary = exports.InstanceSummary || (exports.InstanceSummary = {}));
-var ListInstancesRequest;
-(function (ListInstancesRequest) {
-    ListInstancesRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListInstancesRequest = exports.ListInstancesRequest || (exports.ListInstancesRequest = {}));
-var ListInstancesResponse;
-(function (ListInstancesResponse) {
-    ListInstancesResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListInstancesResponse = exports.ListInstancesResponse || (exports.ListInstancesResponse = {}));
 var NamespaceFilterName;
 (function (NamespaceFilterName) {
     NamespaceFilterName["TYPE"] = "TYPE";
 })(NamespaceFilterName = exports.NamespaceFilterName || (exports.NamespaceFilterName = {}));
-var NamespaceFilter;
-(function (NamespaceFilter) {
-    NamespaceFilter.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(NamespaceFilter = exports.NamespaceFilter || (exports.NamespaceFilter = {}));
-var ListNamespacesRequest;
-(function (ListNamespacesRequest) {
-    ListNamespacesRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListNamespacesRequest = exports.ListNamespacesRequest || (exports.ListNamespacesRequest = {}));
-var NamespaceSummary;
-(function (NamespaceSummary) {
-    NamespaceSummary.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(NamespaceSummary = exports.NamespaceSummary || (exports.NamespaceSummary = {}));
-var ListNamespacesResponse;
-(function (ListNamespacesResponse) {
-    ListNamespacesResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListNamespacesResponse = exports.ListNamespacesResponse || (exports.ListNamespacesResponse = {}));
 var OperationFilterName;
 (function (OperationFilterName) {
     OperationFilterName["NAMESPACE_ID"] = "NAMESPACE_ID";
@@ -4624,70 +4306,10 @@ var OperationFilterName;
     OperationFilterName["TYPE"] = "TYPE";
     OperationFilterName["UPDATE_DATE"] = "UPDATE_DATE";
 })(OperationFilterName = exports.OperationFilterName || (exports.OperationFilterName = {}));
-var OperationFilter;
-(function (OperationFilter) {
-    OperationFilter.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(OperationFilter = exports.OperationFilter || (exports.OperationFilter = {}));
-var ListOperationsRequest;
-(function (ListOperationsRequest) {
-    ListOperationsRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListOperationsRequest = exports.ListOperationsRequest || (exports.ListOperationsRequest = {}));
-var OperationSummary;
-(function (OperationSummary) {
-    OperationSummary.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(OperationSummary = exports.OperationSummary || (exports.OperationSummary = {}));
-var ListOperationsResponse;
-(function (ListOperationsResponse) {
-    ListOperationsResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListOperationsResponse = exports.ListOperationsResponse || (exports.ListOperationsResponse = {}));
 var ServiceFilterName;
 (function (ServiceFilterName) {
     ServiceFilterName["NAMESPACE_ID"] = "NAMESPACE_ID";
 })(ServiceFilterName = exports.ServiceFilterName || (exports.ServiceFilterName = {}));
-var ServiceFilter;
-(function (ServiceFilter) {
-    ServiceFilter.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ServiceFilter = exports.ServiceFilter || (exports.ServiceFilter = {}));
-var ListServicesRequest;
-(function (ListServicesRequest) {
-    ListServicesRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListServicesRequest = exports.ListServicesRequest || (exports.ListServicesRequest = {}));
-var ServiceSummary;
-(function (ServiceSummary) {
-    ServiceSummary.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ServiceSummary = exports.ServiceSummary || (exports.ServiceSummary = {}));
-var ListServicesResponse;
-(function (ListServicesResponse) {
-    ListServicesResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListServicesResponse = exports.ListServicesResponse || (exports.ListServicesResponse = {}));
-var ListTagsForResourceRequest;
-(function (ListTagsForResourceRequest) {
-    ListTagsForResourceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListTagsForResourceRequest = exports.ListTagsForResourceRequest || (exports.ListTagsForResourceRequest = {}));
-var ListTagsForResourceResponse;
-(function (ListTagsForResourceResponse) {
-    ListTagsForResourceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListTagsForResourceResponse = exports.ListTagsForResourceResponse || (exports.ListTagsForResourceResponse = {}));
 class ResourceNotFoundException extends ServiceDiscoveryServiceException_1.ServiceDiscoveryServiceException {
     constructor(opts) {
         super({
@@ -4702,144 +4324,350 @@ class ResourceNotFoundException extends ServiceDiscoveryServiceException_1.Servi
     }
 }
 exports.ResourceNotFoundException = ResourceNotFoundException;
-var SOAChange;
-(function (SOAChange) {
-    SOAChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(SOAChange = exports.SOAChange || (exports.SOAChange = {}));
-var PrivateDnsPropertiesMutableChange;
-(function (PrivateDnsPropertiesMutableChange) {
-    PrivateDnsPropertiesMutableChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PrivateDnsPropertiesMutableChange = exports.PrivateDnsPropertiesMutableChange || (exports.PrivateDnsPropertiesMutableChange = {}));
-var PrivateDnsNamespacePropertiesChange;
-(function (PrivateDnsNamespacePropertiesChange) {
-    PrivateDnsNamespacePropertiesChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PrivateDnsNamespacePropertiesChange = exports.PrivateDnsNamespacePropertiesChange || (exports.PrivateDnsNamespacePropertiesChange = {}));
-var PrivateDnsNamespaceChange;
-(function (PrivateDnsNamespaceChange) {
-    PrivateDnsNamespaceChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PrivateDnsNamespaceChange = exports.PrivateDnsNamespaceChange || (exports.PrivateDnsNamespaceChange = {}));
-var PublicDnsPropertiesMutableChange;
-(function (PublicDnsPropertiesMutableChange) {
-    PublicDnsPropertiesMutableChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PublicDnsPropertiesMutableChange = exports.PublicDnsPropertiesMutableChange || (exports.PublicDnsPropertiesMutableChange = {}));
-var PublicDnsNamespacePropertiesChange;
-(function (PublicDnsNamespacePropertiesChange) {
-    PublicDnsNamespacePropertiesChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PublicDnsNamespacePropertiesChange = exports.PublicDnsNamespacePropertiesChange || (exports.PublicDnsNamespacePropertiesChange = {}));
-var PublicDnsNamespaceChange;
-(function (PublicDnsNamespaceChange) {
-    PublicDnsNamespaceChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PublicDnsNamespaceChange = exports.PublicDnsNamespaceChange || (exports.PublicDnsNamespaceChange = {}));
-var RegisterInstanceRequest;
-(function (RegisterInstanceRequest) {
-    RegisterInstanceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(RegisterInstanceRequest = exports.RegisterInstanceRequest || (exports.RegisterInstanceRequest = {}));
-var RegisterInstanceResponse;
-(function (RegisterInstanceResponse) {
-    RegisterInstanceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(RegisterInstanceResponse = exports.RegisterInstanceResponse || (exports.RegisterInstanceResponse = {}));
-var TagResourceRequest;
-(function (TagResourceRequest) {
-    TagResourceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(TagResourceRequest = exports.TagResourceRequest || (exports.TagResourceRequest = {}));
-var TagResourceResponse;
-(function (TagResourceResponse) {
-    TagResourceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(TagResourceResponse = exports.TagResourceResponse || (exports.TagResourceResponse = {}));
-var UntagResourceRequest;
-(function (UntagResourceRequest) {
-    UntagResourceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UntagResourceRequest = exports.UntagResourceRequest || (exports.UntagResourceRequest = {}));
-var UntagResourceResponse;
-(function (UntagResourceResponse) {
-    UntagResourceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UntagResourceResponse = exports.UntagResourceResponse || (exports.UntagResourceResponse = {}));
-var UpdateHttpNamespaceRequest;
-(function (UpdateHttpNamespaceRequest) {
-    UpdateHttpNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdateHttpNamespaceRequest = exports.UpdateHttpNamespaceRequest || (exports.UpdateHttpNamespaceRequest = {}));
-var UpdateHttpNamespaceResponse;
-(function (UpdateHttpNamespaceResponse) {
-    UpdateHttpNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdateHttpNamespaceResponse = exports.UpdateHttpNamespaceResponse || (exports.UpdateHttpNamespaceResponse = {}));
-var UpdateInstanceCustomHealthStatusRequest;
-(function (UpdateInstanceCustomHealthStatusRequest) {
-    UpdateInstanceCustomHealthStatusRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdateInstanceCustomHealthStatusRequest = exports.UpdateInstanceCustomHealthStatusRequest || (exports.UpdateInstanceCustomHealthStatusRequest = {}));
-var UpdatePrivateDnsNamespaceRequest;
-(function (UpdatePrivateDnsNamespaceRequest) {
-    UpdatePrivateDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdatePrivateDnsNamespaceRequest = exports.UpdatePrivateDnsNamespaceRequest || (exports.UpdatePrivateDnsNamespaceRequest = {}));
-var UpdatePrivateDnsNamespaceResponse;
-(function (UpdatePrivateDnsNamespaceResponse) {
-    UpdatePrivateDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdatePrivateDnsNamespaceResponse = exports.UpdatePrivateDnsNamespaceResponse || (exports.UpdatePrivateDnsNamespaceResponse = {}));
-var UpdatePublicDnsNamespaceRequest;
-(function (UpdatePublicDnsNamespaceRequest) {
-    UpdatePublicDnsNamespaceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdatePublicDnsNamespaceRequest = exports.UpdatePublicDnsNamespaceRequest || (exports.UpdatePublicDnsNamespaceRequest = {}));
-var UpdatePublicDnsNamespaceResponse;
-(function (UpdatePublicDnsNamespaceResponse) {
-    UpdatePublicDnsNamespaceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdatePublicDnsNamespaceResponse = exports.UpdatePublicDnsNamespaceResponse || (exports.UpdatePublicDnsNamespaceResponse = {}));
-var ServiceChange;
-(function (ServiceChange) {
-    ServiceChange.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ServiceChange = exports.ServiceChange || (exports.ServiceChange = {}));
-var UpdateServiceRequest;
-(function (UpdateServiceRequest) {
-    UpdateServiceRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdateServiceRequest = exports.UpdateServiceRequest || (exports.UpdateServiceRequest = {}));
-var UpdateServiceResponse;
-(function (UpdateServiceResponse) {
-    UpdateServiceResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(UpdateServiceResponse = exports.UpdateServiceResponse || (exports.UpdateServiceResponse = {}));
+const TagFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagFilterSensitiveLog = TagFilterSensitiveLog;
+const CreateHttpNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateHttpNamespaceRequestFilterSensitiveLog = CreateHttpNamespaceRequestFilterSensitiveLog;
+const CreateHttpNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateHttpNamespaceResponseFilterSensitiveLog = CreateHttpNamespaceResponseFilterSensitiveLog;
+const SOAFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.SOAFilterSensitiveLog = SOAFilterSensitiveLog;
+const PrivateDnsPropertiesMutableFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PrivateDnsPropertiesMutableFilterSensitiveLog = PrivateDnsPropertiesMutableFilterSensitiveLog;
+const PrivateDnsNamespacePropertiesFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PrivateDnsNamespacePropertiesFilterSensitiveLog = PrivateDnsNamespacePropertiesFilterSensitiveLog;
+const CreatePrivateDnsNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreatePrivateDnsNamespaceRequestFilterSensitiveLog = CreatePrivateDnsNamespaceRequestFilterSensitiveLog;
+const CreatePrivateDnsNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreatePrivateDnsNamespaceResponseFilterSensitiveLog = CreatePrivateDnsNamespaceResponseFilterSensitiveLog;
+const PublicDnsPropertiesMutableFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PublicDnsPropertiesMutableFilterSensitiveLog = PublicDnsPropertiesMutableFilterSensitiveLog;
+const PublicDnsNamespacePropertiesFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PublicDnsNamespacePropertiesFilterSensitiveLog = PublicDnsNamespacePropertiesFilterSensitiveLog;
+const CreatePublicDnsNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreatePublicDnsNamespaceRequestFilterSensitiveLog = CreatePublicDnsNamespaceRequestFilterSensitiveLog;
+const CreatePublicDnsNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreatePublicDnsNamespaceResponseFilterSensitiveLog = CreatePublicDnsNamespaceResponseFilterSensitiveLog;
+const DnsRecordFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DnsRecordFilterSensitiveLog = DnsRecordFilterSensitiveLog;
+const DnsConfigFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DnsConfigFilterSensitiveLog = DnsConfigFilterSensitiveLog;
+const HealthCheckConfigFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HealthCheckConfigFilterSensitiveLog = HealthCheckConfigFilterSensitiveLog;
+const HealthCheckCustomConfigFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HealthCheckCustomConfigFilterSensitiveLog = HealthCheckCustomConfigFilterSensitiveLog;
+const CreateServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateServiceRequestFilterSensitiveLog = CreateServiceRequestFilterSensitiveLog;
+const ServiceFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceFilterSensitiveLog = ServiceFilterSensitiveLog;
+const CreateServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateServiceResponseFilterSensitiveLog = CreateServiceResponseFilterSensitiveLog;
+const DeleteNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteNamespaceRequestFilterSensitiveLog = DeleteNamespaceRequestFilterSensitiveLog;
+const DeleteNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteNamespaceResponseFilterSensitiveLog = DeleteNamespaceResponseFilterSensitiveLog;
+const DeleteServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteServiceRequestFilterSensitiveLog = DeleteServiceRequestFilterSensitiveLog;
+const DeleteServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteServiceResponseFilterSensitiveLog = DeleteServiceResponseFilterSensitiveLog;
+const DeregisterInstanceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeregisterInstanceRequestFilterSensitiveLog = DeregisterInstanceRequestFilterSensitiveLog;
+const DeregisterInstanceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeregisterInstanceResponseFilterSensitiveLog = DeregisterInstanceResponseFilterSensitiveLog;
+const DiscoverInstancesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DiscoverInstancesRequestFilterSensitiveLog = DiscoverInstancesRequestFilterSensitiveLog;
+const HttpInstanceSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HttpInstanceSummaryFilterSensitiveLog = HttpInstanceSummaryFilterSensitiveLog;
+const DiscoverInstancesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DiscoverInstancesResponseFilterSensitiveLog = DiscoverInstancesResponseFilterSensitiveLog;
+const DnsConfigChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DnsConfigChangeFilterSensitiveLog = DnsConfigChangeFilterSensitiveLog;
+const DnsPropertiesFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DnsPropertiesFilterSensitiveLog = DnsPropertiesFilterSensitiveLog;
+const GetInstanceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetInstanceRequestFilterSensitiveLog = GetInstanceRequestFilterSensitiveLog;
+const InstanceFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.InstanceFilterSensitiveLog = InstanceFilterSensitiveLog;
+const GetInstanceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetInstanceResponseFilterSensitiveLog = GetInstanceResponseFilterSensitiveLog;
+const GetInstancesHealthStatusRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetInstancesHealthStatusRequestFilterSensitiveLog = GetInstancesHealthStatusRequestFilterSensitiveLog;
+const GetInstancesHealthStatusResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetInstancesHealthStatusResponseFilterSensitiveLog = GetInstancesHealthStatusResponseFilterSensitiveLog;
+const GetNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetNamespaceRequestFilterSensitiveLog = GetNamespaceRequestFilterSensitiveLog;
+const HttpPropertiesFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HttpPropertiesFilterSensitiveLog = HttpPropertiesFilterSensitiveLog;
+const NamespacePropertiesFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.NamespacePropertiesFilterSensitiveLog = NamespacePropertiesFilterSensitiveLog;
+const NamespaceFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.NamespaceFilterSensitiveLog = NamespaceFilterSensitiveLog;
+const GetNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetNamespaceResponseFilterSensitiveLog = GetNamespaceResponseFilterSensitiveLog;
+const GetOperationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetOperationRequestFilterSensitiveLog = GetOperationRequestFilterSensitiveLog;
+const OperationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.OperationFilterSensitiveLog = OperationFilterSensitiveLog;
+const GetOperationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetOperationResponseFilterSensitiveLog = GetOperationResponseFilterSensitiveLog;
+const GetServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetServiceRequestFilterSensitiveLog = GetServiceRequestFilterSensitiveLog;
+const GetServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetServiceResponseFilterSensitiveLog = GetServiceResponseFilterSensitiveLog;
+const HttpNamespaceChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HttpNamespaceChangeFilterSensitiveLog = HttpNamespaceChangeFilterSensitiveLog;
+const InstanceSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.InstanceSummaryFilterSensitiveLog = InstanceSummaryFilterSensitiveLog;
+const ListInstancesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListInstancesRequestFilterSensitiveLog = ListInstancesRequestFilterSensitiveLog;
+const ListInstancesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListInstancesResponseFilterSensitiveLog = ListInstancesResponseFilterSensitiveLog;
+const NamespaceFilterFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.NamespaceFilterFilterSensitiveLog = NamespaceFilterFilterSensitiveLog;
+const ListNamespacesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListNamespacesRequestFilterSensitiveLog = ListNamespacesRequestFilterSensitiveLog;
+const NamespaceSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.NamespaceSummaryFilterSensitiveLog = NamespaceSummaryFilterSensitiveLog;
+const ListNamespacesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListNamespacesResponseFilterSensitiveLog = ListNamespacesResponseFilterSensitiveLog;
+const OperationFilterFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.OperationFilterFilterSensitiveLog = OperationFilterFilterSensitiveLog;
+const ListOperationsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListOperationsRequestFilterSensitiveLog = ListOperationsRequestFilterSensitiveLog;
+const OperationSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.OperationSummaryFilterSensitiveLog = OperationSummaryFilterSensitiveLog;
+const ListOperationsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListOperationsResponseFilterSensitiveLog = ListOperationsResponseFilterSensitiveLog;
+const ServiceFilterFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceFilterFilterSensitiveLog = ServiceFilterFilterSensitiveLog;
+const ListServicesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListServicesRequestFilterSensitiveLog = ListServicesRequestFilterSensitiveLog;
+const ServiceSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceSummaryFilterSensitiveLog = ServiceSummaryFilterSensitiveLog;
+const ListServicesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListServicesResponseFilterSensitiveLog = ListServicesResponseFilterSensitiveLog;
+const ListTagsForResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListTagsForResourceRequestFilterSensitiveLog = ListTagsForResourceRequestFilterSensitiveLog;
+const ListTagsForResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListTagsForResourceResponseFilterSensitiveLog = ListTagsForResourceResponseFilterSensitiveLog;
+const SOAChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.SOAChangeFilterSensitiveLog = SOAChangeFilterSensitiveLog;
+const PrivateDnsPropertiesMutableChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PrivateDnsPropertiesMutableChangeFilterSensitiveLog = PrivateDnsPropertiesMutableChangeFilterSensitiveLog;
+const PrivateDnsNamespacePropertiesChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PrivateDnsNamespacePropertiesChangeFilterSensitiveLog = PrivateDnsNamespacePropertiesChangeFilterSensitiveLog;
+const PrivateDnsNamespaceChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PrivateDnsNamespaceChangeFilterSensitiveLog = PrivateDnsNamespaceChangeFilterSensitiveLog;
+const PublicDnsPropertiesMutableChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PublicDnsPropertiesMutableChangeFilterSensitiveLog = PublicDnsPropertiesMutableChangeFilterSensitiveLog;
+const PublicDnsNamespacePropertiesChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PublicDnsNamespacePropertiesChangeFilterSensitiveLog = PublicDnsNamespacePropertiesChangeFilterSensitiveLog;
+const PublicDnsNamespaceChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PublicDnsNamespaceChangeFilterSensitiveLog = PublicDnsNamespaceChangeFilterSensitiveLog;
+const RegisterInstanceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.RegisterInstanceRequestFilterSensitiveLog = RegisterInstanceRequestFilterSensitiveLog;
+const RegisterInstanceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.RegisterInstanceResponseFilterSensitiveLog = RegisterInstanceResponseFilterSensitiveLog;
+const TagResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagResourceRequestFilterSensitiveLog = TagResourceRequestFilterSensitiveLog;
+const TagResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagResourceResponseFilterSensitiveLog = TagResourceResponseFilterSensitiveLog;
+const UntagResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UntagResourceRequestFilterSensitiveLog = UntagResourceRequestFilterSensitiveLog;
+const UntagResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UntagResourceResponseFilterSensitiveLog = UntagResourceResponseFilterSensitiveLog;
+const UpdateHttpNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdateHttpNamespaceRequestFilterSensitiveLog = UpdateHttpNamespaceRequestFilterSensitiveLog;
+const UpdateHttpNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdateHttpNamespaceResponseFilterSensitiveLog = UpdateHttpNamespaceResponseFilterSensitiveLog;
+const UpdateInstanceCustomHealthStatusRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdateInstanceCustomHealthStatusRequestFilterSensitiveLog = UpdateInstanceCustomHealthStatusRequestFilterSensitiveLog;
+const UpdatePrivateDnsNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdatePrivateDnsNamespaceRequestFilterSensitiveLog = UpdatePrivateDnsNamespaceRequestFilterSensitiveLog;
+const UpdatePrivateDnsNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdatePrivateDnsNamespaceResponseFilterSensitiveLog = UpdatePrivateDnsNamespaceResponseFilterSensitiveLog;
+const UpdatePublicDnsNamespaceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdatePublicDnsNamespaceRequestFilterSensitiveLog = UpdatePublicDnsNamespaceRequestFilterSensitiveLog;
+const UpdatePublicDnsNamespaceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdatePublicDnsNamespaceResponseFilterSensitiveLog = UpdatePublicDnsNamespaceResponseFilterSensitiveLog;
+const ServiceChangeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceChangeFilterSensitiveLog = ServiceChangeFilterSensitiveLog;
+const UpdateServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdateServiceRequestFilterSensitiveLog = UpdateServiceRequestFilterSensitiveLog;
+const UpdateServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UpdateServiceResponseFilterSensitiveLog = UpdateServiceResponseFilterSensitiveLog;
 
 
 /***/ }),
@@ -7836,8 +7664,8 @@ class GetRoleCredentialsCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetRoleCredentialsRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetRoleCredentialsResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetRoleCredentialsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetRoleCredentialsResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -7880,8 +7708,8 @@ class ListAccountRolesCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListAccountRolesRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListAccountRolesResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListAccountRolesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListAccountRolesResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -7924,8 +7752,8 @@ class ListAccountsCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.ListAccountsRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListAccountsResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.ListAccountsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListAccountsResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -7968,7 +7796,7 @@ class LogoutCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.LogoutRequest.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.LogoutRequestFilterSensitiveLog,
             outputFilterSensitiveLog: (output) => output,
         };
         const { requestHandler } = configuration;
@@ -8386,37 +8214,9 @@ tslib_1.__exportStar(__nccwpck_require__(6390), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.LogoutRequest = exports.ListAccountsResponse = exports.ListAccountsRequest = exports.ListAccountRolesResponse = exports.RoleInfo = exports.ListAccountRolesRequest = exports.UnauthorizedException = exports.TooManyRequestsException = exports.ResourceNotFoundException = exports.InvalidRequestException = exports.GetRoleCredentialsResponse = exports.RoleCredentials = exports.GetRoleCredentialsRequest = exports.AccountInfo = void 0;
+exports.LogoutRequestFilterSensitiveLog = exports.ListAccountsResponseFilterSensitiveLog = exports.ListAccountsRequestFilterSensitiveLog = exports.ListAccountRolesResponseFilterSensitiveLog = exports.RoleInfoFilterSensitiveLog = exports.ListAccountRolesRequestFilterSensitiveLog = exports.GetRoleCredentialsResponseFilterSensitiveLog = exports.RoleCredentialsFilterSensitiveLog = exports.GetRoleCredentialsRequestFilterSensitiveLog = exports.AccountInfoFilterSensitiveLog = exports.UnauthorizedException = exports.TooManyRequestsException = exports.ResourceNotFoundException = exports.InvalidRequestException = void 0;
 const smithy_client_1 = __nccwpck_require__(4963);
 const SSOServiceException_1 = __nccwpck_require__(1517);
-var AccountInfo;
-(function (AccountInfo) {
-    AccountInfo.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AccountInfo = exports.AccountInfo || (exports.AccountInfo = {}));
-var GetRoleCredentialsRequest;
-(function (GetRoleCredentialsRequest) {
-    GetRoleCredentialsRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
-    });
-})(GetRoleCredentialsRequest = exports.GetRoleCredentialsRequest || (exports.GetRoleCredentialsRequest = {}));
-var RoleCredentials;
-(function (RoleCredentials) {
-    RoleCredentials.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.secretAccessKey && { secretAccessKey: smithy_client_1.SENSITIVE_STRING }),
-        ...(obj.sessionToken && { sessionToken: smithy_client_1.SENSITIVE_STRING }),
-    });
-})(RoleCredentials = exports.RoleCredentials || (exports.RoleCredentials = {}));
-var GetRoleCredentialsResponse;
-(function (GetRoleCredentialsResponse) {
-    GetRoleCredentialsResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.roleCredentials && { roleCredentials: RoleCredentials.filterSensitiveLog(obj.roleCredentials) }),
-    });
-})(GetRoleCredentialsResponse = exports.GetRoleCredentialsResponse || (exports.GetRoleCredentialsResponse = {}));
 class InvalidRequestException extends SSOServiceException_1.SSOServiceException {
     constructor(opts) {
         super({
@@ -8469,45 +8269,53 @@ class UnauthorizedException extends SSOServiceException_1.SSOServiceException {
     }
 }
 exports.UnauthorizedException = UnauthorizedException;
-var ListAccountRolesRequest;
-(function (ListAccountRolesRequest) {
-    ListAccountRolesRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
-    });
-})(ListAccountRolesRequest = exports.ListAccountRolesRequest || (exports.ListAccountRolesRequest = {}));
-var RoleInfo;
-(function (RoleInfo) {
-    RoleInfo.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(RoleInfo = exports.RoleInfo || (exports.RoleInfo = {}));
-var ListAccountRolesResponse;
-(function (ListAccountRolesResponse) {
-    ListAccountRolesResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListAccountRolesResponse = exports.ListAccountRolesResponse || (exports.ListAccountRolesResponse = {}));
-var ListAccountsRequest;
-(function (ListAccountsRequest) {
-    ListAccountsRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
-    });
-})(ListAccountsRequest = exports.ListAccountsRequest || (exports.ListAccountsRequest = {}));
-var ListAccountsResponse;
-(function (ListAccountsResponse) {
-    ListAccountsResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(ListAccountsResponse = exports.ListAccountsResponse || (exports.ListAccountsResponse = {}));
-var LogoutRequest;
-(function (LogoutRequest) {
-    LogoutRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-        ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
-    });
-})(LogoutRequest = exports.LogoutRequest || (exports.LogoutRequest = {}));
+const AccountInfoFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AccountInfoFilterSensitiveLog = AccountInfoFilterSensitiveLog;
+const GetRoleCredentialsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.GetRoleCredentialsRequestFilterSensitiveLog = GetRoleCredentialsRequestFilterSensitiveLog;
+const RoleCredentialsFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.secretAccessKey && { secretAccessKey: smithy_client_1.SENSITIVE_STRING }),
+    ...(obj.sessionToken && { sessionToken: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.RoleCredentialsFilterSensitiveLog = RoleCredentialsFilterSensitiveLog;
+const GetRoleCredentialsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.roleCredentials && { roleCredentials: (0, exports.RoleCredentialsFilterSensitiveLog)(obj.roleCredentials) }),
+});
+exports.GetRoleCredentialsResponseFilterSensitiveLog = GetRoleCredentialsResponseFilterSensitiveLog;
+const ListAccountRolesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.ListAccountRolesRequestFilterSensitiveLog = ListAccountRolesRequestFilterSensitiveLog;
+const RoleInfoFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.RoleInfoFilterSensitiveLog = RoleInfoFilterSensitiveLog;
+const ListAccountRolesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListAccountRolesResponseFilterSensitiveLog = ListAccountRolesResponseFilterSensitiveLog;
+const ListAccountsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.ListAccountsRequestFilterSensitiveLog = ListAccountsRequestFilterSensitiveLog;
+const ListAccountsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListAccountsResponseFilterSensitiveLog = ListAccountsResponseFilterSensitiveLog;
+const LogoutRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.accessToken && { accessToken: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.LogoutRequestFilterSensitiveLog = LogoutRequestFilterSensitiveLog;
 
 
 /***/ }),
@@ -9349,8 +9157,8 @@ class AssumeRoleCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.AssumeRoleRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.AssumeRoleResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9393,8 +9201,8 @@ class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleWithSAMLResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9437,8 +9245,8 @@ class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssumeRoleWithWebIdentityResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9483,8 +9291,8 @@ class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DecodeAuthorizationMessageResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9529,8 +9337,8 @@ class GetAccessKeyInfoCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetAccessKeyInfoRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetAccessKeyInfoResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetAccessKeyInfoRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetAccessKeyInfoResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9575,8 +9383,8 @@ class GetCallerIdentityCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetCallerIdentityRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetCallerIdentityResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetCallerIdentityRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetCallerIdentityResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9621,8 +9429,8 @@ class GetFederationTokenCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetFederationTokenRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetFederationTokenResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetFederationTokenRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetFederationTokenResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -9667,8 +9475,8 @@ class GetSessionTokenCommand extends smithy_client_1.Command {
             logger,
             clientName,
             commandName,
-            inputFilterSensitiveLog: models_0_1.GetSessionTokenRequest.filterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.GetSessionTokenResponse.filterSensitiveLog,
+            inputFilterSensitiveLog: models_0_1.GetSessionTokenRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.GetSessionTokenResponseFilterSensitiveLog,
         };
         const { requestHandler } = configuration;
         return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
@@ -10069,44 +9877,8 @@ tslib_1.__exportStar(__nccwpck_require__(1780), exports);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.GetSessionTokenResponse = exports.GetSessionTokenRequest = exports.GetFederationTokenResponse = exports.FederatedUser = exports.GetFederationTokenRequest = exports.GetCallerIdentityResponse = exports.GetCallerIdentityRequest = exports.GetAccessKeyInfoResponse = exports.GetAccessKeyInfoRequest = exports.InvalidAuthorizationMessageException = exports.DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageRequest = exports.IDPCommunicationErrorException = exports.AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityRequest = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLRequest = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = exports.AssumeRoleResponse = exports.Credentials = exports.AssumeRoleRequest = exports.Tag = exports.PolicyDescriptorType = exports.AssumedRoleUser = void 0;
+exports.GetSessionTokenResponseFilterSensitiveLog = exports.GetSessionTokenRequestFilterSensitiveLog = exports.GetFederationTokenResponseFilterSensitiveLog = exports.FederatedUserFilterSensitiveLog = exports.GetFederationTokenRequestFilterSensitiveLog = exports.GetCallerIdentityResponseFilterSensitiveLog = exports.GetCallerIdentityRequestFilterSensitiveLog = exports.GetAccessKeyInfoResponseFilterSensitiveLog = exports.GetAccessKeyInfoRequestFilterSensitiveLog = exports.DecodeAuthorizationMessageResponseFilterSensitiveLog = exports.DecodeAuthorizationMessageRequestFilterSensitiveLog = exports.AssumeRoleWithWebIdentityResponseFilterSensitiveLog = exports.AssumeRoleWithWebIdentityRequestFilterSensitiveLog = exports.AssumeRoleWithSAMLResponseFilterSensitiveLog = exports.AssumeRoleWithSAMLRequestFilterSensitiveLog = exports.AssumeRoleResponseFilterSensitiveLog = exports.CredentialsFilterSensitiveLog = exports.AssumeRoleRequestFilterSensitiveLog = exports.TagFilterSensitiveLog = exports.PolicyDescriptorTypeFilterSensitiveLog = exports.AssumedRoleUserFilterSensitiveLog = exports.InvalidAuthorizationMessageException = exports.IDPCommunicationErrorException = exports.InvalidIdentityTokenException = exports.IDPRejectedClaimException = exports.RegionDisabledException = exports.PackedPolicyTooLargeException = exports.MalformedPolicyDocumentException = exports.ExpiredTokenException = void 0;
 const STSServiceException_1 = __nccwpck_require__(6450);
-var AssumedRoleUser;
-(function (AssumedRoleUser) {
-    AssumedRoleUser.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumedRoleUser = exports.AssumedRoleUser || (exports.AssumedRoleUser = {}));
-var PolicyDescriptorType;
-(function (PolicyDescriptorType) {
-    PolicyDescriptorType.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(PolicyDescriptorType = exports.PolicyDescriptorType || (exports.PolicyDescriptorType = {}));
-var Tag;
-(function (Tag) {
-    Tag.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Tag = exports.Tag || (exports.Tag = {}));
-var AssumeRoleRequest;
-(function (AssumeRoleRequest) {
-    AssumeRoleRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleRequest = exports.AssumeRoleRequest || (exports.AssumeRoleRequest = {}));
-var Credentials;
-(function (Credentials) {
-    Credentials.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(Credentials = exports.Credentials || (exports.Credentials = {}));
-var AssumeRoleResponse;
-(function (AssumeRoleResponse) {
-    AssumeRoleResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleResponse = exports.AssumeRoleResponse || (exports.AssumeRoleResponse = {}));
 class ExpiredTokenException extends STSServiceException_1.STSServiceException {
     constructor(opts) {
         super({
@@ -10159,18 +9931,6 @@ class RegionDisabledException extends STSServiceException_1.STSServiceException 
     }
 }
 exports.RegionDisabledException = RegionDisabledException;
-var AssumeRoleWithSAMLRequest;
-(function (AssumeRoleWithSAMLRequest) {
-    AssumeRoleWithSAMLRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleWithSAMLRequest = exports.AssumeRoleWithSAMLRequest || (exports.AssumeRoleWithSAMLRequest = {}));
-var AssumeRoleWithSAMLResponse;
-(function (AssumeRoleWithSAMLResponse) {
-    AssumeRoleWithSAMLResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleWithSAMLResponse = exports.AssumeRoleWithSAMLResponse || (exports.AssumeRoleWithSAMLResponse = {}));
 class IDPRejectedClaimException extends STSServiceException_1.STSServiceException {
     constructor(opts) {
         super({
@@ -10197,18 +9957,6 @@ class InvalidIdentityTokenException extends STSServiceException_1.STSServiceExce
     }
 }
 exports.InvalidIdentityTokenException = InvalidIdentityTokenException;
-var AssumeRoleWithWebIdentityRequest;
-(function (AssumeRoleWithWebIdentityRequest) {
-    AssumeRoleWithWebIdentityRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleWithWebIdentityRequest = exports.AssumeRoleWithWebIdentityRequest || (exports.AssumeRoleWithWebIdentityRequest = {}));
-var AssumeRoleWithWebIdentityResponse;
-(function (AssumeRoleWithWebIdentityResponse) {
-    AssumeRoleWithWebIdentityResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(AssumeRoleWithWebIdentityResponse = exports.AssumeRoleWithWebIdentityResponse || (exports.AssumeRoleWithWebIdentityResponse = {}));
 class IDPCommunicationErrorException extends STSServiceException_1.STSServiceException {
     constructor(opts) {
         super({
@@ -10222,18 +9970,6 @@ class IDPCommunicationErrorException extends STSServiceException_1.STSServiceExc
     }
 }
 exports.IDPCommunicationErrorException = IDPCommunicationErrorException;
-var DecodeAuthorizationMessageRequest;
-(function (DecodeAuthorizationMessageRequest) {
-    DecodeAuthorizationMessageRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DecodeAuthorizationMessageRequest = exports.DecodeAuthorizationMessageRequest || (exports.DecodeAuthorizationMessageRequest = {}));
-var DecodeAuthorizationMessageResponse;
-(function (DecodeAuthorizationMessageResponse) {
-    DecodeAuthorizationMessageResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(DecodeAuthorizationMessageResponse = exports.DecodeAuthorizationMessageResponse || (exports.DecodeAuthorizationMessageResponse = {}));
 class InvalidAuthorizationMessageException extends STSServiceException_1.STSServiceException {
     constructor(opts) {
         super({
@@ -10247,60 +9983,90 @@ class InvalidAuthorizationMessageException extends STSServiceException_1.STSServ
     }
 }
 exports.InvalidAuthorizationMessageException = InvalidAuthorizationMessageException;
-var GetAccessKeyInfoRequest;
-(function (GetAccessKeyInfoRequest) {
-    GetAccessKeyInfoRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetAccessKeyInfoRequest = exports.GetAccessKeyInfoRequest || (exports.GetAccessKeyInfoRequest = {}));
-var GetAccessKeyInfoResponse;
-(function (GetAccessKeyInfoResponse) {
-    GetAccessKeyInfoResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetAccessKeyInfoResponse = exports.GetAccessKeyInfoResponse || (exports.GetAccessKeyInfoResponse = {}));
-var GetCallerIdentityRequest;
-(function (GetCallerIdentityRequest) {
-    GetCallerIdentityRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetCallerIdentityRequest = exports.GetCallerIdentityRequest || (exports.GetCallerIdentityRequest = {}));
-var GetCallerIdentityResponse;
-(function (GetCallerIdentityResponse) {
-    GetCallerIdentityResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetCallerIdentityResponse = exports.GetCallerIdentityResponse || (exports.GetCallerIdentityResponse = {}));
-var GetFederationTokenRequest;
-(function (GetFederationTokenRequest) {
-    GetFederationTokenRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetFederationTokenRequest = exports.GetFederationTokenRequest || (exports.GetFederationTokenRequest = {}));
-var FederatedUser;
-(function (FederatedUser) {
-    FederatedUser.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(FederatedUser = exports.FederatedUser || (exports.FederatedUser = {}));
-var GetFederationTokenResponse;
-(function (GetFederationTokenResponse) {
-    GetFederationTokenResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetFederationTokenResponse = exports.GetFederationTokenResponse || (exports.GetFederationTokenResponse = {}));
-var GetSessionTokenRequest;
-(function (GetSessionTokenRequest) {
-    GetSessionTokenRequest.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetSessionTokenRequest = exports.GetSessionTokenRequest || (exports.GetSessionTokenRequest = {}));
-var GetSessionTokenResponse;
-(function (GetSessionTokenResponse) {
-    GetSessionTokenResponse.filterSensitiveLog = (obj) => ({
-        ...obj,
-    });
-})(GetSessionTokenResponse = exports.GetSessionTokenResponse || (exports.GetSessionTokenResponse = {}));
+const AssumedRoleUserFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumedRoleUserFilterSensitiveLog = AssumedRoleUserFilterSensitiveLog;
+const PolicyDescriptorTypeFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PolicyDescriptorTypeFilterSensitiveLog = PolicyDescriptorTypeFilterSensitiveLog;
+const TagFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagFilterSensitiveLog = TagFilterSensitiveLog;
+const AssumeRoleRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleRequestFilterSensitiveLog = AssumeRoleRequestFilterSensitiveLog;
+const CredentialsFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CredentialsFilterSensitiveLog = CredentialsFilterSensitiveLog;
+const AssumeRoleResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleResponseFilterSensitiveLog = AssumeRoleResponseFilterSensitiveLog;
+const AssumeRoleWithSAMLRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleWithSAMLRequestFilterSensitiveLog = AssumeRoleWithSAMLRequestFilterSensitiveLog;
+const AssumeRoleWithSAMLResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleWithSAMLResponseFilterSensitiveLog = AssumeRoleWithSAMLResponseFilterSensitiveLog;
+const AssumeRoleWithWebIdentityRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleWithWebIdentityRequestFilterSensitiveLog = AssumeRoleWithWebIdentityRequestFilterSensitiveLog;
+const AssumeRoleWithWebIdentityResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssumeRoleWithWebIdentityResponseFilterSensitiveLog = AssumeRoleWithWebIdentityResponseFilterSensitiveLog;
+const DecodeAuthorizationMessageRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DecodeAuthorizationMessageRequestFilterSensitiveLog = DecodeAuthorizationMessageRequestFilterSensitiveLog;
+const DecodeAuthorizationMessageResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DecodeAuthorizationMessageResponseFilterSensitiveLog = DecodeAuthorizationMessageResponseFilterSensitiveLog;
+const GetAccessKeyInfoRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetAccessKeyInfoRequestFilterSensitiveLog = GetAccessKeyInfoRequestFilterSensitiveLog;
+const GetAccessKeyInfoResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetAccessKeyInfoResponseFilterSensitiveLog = GetAccessKeyInfoResponseFilterSensitiveLog;
+const GetCallerIdentityRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetCallerIdentityRequestFilterSensitiveLog = GetCallerIdentityRequestFilterSensitiveLog;
+const GetCallerIdentityResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetCallerIdentityResponseFilterSensitiveLog = GetCallerIdentityResponseFilterSensitiveLog;
+const GetFederationTokenRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetFederationTokenRequestFilterSensitiveLog = GetFederationTokenRequestFilterSensitiveLog;
+const FederatedUserFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.FederatedUserFilterSensitiveLog = FederatedUserFilterSensitiveLog;
+const GetFederationTokenResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetFederationTokenResponseFilterSensitiveLog = GetFederationTokenResponseFilterSensitiveLog;
+const GetSessionTokenRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetSessionTokenRequestFilterSensitiveLog = GetSessionTokenRequestFilterSensitiveLog;
+const GetSessionTokenResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.GetSessionTokenResponseFilterSensitiveLog = GetSessionTokenResponseFilterSensitiveLog;
 
 
 /***/ }),
@@ -16358,9 +16124,9 @@ const parseRfc3339DateTime = (value) => {
     return buildDate(year, month, day, { hours, minutes, seconds, fractionalMilliseconds });
 };
 exports.parseRfc3339DateTime = parseRfc3339DateTime;
-const IMF_FIXDATE = new RegExp(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), (\d{2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4}) (\d{2}):(\d{2}):(\d{2})(?:\.(\d+))? GMT$/);
-const RFC_850_DATE = new RegExp(/^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\d{2})-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d{2}) (\d{2}):(\d{2}):(\d{2})(?:\.(\d+))? GMT$/);
-const ASC_TIME = new RegExp(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ( [1-9]|\d{2}) (\d{2}):(\d{2}):(\d{2})(?:\.(\d+))? (\d{4})$/);
+const IMF_FIXDATE = new RegExp(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), (\d{2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4}) (\d{1,2}):(\d{2}):(\d{2})(?:\.(\d+))? GMT$/);
+const RFC_850_DATE = new RegExp(/^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\d{2})-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d{2}) (\d{1,2}):(\d{2}):(\d{2})(?:\.(\d+))? GMT$/);
+const ASC_TIME = new RegExp(/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ( [1-9]|\d{2}) (\d{1,2}):(\d{2}):(\d{2})(?:\.(\d+))? (\d{4})$/);
 const parseRfc7231DateTime = (value) => {
     if (value === null || value === undefined) {
         return undefined;
@@ -37913,7 +37679,7 @@ module.exports = require("util");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.131.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.131.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/credential-provider-node":"3.131.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.130.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.130.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","description":"AWS SDK for JavaScript Servicediscovery Client for Node.js, Browser and React Native","version":"3.137.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.137.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/credential-provider-node":"3.137.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.130.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.137.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.137.0","@aws-sdk/util-defaults-mode-node":"3.137.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-servicediscovery","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-servicediscovery"}}');
 
 /***/ }),
 
@@ -37921,7 +37687,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-servicediscovery","descrip
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.131.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.130.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.137.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.137.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.137.0","@aws-sdk/util-defaults-mode-node":"3.137.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -37929,7 +37695,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.131.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/credential-provider-node":"3.131.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-sdk-sts":"3.130.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.130.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.127.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.127.0","@aws-sdk/util-defaults-mode-node":"3.130.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.137.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.130.0","@aws-sdk/credential-provider-node":"3.137.0","@aws-sdk/fetch-http-handler":"3.131.0","@aws-sdk/hash-node":"3.127.0","@aws-sdk/invalid-dependency":"3.127.0","@aws-sdk/middleware-content-length":"3.127.0","@aws-sdk/middleware-host-header":"3.127.0","@aws-sdk/middleware-logger":"3.127.0","@aws-sdk/middleware-recursion-detection":"3.127.0","@aws-sdk/middleware-retry":"3.127.0","@aws-sdk/middleware-sdk-sts":"3.130.0","@aws-sdk/middleware-serde":"3.127.0","@aws-sdk/middleware-signing":"3.130.0","@aws-sdk/middleware-stack":"3.127.0","@aws-sdk/middleware-user-agent":"3.127.0","@aws-sdk/node-config-provider":"3.127.0","@aws-sdk/node-http-handler":"3.127.0","@aws-sdk/protocol-http":"3.127.0","@aws-sdk/smithy-client":"3.137.0","@aws-sdk/types":"3.127.0","@aws-sdk/url-parser":"3.127.0","@aws-sdk/util-base64-browser":"3.109.0","@aws-sdk/util-base64-node":"3.55.0","@aws-sdk/util-body-length-browser":"3.55.0","@aws-sdk/util-body-length-node":"3.55.0","@aws-sdk/util-defaults-mode-browser":"3.137.0","@aws-sdk/util-defaults-mode-node":"3.137.0","@aws-sdk/util-user-agent-browser":"3.127.0","@aws-sdk/util-user-agent-node":"3.127.0","@aws-sdk/util-utf8-browser":"3.109.0","@aws-sdk/util-utf8-node":"3.109.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.58.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.7.0","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
