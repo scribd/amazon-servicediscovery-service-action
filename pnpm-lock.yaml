@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@actions/core': ^1.9.0
   '@aws-sdk/client-servicediscovery': ^3.137.0
+  '@aws-sdk/util-waiter': ^3.127.0
   '@vercel/ncc': 0.34.0
   eslint: ^8.20.0
   eslint-config-google: ^0.14.0
@@ -14,6 +15,7 @@ specifiers:
 dependencies:
   '@actions/core': 1.9.0
   '@aws-sdk/client-servicediscovery': 3.137.0
+  '@aws-sdk/util-waiter': 3.127.0
   lodash: 4.17.21
   yaml: 2.1.1
 
@@ -670,6 +672,15 @@ packages:
     engines: {node: '>= 12.0.0'}
     dependencies:
       '@aws-sdk/util-buffer-from': 3.55.0
+      tslib: 2.4.0
+    dev: false
+
+  /@aws-sdk/util-waiter/3.127.0:
+    resolution: {integrity: sha512-E5qrRpBJS8dmClqSDW1pWVMKzCG/mxabG6jVUtlW/WLHnl/znxGaOQc6tnnwKik0nEq/4DpT9fEfPUz9JiLrkw==}
+    engines: {node: '>= 12.0.0'}
+    dependencies:
+      '@aws-sdk/abort-controller': 3.127.0
+      '@aws-sdk/types': 3.127.0
       tslib: 2.4.0
     dev: false
 
