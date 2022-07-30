@@ -1,3 +1,11 @@
+## [1.0.44](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.43...v1.0.44) (2022-07-30)
+
+
+### Bug Fixes
+
+* add util-waiter dependency ([8b856c3](https://github.com/scribd/amazon-servicediscovery-service-action/commit/8b856c3fd86c84a5cadb0abaf42d6e0f551634b4))
+* **deps:** pnpm upgrade 20220727 ([6160228](https://github.com/scribd/amazon-servicediscovery-service-action/commit/6160228e9e779e9421304d1d71383fc599fd7b07))
+
 ## [1.0.43](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.42...v1.0.43) (2022-07-27)
 
 
