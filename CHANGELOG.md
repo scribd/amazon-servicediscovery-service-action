@@ -1,3 +1,11 @@
+## [1.0.49](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.48...v1.0.49) (2022-10-06)
+
+
+### Bug Fixes
+
+* **deps:** pnpm update 20221004 ([13e78db](https://github.com/scribd/amazon-servicediscovery-service-action/commit/13e78dbd65a2aee85bdfeb7c16c85bbe2078e8de))
+* **deps:** pnpm upgrade 20220907 ([0fde6ae](https://github.com/scribd/amazon-servicediscovery-service-action/commit/0fde6aeb5610810a5fea8236bce4c4206d661ec2))
+
 ## [1.0.48](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.47...v1.0.48) (2022-09-07)
 
 
