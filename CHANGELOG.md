@@ -1,3 +1,10 @@
+## [1.0.51-alpha.3](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.51-alpha.2...v1.0.51-alpha.3) (2022-12-02)
+
+
+### Reverts
+
+* Revert "fix(deps): pnpm update 2022-12-02" ([5a11dea](https://github.com/scribd/amazon-servicediscovery-service-action/commit/5a11dea84508aa7678d187fc9ec0a05fc02b8bbc))
+
 ## [1.0.51-alpha.2](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.51-alpha.1...v1.0.51-alpha.2) (2022-12-02)
 
 
