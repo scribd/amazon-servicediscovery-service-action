@@ -1,3 +1,10 @@
+## [1.0.52-alpha.1](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.51...v1.0.52-alpha.1) (2023-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update aws sdk ([e1295b6](https://github.com/scribd/amazon-servicediscovery-service-action/commit/e1295b6a768d98d3754d5e1ccead382d52a851e2))
+
 ## [1.0.51](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.50...v1.0.51) (2023-03-30)
 
 
