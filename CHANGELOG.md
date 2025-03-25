@@ -1,3 +1,10 @@
+## [1.0.52](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.51...v1.0.52) (2025-03-25)
+
+
+### Bug Fixes
+
+* DEVPLAT-3294 Update github actions due to ubuntu-20.04 deprecation ([3252a0d](https://github.com/scribd/amazon-servicediscovery-service-action/commit/3252a0d4266a18217ce158e6ffaaee84ba0a7472))
+
 ## [1.0.51](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.50...v1.0.51) (2023-03-30)
 
 
