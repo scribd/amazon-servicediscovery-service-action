@@ -1,3 +1,11 @@
+## [1.0.53](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.52...v1.0.53) (2026-05-05)
+
+
+### Bug Fixes
+
+* bump semantic_version to 24 for Node.js 24 compatibility [DEVPLAT-7373] ([b83937e](https://github.com/scribd/amazon-servicediscovery-service-action/commit/b83937e98c92e231c9f39d68fe97d3b9fe9c49af))
+* update extra_plugins to v24-compatible versions ([ff89afc](https://github.com/scribd/amazon-servicediscovery-service-action/commit/ff89afc581fec353c5332b980119a6df8f466f99))
+
 ## [1.0.52](https://github.com/scribd/amazon-servicediscovery-service-action/compare/v1.0.51...v1.0.52) (2025-03-25)
 
 
